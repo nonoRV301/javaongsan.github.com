@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-10-14T16:01:26+08:00</updated>
+  <updated>2012-10-14T16:10:06+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,8 +18,11 @@
     <link href="http://javaongsan.github.com/blog/2012/10/14/about/"/>
     <updated>2012-10-14T15:58:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2012/10/14/about</id>
-    <content type="html"><![CDATA[<p>
+    <content type="html"><![CDATA[<p>Ong Swee San is a developer.  He enjoys MMA, Triahtlon and ….  All of these are enjoyed in the context of his family of 2 precocious children, and his beautiful wife.
 </p>
+
+
+<p>You can find him <a href="http://twitter.com/ongsweesan">on Twitter</a> or send him an <a href="mailto:@gmail.com">email</a>.</p>
 
 ]]></content>
   </entry>

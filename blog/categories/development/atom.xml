@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ong Swee San]]></title>
-  <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Development | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
   <updated>2012-10-15T11:51:45+08:00</updated>
   <id>http://javaongsan.github.com/</id>
@@ -27,20 +27,6 @@
     
     The app is still wating for approval. 
 </p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[About]]></title>
-    <link href="http://javaongsan.github.com/blog/2012/10/14/about/"/>
-    <updated>2012-10-14T15:58:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2012/10/14/about</id>
-    <content type="html"><![CDATA[<p>Ong Swee San is a developer.  He enjoys MMA, Triahtlon and ….  All of these are enjoyed in the context of his family of 2 precocious children, and his beautiful wife.
-</p>
-
-
-<p>You can find him <a href="http://twitter.com/ongsweesan">on Twitter</a> or send him an <a href="mailto:@gmail.com">email</a>.</p>
 
 ]]></content>
   </entry>

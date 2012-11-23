@@ -4,7 +4,7 @@
   <title><![CDATA[Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-23T10:31:36+08:00</updated>
+  <updated>2012-11-23T15:24:57+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -62,176 +62,175 @@
   <entry>
     <title type="html"><![CDATA[Abstract Class Implementing Interface]]></title>
     <link href="http://javaongsan.github.com/blog/2011/10/22/abstract-class-implementing-interface/"/>
-    <updated>2011-10-22T15:54:55+08:00</updated>
+    <updated>2011-10-22T23:54:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/10/22/abstract-class-implementing-interface</id>
     <content type="html"><![CDATA[<p>Abstract Class Implementing Interface.</p>
 
-<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will
+<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will <br/>
 use an abstract class that implements an Interface.</p>
 
-<p>What is abstract class ?
-Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods
+<p>What is abstract class ?<br/>
+Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods <br/>
 or it can have implemented methods which can be overridden by child classes.</p>
 
-<p>What are interfaces?
-Interface is a contract class with empty methods, properties and functions.
-Any class which implements the interface has to compulsory implement all the
+<p>What are interfaces?<br/>
+Interface is a contract class with empty methods, properties and functions. <br/>
+Any class which implements the interface has to compulsory implement all the <br/>
 empty methods, functions and properties of the interface.</p>
 
-<p>Interface
-`
-using System;
-using System.Collections.Generic;
-using System.Linq;
+<p>Interface <br/>
+`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
 using System.Web;</p>
 
-<p>namespace Employee.Interface
-{</p>
+<p>namespace Employee.Interface<br/>
+{<br/>
+   public interface IEmployee<br/>
+   {</p>
 
-<pre><code>public interface IEmployee
-{
-    String Name
-    {
-        get;
-        set;
-    }
+<pre><code>    String Name  
+    {  
+        get;  
+        set;  
+    }  
 
-    String DateJoin
-    {
-        get;
-        set;
-    }
+    String DateJoin  
+    {  
+        get;  
+        set;  
+    }  
 
-    String Department
-    {
-        get;
-        set;
-    }
+   String Department  
+   {  
+       get;  
+       set;  
+   }  
 
-    bool Save(String mName, String mDate, String mDepartment);
-}
+   bool Save(String mName, String mDate, String mDepartment);  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 
 <p>Abstract Class</p>
 
-<p>`
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+<p>`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Web;<br/>
 using Employee.Interface;</p>
 
-<p>namespace Employee.Abstract
-{</p>
+<p>namespace Employee.Abstract<br/>
+{<br/>
+   public abstract class AEmployee:IEmployee<br/>
+   {</p>
 
-<pre><code>public abstract class AEmployee:IEmployee
-{
-    public abstract String Name
-    {
-        get;
-        set;
-    }
+<pre><code>   public abstract String Name  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract String DateJoin
-    {
-        get;
-        set;
-    }
+   public abstract String DateJoin  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract String Department
-    {
-        get;
-        set;
-    }
+   public abstract String Department  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract bool Save(String mName, String mDate, String mDepartment);
-
-}
+   public abstract bool Save(String mName, String mDate, String mDepartment);  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 
-<p>Employee Class
-`
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+<p>Employee Class<br/>
+`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Web;<br/>
 using Employee.Abstract;</p>
 
-<p>namespace Employee
-{</p>
+<p>namespace Employee<br/>
+{<br/>
+   public class Employee : AEmployee<br/>
+   {</p>
 
-<pre><code>public class Employee : AEmployee
-{
-    private String _Name = String.Empty;
-    private String _DateJoin = String.Empty;
-    private String _Department = String.Empty;
+<pre><code>   private String _Name = String.Empty;  
+   private String _DateJoin = String.Empty;  
+   private String _Department = String.Empty;  
 
-    public override String Name
-    {
-        get
-        {
+   public override String Name  
+   {  
+       get  
+       {  
 
-            return _Name;
-        }
-        set
-        {
-            _Name = value;
-        }
-    }
+           return _Name;  
+       }  
+       set  
+       {  
+           _Name = value;  
+       }  
+   }  
 
-    public override String DateJoin
-    {
-        get
-        {
-            return _DateJoin;
-        }
-        set
-        {
-            _DateJoin = value;
-        }
-    }
+   public override String DateJoin  
+   {  
+       get  
+       {  
+           return _DateJoin;  
+       }  
+       set  
+       {  
+           _DateJoin = value;  
+       }  
+   }  
 
-    public override String Department
-    {
-        get
-        {
-            return _Department;
-        }
-        set
-        {
-            _Department = value;
-        }
-    }
+   public override String Department  
+   {  
+       get  
+       {  
+           return _Department;  
+       }  
+       set  
+       {  
+           _Department = value;  
+       }  
+   }  
 
-    public override bool Save(String mName, String mDate, String mDepartment)
-    {
-        bool success = false;
-        try
-        {
-            _Name = mName;
-            _DateJoin = mDate;
-            _Department = mDepartment;
+   public override bool Save(String mName, String mDate, String mDepartment)  
+   {  
+       bool success = false;  
+       try  
+       {  
+           _Name = mName;  
+           _DateJoin = mDate;  
+           _Department = mDepartment;  
 
-            //Code to save 
-            //
-            success = true;
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-        return success;
-    }
-}
+           //Code to save   
+           //  
+           success = true;  
+       }  
+       catch (Exception)  
+       {  
+           throw;  
+       }  
+       return success;  
+   }  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 ]]></content>
   </entry>
@@ -239,7 +238,7 @@ using Employee.Abstract;</p>
   <entry>
     <title type="html"><![CDATA[Web-Based Kindle Cloud Reader]]></title>
     <link href="http://javaongsan.github.com/blog/2011/08/10/web-based-kindle-cloud-reader/"/>
-    <updated>2011-08-10T08:20:37+08:00</updated>
+    <updated>2011-08-10T16:20:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/08/10/web-based-kindle-cloud-reader</id>
     <content type="html"><![CDATA[<p>Kindle apps for iPad is not available in a lot of countries like Singapore. The only way to get one is to sign in an US based iTunes account. Now there,s a cloud reader which is accessible any where via https://read.amazon.com.</p>
 ]]></content>
@@ -248,7 +247,7 @@ using Employee.Abstract;</p>
   <entry>
     <title type="html"><![CDATA[Yahoo mail release old deactivated email address]]></title>
     <link href="http://javaongsan.github.com/blog/2011/07/15/yahoo-mail-release-old-deactivated-email-address/"/>
-    <updated>2011-07-15T06:50:44+08:00</updated>
+    <updated>2011-07-15T14:50:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/07/15/yahoo-mail-release-old-deactivated-email-address</id>
     <content type="html"><![CDATA[<p>Not sure how long it&#8217;s has been going on but Yahoo Mail release the lock on old deactivated email address. If you have ever deactivated an account with yahoo because of spam or whatever reason, you can register for the same username which is not possible last time.</p>
 ]]></content>
@@ -257,36 +256,36 @@ using Employee.Abstract;</p>
   <entry>
     <title type="html"><![CDATA[Ayschronous Data Loading]]></title>
     <link href="http://javaongsan.github.com/blog/2011/06/08/ayschronous-data-loading/"/>
-    <updated>2011-06-08T07:41:27+08:00</updated>
+    <updated>2011-06-08T15:41:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/06/08/ayschronous-data-loading</id>
     <content type="html"><![CDATA[<p>This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids.</p>
 
 <p>`private DataTable dt = null;</p>
 
-<p>private void LoadGrid(object sender, DoWorkEventArgs e)
+<p>private void LoadGrid(object sender, DoWorkEventArgs e)<br/>
 {</p>
 
-<pre><code>dt = ...;
+<pre><code>dt = ...;  
 </code></pre>
 
 <p>}</p>
 
-<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)<br/>
 {</p>
 
-<pre><code>dgView.DataSource = dt;
-dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+<pre><code>dgView.DataSource = dt;  
+dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
 </code></pre>
 
 <p>}</p>
 
-<p>private void LoadinBackground()
+<p>private void LoadinBackground()<br/>
 {</p>
 
-<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();
-bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);
-bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);
-bgWrkr.RunWorkerAsync();
+<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
+bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
+bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
+bgWrkr.RunWorkerAsync();  
 </code></pre>
 
 <p>}`</p>
@@ -296,41 +295,150 @@ bgWrkr.RunWorkerAsync();
   <entry>
     <title type="html"><![CDATA[C#Windows forms Caching]]></title>
     <link href="http://javaongsan.github.com/blog/2011/05/25/cwindows-forms-caching/"/>
-    <updated>2011-05-25T05:05:44+08:00</updated>
+    <updated>2011-05-25T13:05:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/05/25/cwindows-forms-caching</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>When developing C# windows application, we  tend to reuse  common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good strategy reduce the round trip to database.  I cache most of all my commonly used datasets improve loading time.</p>
+
+<p>`using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Text;</p>
+
+<p>namespace Cache<br/>
+{<br/>
+   public class Cache<br/>
+   {</p>
+
+<pre><code>   static Dictionary _cache = new Dictionary();  
+
+   public Cache() { }  
+
+   public static bool AddToCache(string key, object obj)  
+   {  
+       try  
+       {  
+           _cache.Add(key, obj);  
+       }  
+       catch (ArgumentException)  
+       {  
+           return false;  
+       }  
+       return true;  
+   }  
+
+   public static object GetFromCache(string key)  
+   {  
+       object obj = null;  
+       try  
+       {  
+           if (_cache.ContainsKey(key))  
+               _cache.TryGetValue(key, out obj);  
+       }  
+       catch  
+       {  
+       }  
+       return obj;  
+   }  
+
+   public static void ClearCache()  
+   {  
+       _cache.Clear();  
+   }  
+</code></pre>
+
+<p>   }<br/>
+}<br/>
+`</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Request yahoo serach marketing to reissue cheque to my actual name instead of account name]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/"/>
-    <updated>2011-03-28T02:46:38+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name</id>
+    <title type="html"><![CDATA[Lower back pain]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/03/28/lower-back-pain/"/>
+    <updated>2011-03-28T18:03:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/03/28/lower-back-pain</id>
+    <content type="html"><![CDATA[<p>I been suffering form lower back pain for last 2 weeks which has disturbed my training schedule. I been having back problem for many years but it has been getting pretty bad for the past 2 years. It seems lack of strength training on the lower back is causing my muscles to tense up when it&#8217;s overuse. The tense up muscle affects the nerves near the spine area which cause a shooting pain to the lower butt and leg area. The only thing I can do is to get physiotherapy now and slowly strengthen my back before pounding on the training load.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Request yahoo serach marketing to reissue cheque to my actual name
+instead of account name]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/"/>
+    <updated>2011-03-28T10:46:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name</id>
     <content type="html"><![CDATA[<p>Sometime ago yahoo search marking was merge into mircosoft adcenter. Recently I receive a refund for one of my inactive account, totalling about $200 but it was issue to the account name created and not to my real name. Therefor I couldn&#8217;t cash the cheque. I log in to my account again trying find a email contact to ask to have the cheque reissue but all contact was remove except for a hotline number. I google and found the FAQ page which gave instructions on how to get my check reissue. http://advertisingcentral.yahoo.com/refund</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Vs2010 development environment hacks]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/03/14/vs2010-development-environment-hacks/"/>
-    <updated>2011-03-14T06:55:43+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/03/14/vs2010-development-environment-hacks</id>
-    <content type="html"><![CDATA[<p>Very useful tips to change the boring look of vs2010 from [hanselman.com&lt; \a></p>
+    <title type="html"><![CDATA[Training # 2]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/03/15/training-2/"/>
+    <updated>2011-03-15T23:32:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/03/15/training-2</id>
+    <content type="html"><![CDATA[<p>Tempo run</p>
 
-<p>What I followed
-Close all toolbars
-Close all pinned Toolboxes
-Get a fresh font and color theme for Visual Studio from http://studiostyl.es, I choose wekeRoad ink, which is a dark theme.](http://www.hanselman.com/blog/SimplifyYourVisualStudio2010ToolbarAndFreeYourMind.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ScottHanselman+%28Scott+Hanselman+-+ComputerZen.com%29)</p>
+<p>Target heart rate:130 - 140 beats per minute</p>
+
+<p>Run duration:40 minutes</p>
+
+<p>Workout importance:High</p>
+
+<p>Workout pointers:High aerobic run. Time to pick up the tempo. Stay close to upper range of target heart rate.</p>
+
+<p>Weight training 1</p>
+
+<p>Description: Lifting adaptation period 1 set of 12 repetitions. </p>
+
+<p>Power Lateral Pull-Downs<br/>
+Power Leg Extensions<br/>
+Power Leg Curls<br/>
+Bench Press<br/>
+Squats OR Leg Press<br/>
+Power Dumbbell Pullover<br/>
+Bent Over Row<br/>
+Lunges<br/>
+Side Lateral Raises<br/>
+Biceps<br/>
+Triceps<br/>
+Calf Raises<br/>
+Sit-ups<br/>
+Stretching<br/>
+Sit-ups<br/>
+Stretching</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Training #1]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/03/14/training-1/"/>
+    <updated>2011-03-14T22:34:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/03/14/training-1</id>
+    <content type="html"><![CDATA[<p>Bought a olympic distance training program from Markallen.com to prepare for august races. Program is very light for beginners cause I haven&#8217;t been active for a while. Most beginners should be able to follow along these program.</p>
+
+<p>Training #1</p>
+
+<p>Target heart rate: 130 - 140 beats per minute</p>
+
+<p>Swim distance:500</p>
+
+<p>Swim workout details: <br/>
+Warm up 200 easy, accelerating speed every other lap. <br/>
+Main Set 8x25 fast on 45 sec rest. <br/>
+Warm down 100 easy.</p>
+
+<p>Workout importance:High</p>
+
+<p>Workout pointers:High aerobic swim. Stay close to upper range of target heart rate.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Grub rescue error]]></title>
     <link href="http://javaongsan.github.com/blog/2011/03/14/grub-rescue-error/"/>
-    <updated>2011-03-14T02:14:21+08:00</updated>
+    <updated>2011-03-14T10:14:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/03/14/grub-rescue-error</id>
-    <content type="html"><![CDATA[<p>I used gpart to partition a 600g hard disk with preinstall win7. When I boot up after that, boot sector for win7 was gone or maybe replaced. The grup rescue command prompt appear. I couldn&#8217;t fix it.
+    <content type="html"><![CDATA[<p>I used gpart to partition a 600g hard disk with preinstall win7. When I boot up after that, boot sector for win7 was gone or maybe replaced. The grup rescue command prompt appear. I couldn&#8217;t fix it. <br/>
 I simply install Linux and got a new boot menu.</p>
 
 <p>When I migrate win7 to virtual box the same problem appear. This time I had to use win7 rescues disk to fix the problem. Below are the steps I found</p>
@@ -350,9 +458,9 @@ I simply install Linux and got a new boot menu.</p>
   
   <entry>
     <title type="html"><![CDATA[VS2008 events handler]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/02/18/vs2008-events-handler/"/>
-    <updated>2011-02-18T16:09:47+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/02/18/vs2008-events-handler</id>
+    <link href="http://javaongsan.github.com/blog/2011/02/19/vs2008-events-handler/"/>
+    <updated>2011-02-19T00:09:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/02/19/vs2008-events-handler</id>
     <content type="html"><![CDATA[<p>If you are using the Visual Studio IDE 2008 onwards, you will not find the event handlers by double clicking on the components or from the drop down box in code view.</p>
 
 <p>You have to toto properties of that component and click the Events icon. You find all the event handlers there. Double-click the event that you want to create, for example the Load event.</p>
@@ -362,13 +470,13 @@ I simply install Linux and got a new boot menu.</p>
   <entry>
     <title type="html"><![CDATA[DVD Player Region Hack]]></title>
     <link href="http://javaongsan.github.com/blog/2011/02/05/dvd-player-region-hack/"/>
-    <updated>2011-02-05T02:54:22+08:00</updated>
+    <updated>2011-02-05T10:54:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/02/05/dvd-player-region-hack</id>
     <content type="html"><![CDATA[<p>I purchase a LG dvd player sometime ago. It was a display set on sale $300 for a $500 set. Recently, it somehow cold booted, and some DVD I bought cannot be played. A message &#8220;Wrong regional code&#8221;.</p>
 
 <p>I google a bit and found that I could hack the region code.</p>
 
-<p>I got the instruction from videohelp.com/dvdhacks
+<p>I got the instruction from videohelp.com/dvdhacks<br/>
 1. Press &#8220;Home key on Remote Control</p>
 
 <ol>
@@ -385,28 +493,13 @@ I simply install Linux and got a new boot menu.</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Kindle Available For Sale Outside US]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/10/12/kindle-available-for-sale-outside-us/"/>
-    <updated>2009-10-12T15:17:39+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/10/12/kindle-available-for-sale-outside-us</id>
-    <content type="html"><![CDATA[<p>Finally&#8230;we get Kindle ship to us outside of US. Amazon introduces a new addition to the Kindle family of wireless reading devices: <strong>Kindle with U.S. and International Wireless</strong>. With this new Kindle, you can receive your books, newspapers, and magazines wirelessly while at home or abroad in over 100 countries. Whether you&#8217;re in New York, Paris, SÃ£o Paulo, Mumbai, Beijing, Tokyo, or Sydney, you can think of a book and be reading it in less than 60 seconds. The $279 Kindle with U.S. and International Wireless can be preordered today for delivery starting in two weeks.</p>
-
-<p>Kindle utilizes the same 3G wireless technology as advanced cell phones, so you never need to hunt for a Wi-Fi hotspot. Unlike cell phones, there are no monthly wireless bills and no yearly contracts. There is no software to install, and no syncing required.</p>
-
-<p>The 8&#8221; x 5.3&#8221; x 0.36&#8221; Kindle is as thin as most magazines and weighs less than a paperbackâ€”but can hold 1,500 books. Its electronic-ink screen looks and reads like real paper with no glareâ€”even in bright sunlight. A long battery life means you can read for up to two weeks on a single charge.</p>
-
-<p>You can order one <a href="http://www.amazon.com/gp/product/B00154JDAI?tag=YOUR_ID_HERE-20%20and%20http://www.amazon.com/gp/product/B0015T963C?tag=wizcoder-20"> here</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Countdown Timer]]></title>
     <link href="http://javaongsan.github.com/blog/2009/06/23/countdown-timer/"/>
-    <updated>2009-06-23T02:17:02+08:00</updated>
+    <updated>2009-06-23T10:17:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2009/06/23/countdown-timer</id>
     <content type="html"><![CDATA[<p>If you have read Alex Mandossian&#8217;s Action steps, you know that he suggested that we watch our time using a count down time. Ever since I read this I have been looking for one. A physical countdown time is either too expensive or too small. So i developed one that will run on my screen and stay on top of all my applications. Now i can set a target for my self each time I start a new process.</p>
 
-<p>You can down load the software <a href="http://javaongsan.github.com/wp-content/downloads/Timer.zip">here. </a></p>
+<p>You can down load the software <a href="http://wizcodersolution.com/wp-content/downloads/Timer.zip">here. </a></p>
 
 <p>You may distribute it freely. please sent me some feedback after using it.</p>
 ]]></content>
@@ -415,14 +508,14 @@ I simply install Linux and got a new boot menu.</p>
   <entry>
     <title type="html"><![CDATA[My Beta Commentor Publish Notice WordPress Plugin]]></title>
     <link href="http://javaongsan.github.com/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin/"/>
-    <updated>2009-06-17T09:16:06+08:00</updated>
+    <updated>2009-06-17T17:16:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin</id>
     <content type="html"><![CDATA[<p>I am releasing a beta WordPress plugin, a Commentor Publish Notice emailer. My plugin sends email to all the people who have commented on the blog when a post is publish.</p>
 
 <p>Installation Guide:</p>
 
 <ol>
-<li><a href="http://javaongsan.github.com/wp-content/downloads/wizcom.zip">Download the plugin here</a></li>
+<li><a href="http://wizcodersolution.com/wp-content/downloads/wizcom.zip">Download the plugin here</a></li>
 <li>Unzip the file</li>
 <li>Upload the whole wizcom folder to your Plugins folder via FTP</li>
 <li>Inside the Plugins section of your WordPress control panel activate the plugin</li>
@@ -438,7 +531,7 @@ I simply install Linux and got a new boot menu.</p>
   <entry>
     <title type="html"><![CDATA[Clickbank direct deposit]]></title>
     <link href="http://javaongsan.github.com/blog/2009/03/14/clickbank-direct-deposit/"/>
-    <updated>2009-03-14T03:00:10+08:00</updated>
+    <updated>2009-03-14T11:00:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2009/03/14/clickbank-direct-deposit</id>
     <content type="html"><![CDATA[<p>Clickbank direct deposit is really great I got my paid out for March in 2 days and none of that expensive clearing fee. Comparing to my feburary cheaque payment, I receive it by mail last week and its still processing. I enjoying the shorter turn arond as now I have more funds to paly with. My latest paid out is about $600.  </p>
 
@@ -447,15 +540,24 @@ I simply install Linux and got a new boot menu.</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Singapore loses rights to host ITU World Championship Series]]></title>
+    <link href="http://javaongsan.github.com/blog/2009/03/12/singapore-loses-rights-to-host-itu-world-championship-series/"/>
+    <updated>2009-03-12T19:56:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2009/03/12/singapore-loses-rights-to-host-itu-world-championship-series</id>
+    <content type="html"><![CDATA[<p>A great blow to local triathletes, it seems that Singapore has lost the right to host the ITU World Championship Series Singapore to Korea. Schedule on May 9, the sudden decisions will a affect a large number of triathletes trying to qualify for the world championship. More details will be revealed in these few days.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Portable Skype]]></title>
     <link href="http://javaongsan.github.com/blog/2009/03/12/portable-skype/"/>
-    <updated>2009-03-12T06:02:31+08:00</updated>
+    <updated>2009-03-12T14:02:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2009/03/12/portable-skype</id>
-    <content type="html"><![CDATA[<p>I been a big fan of portable programs ever since I wipe out accidentally my firefox 2 years ago. I was looking for a way not to reinstall my applications and to make them go on my usb. I been using a couple of such program Firefox, Thunderbird, coreftp, putty, keeppass, xampp and many more. The latest addition is Skype.
+    <content type="html"><![CDATA[<p>I been a big fan of portable programs ever since I wipe out accidentally my firefox 2 years ago. I was looking for a way not to reinstall my applications and to make them go on my usb. I been using a couple of such program Firefox, Thunderbird, coreftp, putty, keeppass, xampp and many more. The latest addition is Skype.<br/>
 <a href="http://www.downloadsquad.com/2009/02/17/how-to-run-skype-from-a-usb-flash-drive/">Download Squad</a> show as how</p>
 
 <ol>
-<li><p>Install Skype on your PC and then find the installation folder. It&#8217;s probably something like &#8220;C:\Program Files\Skype.&#8221; Copy the Skype.exe file to a folder on your USB flash drive.  </p></li>
+<li><p>Install Skype on your PC and then find the installation folder. It&#8217;s probably something like &#8220;C:Program FilesSkype.&#8221; Copy the Skype.exe file to a folder on your USB flash drive.  </p></li>
 <li><p>In that same folder on your flash drive, create a subfolder called &#8220;data.&#8221;</p></li>
 <li><p>Create a new text file called &#8220;Skype.bat&#8221; or Skype Portable.bat&#8221; or whatever you like.</p></li>
 <li><p>Open your new file using Notepad or another text editor and write &#8220;skype.exe /datapath:&#8221;data&#8221; /removable&#8221; (without the quotes).</p></li>
@@ -468,42 +570,9 @@ I simply install Linux and got a new boot menu.</p>
   <entry>
     <title type="html"><![CDATA[How to know if you are ready for your niche]]></title>
     <link href="http://javaongsan.github.com/blog/2009/03/12/how-to-know-if-you-are-ready-for-your-niche/"/>
-    <updated>2009-03-12T05:54:22+08:00</updated>
+    <updated>2009-03-12T13:54:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2009/03/12/how-to-know-if-you-are-ready-for-your-niche</id>
     <content type="html"><![CDATA[<p>Your gone through some steps or routine to come to a conclusion on your niche for your website, blog or article campaign. You are all set and passionate about your niche and ready to unleash it on the www audiences. Now before you do that and possible end up with a dead campaign or blog, do a simple test to make sure you are ready for it. Write 20 articles on your niche without any references material, simply using your own words and knowledge. Once your are done spin 5 sub articles out each of this 20 articles. If you are able to do that you have a year worth of content and probably more. Now for a little link muscle. Use 20 on your blog and each of the 5 spin article on a sub domain blog linking to its main. For article campaign simple submit 20 articles to 1 main article directory and separate the 5 across an other directory linking to the main article. Now you have something worthwhile to keep going.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Miracle Baby]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/01/18/miracle-baby/"/>
-    <updated>2009-01-18T14:25:42+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/01/18/miracle-baby</id>
-    <content type="html"><![CDATA[<p>I have read about his story on a local paper. His story was make known by Lee Chee Chew, creator of the comics strip CHEW ON IT!, published in The Sunday Times in Singapore. <a href="http://www.chewonitcomics.blogspot.com/">http://www.chewonitcomics.blogspot.com/</a></p>
-
-<p>It&#8217;s a about a little boy that was bandoned at birth on July 15th, 2006, Thien Nhan was mauled by a wild animal, resulting in the loss of his entire right leg and genitals. In mid-March 2008 he was adopted by a Vietnamese family in Hanoi, and is now seeking sponsors to help pay for his medical care, rehabilitation and education. He&#8217;s a very smart, sweet-natured and bright little boy, who looks forward to learning to walk. Check out the blog  <a href="http://help-thien-nhan.blogspot.com/">http://help-thien-nhan.blogspot.com/.</a></p>
-
-<p>  </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Landing page]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/01/18/landing-page/"/>
-    <updated>2009-01-18T09:44:31+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/01/18/landing-page</id>
-    <content type="html"><![CDATA[<p>Building a landing page can be very confusing. I have studied many landing page website recently, and found that these model works really well.</p>
-
-<ol>
-<li><p>Use attractive pictures to attract more users to research the title.</p></li>
-<li><p>Analysis of potential customers pain and problems with the current services or product.</p></li>
-<li><p>sell the benefits of product or service not the features.</p></li>
-<li><p>Using a large number testimonials.</p></li>
-<li><p>Money back guarantee.</p></li>
-<li><p>Give additional benefits for customers who make immediately purchase.</p></li>
-<li><p>Build an opt-in list, its takes 7 follow up to make a sale.</p></li>
-</ol>
-
 ]]></content>
   </entry>
   

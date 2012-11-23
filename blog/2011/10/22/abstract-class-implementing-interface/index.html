@@ -9,8 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="Abstract Class Implementing Interface. Recenlty I took a technically test and I have write an employee class for an aspx page that will
-use an &hellip;">
+  <meta name="description" content="Abstract Class Implementing Interface. Recenlty I took a technically test and I have write an employee class for an aspx page that will use an &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,7 +95,7 @@ use an &hellip;">
   
 
 
-<time datetime="2011-10-22T15:54:55+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
+<time datetime="2011-10-22T23:54:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
         
       </p>
     
@@ -105,172 +104,171 @@ use an &hellip;">
 
 <div class="entry-content"><p>Abstract Class Implementing Interface.</p>
 
-<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will
+<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will <br/>
 use an abstract class that implements an Interface.</p>
 
-<p>What is abstract class ?
-Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods
+<p>What is abstract class ?<br/>
+Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods <br/>
 or it can have implemented methods which can be overridden by child classes.</p>
 
-<p>What are interfaces?
-Interface is a contract class with empty methods, properties and functions.
-Any class which implements the interface has to compulsory implement all the
+<p>What are interfaces?<br/>
+Interface is a contract class with empty methods, properties and functions. <br/>
+Any class which implements the interface has to compulsory implement all the <br/>
 empty methods, functions and properties of the interface.</p>
 
-<p>Interface
-`
-using System;
-using System.Collections.Generic;
-using System.Linq;
+<p>Interface <br/>
+`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
 using System.Web;</p>
 
-<p>namespace Employee.Interface
-{</p>
+<p>namespace Employee.Interface<br/>
+{<br/>
+   public interface IEmployee<br/>
+   {</p>
 
-<pre><code>public interface IEmployee
-{
-    String Name
-    {
-        get;
-        set;
-    }
+<pre><code>    String Name  
+    {  
+        get;  
+        set;  
+    }  
 
-    String DateJoin
-    {
-        get;
-        set;
-    }
+    String DateJoin  
+    {  
+        get;  
+        set;  
+    }  
 
-    String Department
-    {
-        get;
-        set;
-    }
+   String Department  
+   {  
+       get;  
+       set;  
+   }  
 
-    bool Save(String mName, String mDate, String mDepartment);
-}
+   bool Save(String mName, String mDate, String mDepartment);  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 
 <p>Abstract Class</p>
 
-<p>`
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+<p>`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Web;<br/>
 using Employee.Interface;</p>
 
-<p>namespace Employee.Abstract
-{</p>
+<p>namespace Employee.Abstract<br/>
+{<br/>
+   public abstract class AEmployee:IEmployee<br/>
+   {</p>
 
-<pre><code>public abstract class AEmployee:IEmployee
-{
-    public abstract String Name
-    {
-        get;
-        set;
-    }
+<pre><code>   public abstract String Name  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract String DateJoin
-    {
-        get;
-        set;
-    }
+   public abstract String DateJoin  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract String Department
-    {
-        get;
-        set;
-    }
+   public abstract String Department  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract bool Save(String mName, String mDate, String mDepartment);
-
-}
+   public abstract bool Save(String mName, String mDate, String mDepartment);  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 
-<p>Employee Class
-`
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+<p>Employee Class<br/>
+`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Web;<br/>
 using Employee.Abstract;</p>
 
-<p>namespace Employee
-{</p>
+<p>namespace Employee<br/>
+{<br/>
+   public class Employee : AEmployee<br/>
+   {</p>
 
-<pre><code>public class Employee : AEmployee
-{
-    private String _Name = String.Empty;
-    private String _DateJoin = String.Empty;
-    private String _Department = String.Empty;
+<pre><code>   private String _Name = String.Empty;  
+   private String _DateJoin = String.Empty;  
+   private String _Department = String.Empty;  
 
-    public override String Name
-    {
-        get
-        {
+   public override String Name  
+   {  
+       get  
+       {  
 
-            return _Name;
-        }
-        set
-        {
-            _Name = value;
-        }
-    }
+           return _Name;  
+       }  
+       set  
+       {  
+           _Name = value;  
+       }  
+   }  
 
-    public override String DateJoin
-    {
-        get
-        {
-            return _DateJoin;
-        }
-        set
-        {
-            _DateJoin = value;
-        }
-    }
+   public override String DateJoin  
+   {  
+       get  
+       {  
+           return _DateJoin;  
+       }  
+       set  
+       {  
+           _DateJoin = value;  
+       }  
+   }  
 
-    public override String Department
-    {
-        get
-        {
-            return _Department;
-        }
-        set
-        {
-            _Department = value;
-        }
-    }
+   public override String Department  
+   {  
+       get  
+       {  
+           return _Department;  
+       }  
+       set  
+       {  
+           _Department = value;  
+       }  
+   }  
 
-    public override bool Save(String mName, String mDate, String mDepartment)
-    {
-        bool success = false;
-        try
-        {
-            _Name = mName;
-            _DateJoin = mDate;
-            _Department = mDepartment;
+   public override bool Save(String mName, String mDate, String mDepartment)  
+   {  
+       bool success = false;  
+       try  
+       {  
+           _Name = mName;  
+           _DateJoin = mDate;  
+           _Department = mDepartment;  
 
-            //Code to save 
-            //
-            success = true;
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-        return success;
-    }
-}
+           //Code to save   
+           //  
+           success = true;  
+       }  
+       catch (Exception)  
+       {  
+           throw;  
+       }  
+       return success;  
+   }  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 </div>
 
@@ -294,14 +292,8 @@ using Employee.Abstract;</p>
   
 
 
-<time datetime="2011-10-22T15:54:55+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
+<time datetime="2011-10-22T23:54:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/coding/'>Coding</a>
-  
-</span>
 
 
     </p>
@@ -365,15 +357,16 @@ using Employee.Abstract;</p>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name instead of account name</a>
+        <a href="/blog/2011/03/28/lower-back-pain/">Lower back pain</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/vs2010-development-environment-hacks/">Vs2010 development environment hacks</a>
+        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name
+instead of account name</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/grub-rescue-error/">Grub rescue error</a>
+        <a href="/blog/2011/03/15/training-2/">Training # 2</a>
       </li>
     
   </ul>

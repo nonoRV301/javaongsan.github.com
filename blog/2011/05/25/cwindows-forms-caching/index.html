@@ -9,8 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="When developing C# windows application, we tend to reuse common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,14 +95,65 @@
   
 
 
-<time datetime="2011-05-25T05:05:44+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
+<time datetime="2011-05-25T13:05:00+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>When developing C# windows application, we  tend to reuse  common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good strategy reduce the round trip to database.  I cache most of all my commonly used datasets improve loading time.</p>
+
+<p>`using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Text;</p>
+
+<p>namespace Cache<br/>
+{<br/>
+   public class Cache<br/>
+   {</p>
+
+<pre><code>   static Dictionary _cache = new Dictionary();  
+
+   public Cache() { }  
+
+   public static bool AddToCache(string key, object obj)  
+   {  
+       try  
+       {  
+           _cache.Add(key, obj);  
+       }  
+       catch (ArgumentException)  
+       {  
+           return false;  
+       }  
+       return true;  
+   }  
+
+   public static object GetFromCache(string key)  
+   {  
+       object obj = null;  
+       try  
+       {  
+           if (_cache.ContainsKey(key))  
+               _cache.TryGetValue(key, out obj);  
+       }  
+       catch  
+       {  
+       }  
+       return obj;  
+   }  
+
+   public static void ClearCache()  
+   {  
+       _cache.Clear();  
+   }  
+</code></pre>
+
+<p>   }<br/>
+}<br/>
+`</p>
 </div>
 
 
@@ -126,14 +176,8 @@
   
 
 
-<time datetime="2011-05-25T05:05:44+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
+<time datetime="2011-05-25T13:05:00+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/coding/'>Coding</a>
-  
-</span>
 
 
     </p>
@@ -151,7 +195,7 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/" title="Previous Post: Request yahoo serach marketing to reissue cheque to my actual name instead of account name">&laquo; Request yahoo serach marketing to reissue cheque to my actual name instead of account name</a>
+        <a class="basic-alignment left" href="/blog/2011/03/28/lower-back-pain/" title="Previous Post: Lower back pain">&laquo; Lower back pain</a>
       
       
         <a class="basic-alignment right" href="/blog/2011/06/08/ayschronous-data-loading/" title="Next Post: Ayschronous Data Loading">Ayschronous Data Loading &raquo;</a>
@@ -197,15 +241,16 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name instead of account name</a>
+        <a href="/blog/2011/03/28/lower-back-pain/">Lower back pain</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/vs2010-development-environment-hacks/">Vs2010 development environment hacks</a>
+        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name
+instead of account name</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/grub-rescue-error/">Grub rescue error</a>
+        <a href="/blog/2011/03/15/training-2/">Training # 2</a>
       </li>
     
   </ul>

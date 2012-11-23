@@ -198,7 +198,7 @@
   
 
 
-<time datetime="2011-10-22T15:54:55+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
+<time datetime="2011-10-22T23:54:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
         
       </p>
     
@@ -207,172 +207,171 @@
 
   <div class="entry-content"><p>Abstract Class Implementing Interface.</p>
 
-<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will
+<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will <br/>
 use an abstract class that implements an Interface.</p>
 
-<p>What is abstract class ?
-Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods
+<p>What is abstract class ?<br/>
+Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods <br/>
 or it can have implemented methods which can be overridden by child classes.</p>
 
-<p>What are interfaces?
-Interface is a contract class with empty methods, properties and functions.
-Any class which implements the interface has to compulsory implement all the
+<p>What are interfaces?<br/>
+Interface is a contract class with empty methods, properties and functions. <br/>
+Any class which implements the interface has to compulsory implement all the <br/>
 empty methods, functions and properties of the interface.</p>
 
-<p>Interface
-`
-using System;
-using System.Collections.Generic;
-using System.Linq;
+<p>Interface <br/>
+`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
 using System.Web;</p>
 
-<p>namespace Employee.Interface
-{</p>
+<p>namespace Employee.Interface<br/>
+{<br/>
+   public interface IEmployee<br/>
+   {</p>
 
-<pre><code>public interface IEmployee
-{
-    String Name
-    {
-        get;
-        set;
-    }
+<pre><code>    String Name  
+    {  
+        get;  
+        set;  
+    }  
 
-    String DateJoin
-    {
-        get;
-        set;
-    }
+    String DateJoin  
+    {  
+        get;  
+        set;  
+    }  
 
-    String Department
-    {
-        get;
-        set;
-    }
+   String Department  
+   {  
+       get;  
+       set;  
+   }  
 
-    bool Save(String mName, String mDate, String mDepartment);
-}
+   bool Save(String mName, String mDate, String mDepartment);  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 
 <p>Abstract Class</p>
 
-<p>`
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+<p>`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Web;<br/>
 using Employee.Interface;</p>
 
-<p>namespace Employee.Abstract
-{</p>
+<p>namespace Employee.Abstract<br/>
+{<br/>
+   public abstract class AEmployee:IEmployee<br/>
+   {</p>
 
-<pre><code>public abstract class AEmployee:IEmployee
-{
-    public abstract String Name
-    {
-        get;
-        set;
-    }
+<pre><code>   public abstract String Name  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract String DateJoin
-    {
-        get;
-        set;
-    }
+   public abstract String DateJoin  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract String Department
-    {
-        get;
-        set;
-    }
+   public abstract String Department  
+    {  
+        get;  
+        set;  
+    }  
 
-    public abstract bool Save(String mName, String mDate, String mDepartment);
-
-}
+   public abstract bool Save(String mName, String mDate, String mDepartment);  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 
-<p>Employee Class
-`
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+<p>Employee Class<br/>
+`<br/>
+using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Web;<br/>
 using Employee.Abstract;</p>
 
-<p>namespace Employee
-{</p>
+<p>namespace Employee<br/>
+{<br/>
+   public class Employee : AEmployee<br/>
+   {</p>
 
-<pre><code>public class Employee : AEmployee
-{
-    private String _Name = String.Empty;
-    private String _DateJoin = String.Empty;
-    private String _Department = String.Empty;
+<pre><code>   private String _Name = String.Empty;  
+   private String _DateJoin = String.Empty;  
+   private String _Department = String.Empty;  
 
-    public override String Name
-    {
-        get
-        {
+   public override String Name  
+   {  
+       get  
+       {  
 
-            return _Name;
-        }
-        set
-        {
-            _Name = value;
-        }
-    }
+           return _Name;  
+       }  
+       set  
+       {  
+           _Name = value;  
+       }  
+   }  
 
-    public override String DateJoin
-    {
-        get
-        {
-            return _DateJoin;
-        }
-        set
-        {
-            _DateJoin = value;
-        }
-    }
+   public override String DateJoin  
+   {  
+       get  
+       {  
+           return _DateJoin;  
+       }  
+       set  
+       {  
+           _DateJoin = value;  
+       }  
+   }  
 
-    public override String Department
-    {
-        get
-        {
-            return _Department;
-        }
-        set
-        {
-            _Department = value;
-        }
-    }
+   public override String Department  
+   {  
+       get  
+       {  
+           return _Department;  
+       }  
+       set  
+       {  
+           _Department = value;  
+       }  
+   }  
 
-    public override bool Save(String mName, String mDate, String mDepartment)
-    {
-        bool success = false;
-        try
-        {
-            _Name = mName;
-            _DateJoin = mDate;
-            _Department = mDepartment;
+   public override bool Save(String mName, String mDate, String mDepartment)  
+   {  
+       bool success = false;  
+       try  
+       {  
+           _Name = mName;  
+           _DateJoin = mDate;  
+           _Department = mDepartment;  
 
-            //Code to save 
-            //
-            success = true;
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-        return success;
-    }
-}
+           //Code to save   
+           //  
+           success = true;  
+       }  
+       catch (Exception)  
+       {  
+           throw;  
+       }  
+       return success;  
+   }  
 </code></pre>
 
-<p>}
+<p>   }<br/>
+}<br/>
 `</p>
 </div>
   
@@ -402,7 +401,7 @@ using Employee.Abstract;</p>
   
 
 
-<time datetime="2011-08-10T08:20:37+08:00" pubdate data-updated="true">Aug 10<span>th</span>, 2011</time>
+<time datetime="2011-08-10T16:20:00+08:00" pubdate data-updated="true">Aug 10<span>th</span>, 2011</time>
         
       </p>
     
@@ -438,7 +437,7 @@ using Employee.Abstract;</p>
   
 
 
-<time datetime="2011-07-15T06:50:44+08:00" pubdate data-updated="true">Jul 15<span>th</span>, 2011</time>
+<time datetime="2011-07-15T14:50:00+08:00" pubdate data-updated="true">Jul 15<span>th</span>, 2011</time>
         
       </p>
     
@@ -474,7 +473,7 @@ using Employee.Abstract;</p>
   
 
 
-<time datetime="2011-06-08T07:41:27+08:00" pubdate data-updated="true">Jun 8<span>th</span>, 2011</time>
+<time datetime="2011-06-08T15:41:00+08:00" pubdate data-updated="true">Jun 8<span>th</span>, 2011</time>
         
       </p>
     
@@ -485,30 +484,30 @@ using Employee.Abstract;</p>
 
 <p>`private DataTable dt = null;</p>
 
-<p>private void LoadGrid(object sender, DoWorkEventArgs e)
+<p>private void LoadGrid(object sender, DoWorkEventArgs e)<br/>
 {</p>
 
-<pre><code>dt = ...;
+<pre><code>dt = ...;  
 </code></pre>
 
 <p>}</p>
 
-<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)<br/>
 {</p>
 
-<pre><code>dgView.DataSource = dt;
-dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+<pre><code>dgView.DataSource = dt;  
+dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
 </code></pre>
 
 <p>}</p>
 
-<p>private void LoadinBackground()
+<p>private void LoadinBackground()<br/>
 {</p>
 
-<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();
-bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);
-bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);
-bgWrkr.RunWorkerAsync();
+<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
+bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
+bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
+bgWrkr.RunWorkerAsync();  
 </code></pre>
 
 <p>}`</p>
@@ -540,14 +539,65 @@ bgWrkr.RunWorkerAsync();
   
 
 
-<time datetime="2011-05-25T05:05:44+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
+<time datetime="2011-05-25T13:05:00+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><p>When developing C# windows application, we  tend to reuse  common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good strategy reduce the round trip to database.  I cache most of all my commonly used datasets improve loading time.</p>
+
+<p>`using System;<br/>
+using System.Collections.Generic;<br/>
+using System.Linq;<br/>
+using System.Text;</p>
+
+<p>namespace Cache<br/>
+{<br/>
+   public class Cache<br/>
+   {</p>
+
+<pre><code>   static Dictionary _cache = new Dictionary();  
+
+   public Cache() { }  
+
+   public static bool AddToCache(string key, object obj)  
+   {  
+       try  
+       {  
+           _cache.Add(key, obj);  
+       }  
+       catch (ArgumentException)  
+       {  
+           return false;  
+       }  
+       return true;  
+   }  
+
+   public static object GetFromCache(string key)  
+   {  
+       object obj = null;  
+       try  
+       {  
+           if (_cache.ContainsKey(key))  
+               _cache.TryGetValue(key, out obj);  
+       }  
+       catch  
+       {  
+       }  
+       return obj;  
+   }  
+
+   public static void ClearCache()  
+   {  
+       _cache.Clear();  
+   }  
+</code></pre>
+
+<p>   }<br/>
+}<br/>
+`</p>
 </div>
   
   
@@ -560,7 +610,7 @@ bgWrkr.RunWorkerAsync();
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/">Request Yahoo Serach Marketing to Reissue Cheque to My Actual Name Instead of Account Name</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/03/28/lower-back-pain/">Lower Back Pain</a></h1>
     
     
       <p class="meta">
@@ -576,7 +626,43 @@ bgWrkr.RunWorkerAsync();
   
 
 
-<time datetime="2011-03-28T02:46:38+08:00" pubdate data-updated="true">Mar 28<span>th</span>, 2011</time>
+<time datetime="2011-03-28T18:03:00+08:00" pubdate data-updated="true">Mar 28<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I been suffering form lower back pain for last 2 weeks which has disturbed my training schedule. I been having back problem for many years but it has been getting pretty bad for the past 2 years. It seems lack of strength training on the lower back is causing my muscles to tense up when it&#8217;s overuse. The tense up muscle affects the nerves near the spine area which cause a shooting pain to the lower butt and leg area. The only thing I can do is to get physiotherapy now and slowly strengthen my back before pounding on the training load.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/">Request Yahoo Serach Marketing to Reissue Cheque to My Actual Name Instead of Account Name</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-28T10:46:00+08:00" pubdate data-updated="true">Mar 28<span>th</span>, 2011</time>
         
       </p>
     
@@ -596,7 +682,7 @@ bgWrkr.RunWorkerAsync();
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/03/14/vs2010-development-environment-hacks/">Vs2010 Development Environment Hacks</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/03/15/training-2/">Training # 2</a></h1>
     
     
       <p class="meta">
@@ -612,69 +698,43 @@ bgWrkr.RunWorkerAsync();
   
 
 
-<time datetime="2011-03-14T06:55:43+08:00" pubdate data-updated="true">Mar 14<span>th</span>, 2011</time>
+<time datetime="2011-03-15T23:32:00+08:00" pubdate data-updated="true">Mar 15<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Very useful tips to change the boring look of vs2010 from [hanselman.com&lt; \a></p>
+  <div class="entry-content"><p>Tempo run</p>
 
-<p>What I followed
-Close all toolbars
-Close all pinned Toolboxes
-Get a fresh font and color theme for Visual Studio from http://studiostyl.es, I choose wekeRoad ink, which is a dark theme.](http://www.hanselman.com/blog/SimplifyYourVisualStudio2010ToolbarAndFreeYourMind.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ScottHanselman+%28Scott+Hanselman+-+ComputerZen.com%29)</p>
-</div>
-  
-  
+<p>Target heart rate:130 - 140 beats per minute</p>
 
+<p>Run duration:40 minutes</p>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/14/grub-rescue-error/">Grub Rescue Error</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>Workout importance:High</p>
 
+<p>Workout pointers:High aerobic run. Time to pick up the tempo. Stay close to upper range of target heart rate.</p>
 
+<p>Weight training 1</p>
 
+<p>Description: Lifting adaptation period 1 set of 12 repetitions. </p>
 
-
-
-
-
-  
-
-
-<time datetime="2011-03-14T02:14:21+08:00" pubdate data-updated="true">Mar 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I used gpart to partition a 600g hard disk with preinstall win7. When I boot up after that, boot sector for win7 was gone or maybe replaced. The grup rescue command prompt appear. I couldn&#8217;t fix it.
-I simply install Linux and got a new boot menu.</p>
-
-<p>When I migrate win7 to virtual box the same problem appear. This time I had to use win7 rescues disk to fix the problem. Below are the steps I found</p>
-
-<ol>
-<li>Put the Windows Vista installation disc in the disc drive, and then start the computer.</li>
-<li>Press a key when you are prompted.</li>
-<li>Select a language, a time, a currency, a keyboard or an input method, and then click Next.</li>
-<li>Click Repair your computer.</li>
-<li>Click the operating system that you want to repair, and then click Next.</li>
-<li>In the System Recovery Options dialog box, click Command Prompt.</li>
-<li>Type Bootrec.exe /FixMbr, and then press ENTER.</li>
-</ol>
-
+<p>Power Lateral Pull-Downs<br/>
+Power Leg Extensions<br/>
+Power Leg Curls<br/>
+Bench Press<br/>
+Squats OR Leg Press<br/>
+Power Dumbbell Pullover<br/>
+Bent Over Row<br/>
+Lunges<br/>
+Side Lateral Raises<br/>
+Biceps<br/>
+Triceps<br/>
+Calf Raises<br/>
+Sit-ups<br/>
+Stretching<br/>
+Sit-ups<br/>
+Stretching</p>
 </div>
   
   
@@ -725,15 +785,16 @@ I simply install Linux and got a new boot menu.</p>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name instead of account name</a>
+        <a href="/blog/2011/03/28/lower-back-pain/">Lower back pain</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/vs2010-development-environment-hacks/">Vs2010 development environment hacks</a>
+        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name
+instead of account name</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/grub-rescue-error/">Grub rescue error</a>
+        <a href="/blog/2011/03/15/training-2/">Training # 2</a>
       </li>
     
   </ul>

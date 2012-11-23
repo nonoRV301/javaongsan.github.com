@@ -95,7 +95,7 @@
   
 
 
-<time datetime="2008-05-13T14:01:25+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
+<time datetime="2008-05-13T22:01:00+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
         
       </p>
     
@@ -118,7 +118,7 @@
 
 <p>To create a new project with the name railslist, type rails railslist at the command prompt and press Enter. Your output look similar to this.</p>
 
-<p><strong>G:\InstantRails-2.0-win\rails_apps>rails railslist</strong></p>
+<p><strong>G:InstantRails-2.0-winrails_apps>rails railslist</strong></p>
 
 <p><strong>create</strong></p>
 
@@ -298,14 +298,14 @@
 
 <p><strong>Telling Rails about the databases</strong></p>
 
-<p>Open InstantRails-2.0-win\rails_apps\railslist\config\database.yml with your text editor and make the following changes</p>
+<p>Open InstantRails-2.0-winrails_appsrailslistconfigdatabase.yml with your text editor and make the following changes</p>
 
-<p><strong>development:
-adapter: mysql
-database: railslist_development
-username: root
-password:
-host: localhost
+<p><strong>development:<br/>
+adapter: mysql<br/>
+database: railslist_development<br/>
+username: root<br/>
+password:<br/>
+host: localhost<br/>
 timeout: 5000</strong></p>
 
 <p>**# Warning: The database defined as &#8216;test&#8217; will be erased and</p>
@@ -314,18 +314,18 @@ timeout: 5000</strong></p>
 
 <h1>Do not set this db to the same as development or production.</h1>
 
-<p>test:
-adapter: mysql
-database: railslist_test
-username: root
-password:
+<p>test:<br/>
+adapter: mysql<br/>
+database: railslist_test<br/>
+username: root<br/>
+password:<br/>
 host: localhost**</p>
 
-<p><strong>production:
-adapter: mysql
-database: railslist_deployment
-username: root
-password:
+<p><strong>production:<br/>
+adapter: mysql<br/>
+database: railslist_deployment<br/>
+username: root<br/>
+password:<br/>
 host: localhost</strong></p>
 
 <p><strong>Creating the model</strong></p>
@@ -450,24 +450,24 @@ host: localhost</strong></p>
 
 <p>Open classified_controller.rb file located under app/controllers. Modify the file to look like the following and save your changes:</p>
 
-<p><strong>class ClassifiedController &lt; ApplicationController
-def list
-@classifieds = Classified.find(:all)
-end
-def show
-@classified = Classified.find(params[:id])
-end
-def new
-end
-def create
-end
-def edit
-end
-def update
-end
-def delete
-end
-end
+<p><strong>class ClassifiedController &lt; ApplicationController<br/>
+def list<br/>
+@classifieds = Classified.find(:all)<br/>
+end<br/>
+def show<br/>
+@classified = Classified.find(params[:id])<br/>
+end<br/>
+def new<br/>
+end<br/>
+def create<br/>
+end<br/>
+def edit<br/>
+end<br/>
+def update<br/>
+end<br/>
+def delete<br/>
+end<br/>
+end<br/>
 </strong></p>
 
 <p><strong>Creating the views</strong></p>
@@ -478,19 +478,15 @@ end
 
 <p><strong>&lt;% if @classifieds.blank? %></strong></p>
 
-<p>**</p>
+<hr />
 
 <p>There are not any ads currently in the system.</p>
 
-<p>**</p>
-
 <p><strong>&lt;% else %></strong></p>
 
-<p>**</p>
+<hr />
 
 <p>These are the current classified ads in our system</p>
-
-<p>**</p>
 
 <p>**</p>
 
@@ -499,7 +495,7 @@ end
 <p><strong>&lt;% @classifieds.each do |c| %></strong></p>
 
 <p><strong>
-  * &lt;%= link_to c.title, {:action => &#8216;show&#8217;, :id => c.id} -%>
+* &lt;%= link_to c.title, {:action => &#8216;show&#8217;, :id => c.id} -%>
 </strong></p>
 
 <p><strong>&lt;% end %></strong></p>
@@ -508,11 +504,9 @@ end
 
 <p><strong>&lt;% end %></strong></p>
 
-<p>**</p>
+<hr />
 
 <p>&lt;%= link_to &#8220;Add new ad&#8221;, {:action => &#8216;new&#8217; }%></p>
-
-<p>**</p>
 
 <p><strong>Creating the first objects</strong></p>
 
@@ -536,29 +530,24 @@ end
 
 <p>**&lt;% form_tag &#8216;create&#8217;  do -%></p>
 
-<p>Title</p>
+<p>Title<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></p>
 
-<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></p>
+<p>Price<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></p>
 
-<p>Price</p>
+<p>Location<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></p>
 
-<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></p>
+<p>Description<br/>
+&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></p>
 
-<p>Location</p>
+<p>Email<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></p>
 
-<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></p>
-
-<p>Description</p>
-
-<p>&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></p>
-
-<p>Email</p>
-
-<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></p>
-
-<p><strong>
-</strong>&lt;%= submit_tag &#8216;Create&#8217; %>
-&lt;% end -%>
+<p><strong><br/>
+</strong>&lt;%= submit_tag &#8216;Create&#8217; %><br/>
+&lt;% end -%><br/>
 &lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217;} %>**</p>
 
 <p>Edit the create method in the classified_controller.rb to match the following:</p>
@@ -593,28 +582,21 @@ end
 
 <p>**</p>
 
-<p>**</p>
+<hr />
 
-<p><strong>Price: </strong> $&lt;%= @classified.price %><br/>
-**</p>
+<p><strong>Price: </strong> $&lt;%= @classified.price %></p>
 
-<p><strong><strong>Location: </strong> &lt;%= @classified.location %><br/>
-</strong></p>
+<p><strong>****Location: </strong> &lt;%= @classified.location %></p>
 
-<p><strong><strong>Date Posted:</strong> &lt;%= @classified.created_at %><br/>
-</strong></p>
+<p><strong>****Date Posted:</strong> &lt;%= @classified.created_at %></p>
 
-<p><strong><strong>Last updated:</strong> &lt;%= @classified.updated_at %></strong></p>
+<p><strong>****Last updated:</strong> &lt;%= @classified.updated_at %></p>
 
-<p>**</p>
+<hr />
 
-<p>**</p>
-
-<p>**</p>
+<hr />
 
 <p>&lt;%= @classified.description %></p>
-
-<p>**</p>
 
 <p>**</p>
 
@@ -622,11 +604,9 @@ end
 
 <p>**</p>
 
-<p>**</p>
+<hr />
 
 <p>Interested? Contact &lt;%= mail_to @classified.email -%></p>
-
-<p>**</p>
 
 <p><strong>&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217;} %></strong></p>
 
@@ -668,50 +648,35 @@ end
 
 <p><strong>&lt;% form_tag( {:action => &#8216;update&#8217;, :id => @classified}) do  %></strong></p>
 
-<p>**</p>
+<hr />
 
-<p>Title<br/>
-**</p>
+<p>Title</p>
 
-<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></p>
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></strong></p>
 
-<p>**</p>
+<hr />
 
-<p>**</p>
+<p>Price</p>
 
-<p>Price<br/>
-**</p>
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></strong></p>
 
-<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></p>
+<hr />
 
-<p>**</p>
+<p>Location</p>
 
-<p>**</p>
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></strong></p>
 
-<p>Location<br/>
-**</p>
+<hr />
 
-<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></p>
+<p>Description</p>
 
-<p>**</p>
+<p><strong>&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></strong></p>
 
-<p>**</p>
+<hr />
 
-<p>Description<br/>
-**</p>
+<p>Email</p>
 
-<p>**&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></p>
-
-<p>**</p>
-
-<p>**</p>
-
-<p>Email<br/>
-**</p>
-
-<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></p>
-
-<p>**</p>
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></strong></p>
 
 <p><strong>&lt;%= submit_tag &#8220;Save changes&#8221; %></strong></p>
 
@@ -732,8 +697,7 @@ end
 
 <p><strong>:id => c.id} %></strong></p>
 
-<p><strong>
-</strong></p>
+<hr />
 
 <p>Point your browser to http://localhost:3000/classified/list and test the new functionality.</p>
 
@@ -758,8 +722,7 @@ end
 
 <p><strong>:confirm => &#8220;Are you sure you want to delete this item?&#8221; %></strong></p>
 
-<p><strong>
-</strong></p>
+<hr />
 
 <p>Open classified_controller.rb and modify the delete method as follows:</p>
 
@@ -896,14 +859,8 @@ end
   
 
 
-<time datetime="2008-05-13T14:01:25+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
+<time datetime="2008-05-13T22:01:00+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/programming/'>programming</a>
-  
-</span>
 
 
     </p>
@@ -924,7 +881,7 @@ end
         <a class="basic-alignment left" href="/blog/2008/05/12/how-to-upgrade-from-shared-hosting-to-vps/" title="Previous Post: How to upgrade from shared hosting to VPS">&laquo; How to upgrade from shared hosting to VPS</a>
       
       
-        <a class="basic-alignment right" href="/blog/2008/05/16/gizmodo-are-looking-for-an-editor-in-asia/" title="Next Post: Gizmodo are looking for an editor in Asia ">Gizmodo are looking for an editor in Asia  &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2008/05/16/gizmodo-are-looking-for-an-editor-in-asia/" title="Next Post: Gizmodo are looking for an editor in Asia">Gizmodo are looking for an editor in Asia &raquo;</a>
       
     </p>
   </footer>
@@ -967,15 +924,16 @@ end
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name instead of account name</a>
+        <a href="/blog/2011/03/28/lower-back-pain/">Lower back pain</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/vs2010-development-environment-hacks/">Vs2010 development environment hacks</a>
+        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name
+instead of account name</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2011/03/14/grub-rescue-error/">Grub rescue error</a>
+        <a href="/blog/2011/03/15/training-2/">Training # 2</a>
       </li>
     
   </ul>

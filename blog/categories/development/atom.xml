@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-10-15T11:54:14+08:00</updated>
+  <updated>2012-11-23T10:31:36+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -31,7 +31,15 @@
 
 
 <p>
-    The app is still wating for approval. 
+    After 3 or maybe 4 days, my apps was rejected. I had to make some changes using the tips from <a href="http://www.hanselman.com/blog/FromConceptToCodeIn6HoursShippingMyFirstWindowsPhoneApp.aspx">From Concept to Code in 6 hours: Shipping my first Windows Phone App</a>
+    
+    1. The app keep crashing when in continous download mode, I had to change the design to a click 1 item at time to download. 
+    2. Replace my buttons with Coding4Fun Windows Phone Toolkit.
+    3. Replace screenshots I capture using print screen with the one I took using <a href="http://www.jeff.wilcox.name/2011/10/screenshots-cs-how-to-capture-screenshots-of-your-app-on-your-device/">screenshots.cs"</a> from the crazy-useful Jeff Wilcox.
+    
+    Resubmitted the app and it was approved, but I mistakenly select $6.99 for pricing. 
+    
+    I made a website www.skymusicapp.com using the <a href="http://wp7appsite.codeplex.com/">One-Page Windows Phone 7 App Website Template</a> with <a href="https://github.com/raul/rack-static-boilerplate">rack static boilerplate</a> and hosted it on heroku.
 </p>
 
 ]]></content>

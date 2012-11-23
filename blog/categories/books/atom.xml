@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: books | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/books/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Life Transforming Resources]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/06/21/life-transforming-resources/"/>
+    <updated>2008-06-21T15:23:34+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/06/21/life-transforming-resources</id>
+    <content type="html"><![CDATA[<p>I recent read a book which mention that if a person spent enough time reading the right book, it could transform the person's life and change it forever. The concept is known as <a href="http://astore.amazon.com/wizcoder-20">Life Transforming Resources</a>. I start reading self improvement books since 2003, My life is definitely not the same each time I implement a part of what I read. Books like The magic of thinking big and Win friends and influence people are books that you can reread each year. My favorite one is Think and grow rich. I was once told that Anthony Robins read this book a 100 times to get to where he is today. I hope this <a href="http://astore.amazon.com/wizcoder-20">Life Transforming Resources</a> would benefit you.</p>
+]]></content>
+  </entry>
+  
+</feed>

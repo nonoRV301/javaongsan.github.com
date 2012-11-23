@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: News | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/news/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ Google Announces Non-Exclusive Advertising Services Agreement with Yahoo! in U.S. and Canada]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/06/13/google-announces-non-exclusive-advertising-services-agreement-with-yahoo-in-us-and-canada/"/>
+    <updated>2008-06-13T13:42:03+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/06/13/google-announces-non-exclusive-advertising-services-agreement-with-yahoo-in-us-and-canada</id>
+    <content type="html"><![CDATA[<p>The biggest news today. Not sure if its good think for Yahoo.</p>
+
+<p><strong>MOUNTAIN VIEW, Calif. (June 12, 2008)</strong> ' Google (Nasdaq: GOOG) today announced that it has reached an agreement that gives Yahoo! the ability to use Google's search and contextual advertising technology through its AdSenseâ„¢ for Search and AdSense for Content advertising programs. Under the agreement, Yahoo! has the option to display Google ads alongside its own natural search results in the U.S. and Canada. In addition, Yahoo! can serve contextually targeted ads on its U.S. and Canadian web properties as well as on its current publisher partner sites. Yahoo will continue to operate its own search engine, web properties and advertising services.</p>
+
+<p>You can read more <a href="http://www.google.com/intl/en/press/pressrel/20080612_yahoo.html">here</a>.</p>
+
+<p>Techcrunch points out Google's escape cause <a href="http://www.techcrunch.com/2008/06/13/googles-83-million-escape-clause-sec-filing-spells-out-details-of-yahoo-google-deal/">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yahoo! Search Marketing Lower Minimum Bids]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/02/27/yahoo-search-marketing-lower-minimum-bids/"/>
+    <updated>2008-02-27T11:17:19+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/02/27/yahoo-search-marketing-lower-minimum-bids</id>
+    <content type="html"><![CDATA[<p>Starting in the next several weeks, Yahoo! Search Marketing adjusted the minimum bids for a number of <strong>Sponsored Search</strong> keywords will no longer be fixed at $.10. New minimum bids can be lower or higher than $.10. Content Match minimum bids currently will remain at $.10. Yahoo! Search Marketing believe that this update is intended will align your minimum bids with the value and quality of your keywords and to help improve the overall search user experience by rewarding advertisers for better quality with lower entry points into keyword markets.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WordPress 2.3.3 urgent security release]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/02/06/wordpress-233-urgent-security-release/"/>
+    <updated>2008-02-06T02:47:51+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/02/06/wordpress-233-urgent-security-release</id>
+    <content type="html"><![CDATA[<p>If you are using WordPress 2.3.2 and have registration enabled, pay attention. A flaw was found in the XML-RPC implementation such that a specially crafted request would allow a user to edit posts of other users on that blog. 2.3.3 also fixes <a href="http://trac.wordpress.org/query?status=closed&amp;milestone=2.3.3">a few minor bugs</a>.  If you are interested only in the security fix, download the <a href="http://trac.wordpress.org/browser/tags/2.3.3/xmlrpc.php?format=raw">fixed version of <code>xmlrpc.php</code></a> and copy it over your existing <code>xmlrpc.php</code>.  Otherwise, you can get the entire release <a href="http://wordpress.org/download/">here</a>.</p>
+
+<p>Also, there is <a href="http://weblogtoolscollection.com/archives/2008/01/21/wp-forum-plugin-security-bulletin/">a vulnerability in the WP-Forum plugin</a> that is being actively exploited right now. If you are using this plugin, please remove it until an update is available from its author.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: The Illusions of Entrepreneurship]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/01/08/book-review-the-illusions-of-entrepreneurship/"/>
+    <updated>2008-01-08T02:32:43+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/01/08/book-review-the-illusions-of-entrepreneurship</id>
+    <content type="html"><![CDATA[<p>Guy Kawasaki wrote an interesting review on the recently published The Illusions of Entrepreneurship: The Costly Myths That Entrepreneurs, Investors, and Policy Makers Live By Scott Shane of Case Western  .</p>
+
+<p><a href="http://www.amazon.com/gp/product/0300113315?ie=UTF8&amp;tag=wizcoder-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0300113315">
+<img src="http://ecx.images-amazon.com/images/I/21mCFhM9ZUL._AA_SL160_.jpg" alt="" /></a><em>"In the book, he bursts many of the bubbles of entrepreneurship in America. Says he, Ã¢â‚¬Å“People start businesses based on the myths we tell ourselves about entrepreneurship and then are hurt when confronted by reality. Investors believe these myths and invest money and theyÃ¢â‚¬â„¢re disappointed when they donÃ¢â‚¬â„¢t hold true. Policy makers make policy based on these myths and then wonder why the economy isnÃ¢â‚¬â„¢t growing with all these entrepreneurs now in it.Ã¢â‚¬  If you think you already really know the scoop about entrepreneurship, try taking his <a href="http://yalepress.yale.edu/yupbooks/entrepreneurshipquiz.asp">test</a></em>.<em> If you score less than 80%, maybe you should buy the book. I scored a whopping 40%."</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[End of the Netscape web browser]]></title>
+    <link href="http://javaongsan.github.com/blog/2007/12/29/end-of-the-netscape-web-browser/"/>
+    <updated>2007-12-29T09:01:23+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2007/12/29/end-of-the-netscape-web-browser</id>
+    <content type="html"><![CDATA[<p>The once popluar Netscape Communicator is coming to an end. After February 1, 2008 there will be no more active product support for Navigator 9, or any previous Netscape Navigator browser. This includes Netscape v1-v4.x, Netscape v6, Netscape v7 Suite, Netscape Browser v8, and Netscape Navigator/Messenger 9.</p>
+
+<p><a href="http://blog.netscape.com/2007/12/28/end-of-support-for-netscape-web-browsers">netscape</a>: <em>"AOL's focus on transitioning to an ad-supported web business leaves little room for the size of investment needed to get the Netscape browser to a point many of its fans expect it to be. Given AOL's current business focus and the success the Mozilla Foundation has had in developing critically-acclaimed products, we feel it's the right time to end development of Netscape branded browsers, hand the reins fully to Mozilla and encourage Netscape users to adopt Firefox."</em></p>
+]]></content>
+  </entry>
+  
+</feed>

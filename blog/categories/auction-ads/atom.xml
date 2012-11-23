@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Auction Ads | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/auction-ads/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[AuctionAds and ShoppingAds merged]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/01/10/auctionads-and-shoppingads-merged/"/>
+    <updated>2008-01-10T02:47:25+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/01/10/auctionads-and-shoppingads-merged</id>
+    <content type="html"><![CDATA[<p>AuctionAds and ShoppingAds products are now merged into one product that will be located at http://ShoppingAds.com. The current AuctionAds login will work at ShoppingAds and you do not have to change ANY existing code or links. ShoppingAds is a hybrid product that serves both CPA (cost per action) ads provided by eBay and CPC (cost per click) ads provided by our shopping comparison engine partners. For existing AuctionAds users the only change you will see is the Ã¢â‚¬Å“Ads By AuctionAdsÃ¢â‚¬  displayed on your ads will change to Ã¢â‚¬Å“Ads By ShoppingAdsÃ¢â‚¬ . The other significant change is the ability for you to become a Premium Publisher.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Where is Auctionad?]]></title>
+    <link href="http://javaongsan.github.com/blog/2007/12/07/where-is-auctionad/"/>
+    <updated>2007-12-07T03:26:56+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2007/12/07/where-is-auctionad</id>
+    <content type="html"><![CDATA[<p><img src="http://localhost:8888/wizcoder/images/auctionads.jpg" alt="" />Auctionad seems to have gone down and nobody seems to care.The website itself is returning a 404. I wonder am I the only one who is having trouble with them? Its always good to have a few options of adnetworks to choose from like I mention here <a href="http://javaongsan.github.com/2007/11/10/money-maker-2/">Money Maker</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

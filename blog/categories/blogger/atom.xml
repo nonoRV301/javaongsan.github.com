@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blogger | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/blogger/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Receive calls and post voicemail with blogger]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/03/01/receive-calls-and-post-voicemail-with-blogger/"/>
+    <updated>2008-03-01T08:10:34+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/03/01/receive-calls-and-post-voicemail-with-blogger</id>
+    <content type="html"><![CDATA[<p>With <a href="http://www.grandcentral.com/">GrandCentral</a>, a free service from Google, you can receive phone calls and post voicemails right on your blogger. GrandCentral is currently in a private beta test, bloggers can skip the wait and get a free account immediately. <a href="http://www.grandcentral.com/home/blogger_invite">Sign up now</a>. More info on <a href="http://buzz.blogger.com/2008/01/grandcentral-receive-calls-and-post.html">Blogger Buzz</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Coding | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Abstract Class Implementing Interface]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/10/22/abstract-class-implementing-interface/"/>
+    <updated>2011-10-22T15:54:55+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/10/22/abstract-class-implementing-interface</id>
+    <content type="html"><![CDATA[<p>Abstract Class Implementing Interface.</p>
+
+<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will
+use an abstract class that implements an Interface.</p>
+
+<p>What is abstract class ?
+Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods
+or it can have implemented methods which can be overridden by child classes.</p>
+
+<p>What are interfaces?
+Interface is a contract class with empty methods, properties and functions.
+Any class which implements the interface has to compulsory implement all the
+empty methods, functions and properties of the interface.</p>
+
+<p>Interface
+`
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;</p>
+
+<p>namespace Employee.Interface
+{</p>
+
+<pre><code>public interface IEmployee
+{
+    String Name
+    {
+        get;
+        set;
+    }
+
+    String DateJoin
+    {
+        get;
+        set;
+    }
+
+    String Department
+    {
+        get;
+        set;
+    }
+
+    bool Save(String mName, String mDate, String mDepartment);
+}
+</code></pre>
+
+<p>}
+`</p>
+
+<p>Abstract Class</p>
+
+<p>`
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Employee.Interface;</p>
+
+<p>namespace Employee.Abstract
+{</p>
+
+<pre><code>public abstract class AEmployee:IEmployee
+{
+    public abstract String Name
+    {
+        get;
+        set;
+    }
+
+    public abstract String DateJoin
+    {
+        get;
+        set;
+    }
+
+    public abstract String Department
+    {
+        get;
+        set;
+    }
+
+    public abstract bool Save(String mName, String mDate, String mDepartment);
+
+}
+</code></pre>
+
+<p>}
+`</p>
+
+<p>Employee Class
+`
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Employee.Abstract;</p>
+
+<p>namespace Employee
+{</p>
+
+<pre><code>public class Employee : AEmployee
+{
+    private String _Name = String.Empty;
+    private String _DateJoin = String.Empty;
+    private String _Department = String.Empty;
+
+    public override String Name
+    {
+        get
+        {
+
+            return _Name;
+        }
+        set
+        {
+            _Name = value;
+        }
+    }
+
+    public override String DateJoin
+    {
+        get
+        {
+            return _DateJoin;
+        }
+        set
+        {
+            _DateJoin = value;
+        }
+    }
+
+    public override String Department
+    {
+        get
+        {
+            return _Department;
+        }
+        set
+        {
+            _Department = value;
+        }
+    }
+
+    public override bool Save(String mName, String mDate, String mDepartment)
+    {
+        bool success = false;
+        try
+        {
+            _Name = mName;
+            _DateJoin = mDate;
+            _Department = mDepartment;
+
+            //Code to save 
+            //
+            success = true;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+        return success;
+    }
+}
+</code></pre>
+
+<p>}
+`</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ayschronous Data Loading]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/06/08/ayschronous-data-loading/"/>
+    <updated>2011-06-08T07:41:27+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/06/08/ayschronous-data-loading</id>
+    <content type="html"><![CDATA[<p>This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids.</p>
+
+<p>`private DataTable dt = null;</p>
+
+<p>private void LoadGrid(object sender, DoWorkEventArgs e)
+{</p>
+
+<pre><code>dt = ...;
+</code></pre>
+
+<p>}</p>
+
+<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+{</p>
+
+<pre><code>dgView.DataSource = dt;
+dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+</code></pre>
+
+<p>}</p>
+
+<p>private void LoadinBackground()
+{</p>
+
+<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();
+bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);
+bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);
+bgWrkr.RunWorkerAsync();
+</code></pre>
+
+<p>}`</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[C#Windows forms Caching]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/05/25/cwindows-forms-caching/"/>
+    <updated>2011-05-25T05:05:44+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/05/25/cwindows-forms-caching</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vs2010 development environment hacks]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/03/14/vs2010-development-environment-hacks/"/>
+    <updated>2011-03-14T06:55:43+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/03/14/vs2010-development-environment-hacks</id>
+    <content type="html"><![CDATA[<p>Very useful tips to change the boring look of vs2010 from [hanselman.com&lt; \a></p>
+
+<p>What I followed
+Close all toolbars
+Close all pinned Toolboxes
+Get a fresh font and color theme for Visual Studio from http://studiostyl.es, I choose wekeRoad ink, which is a dark theme.](http://www.hanselman.com/blog/SimplifyYourVisualStudio2010ToolbarAndFreeYourMind.aspx?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ScottHanselman+%28Scott+Hanselman+-+ComputerZen.com%29)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[VS2008 events handler]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/02/18/vs2008-events-handler/"/>
+    <updated>2011-02-18T16:09:47+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/02/18/vs2008-events-handler</id>
+    <content type="html"><![CDATA[<p>If you are using the Visual Studio IDE 2008 onwards, you will not find the event handlers by double clicking on the components or from the drop down box in code view.</p>
+
+<p>You have to toto properties of that component and click the Events icon. You find all the event handlers there. Double-click the event that you want to create, for example the Load event.</p>
+]]></content>
+  </entry>
+  
+</feed>

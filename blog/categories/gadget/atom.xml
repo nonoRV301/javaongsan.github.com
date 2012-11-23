@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gadget | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/gadget/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Web-Based Kindle Cloud Reader]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/08/10/web-based-kindle-cloud-reader/"/>
+    <updated>2011-08-10T08:20:37+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/08/10/web-based-kindle-cloud-reader</id>
+    <content type="html"><![CDATA[<p>Kindle apps for iPad is not available in a lot of countries like Singapore. The only way to get one is to sign in an US based iTunes account. Now there,s a cloud reader which is accessible any where via https://read.amazon.com.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kindle Available For Sale Outside US]]></title>
+    <link href="http://javaongsan.github.com/blog/2009/10/12/kindle-available-for-sale-outside-us/"/>
+    <updated>2009-10-12T15:17:39+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2009/10/12/kindle-available-for-sale-outside-us</id>
+    <content type="html"><![CDATA[<p>Finally...we get Kindle ship to us outside of US. Amazon introduces a new addition to the Kindle family of wireless reading devices: <strong>Kindle with U.S. and International Wireless</strong>. With this new Kindle, you can receive your books, newspapers, and magazines wirelessly while at home or abroad in over 100 countries. Whether you're in New York, Paris, SÃ£o Paulo, Mumbai, Beijing, Tokyo, or Sydney, you can think of a book and be reading it in less than 60 seconds. The $279 Kindle with U.S. and International Wireless can be preordered today for delivery starting in two weeks.</p>
+
+<p>Kindle utilizes the same 3G wireless technology as advanced cell phones, so you never need to hunt for a Wi-Fi hotspot. Unlike cell phones, there are no monthly wireless bills and no yearly contracts. There is no software to install, and no syncing required.</p>
+
+<p>The 8" x 5.3" x 0.36" Kindle is as thin as most magazines and weighs less than a paperbackâ€”but can hold 1,500 books. Its electronic-ink screen looks and reads like real paper with no glareâ€”even in bright sunlight. A long battery life means you can read for up to two weeks on a single charge.</p>
+
+<p>You can order one <a href="http://www.amazon.com/gp/product/B00154JDAI?tag=YOUR_ID_HERE-20%20and%20http://www.amazon.com/gp/product/B0015T963C?tag=wizcoder-20"> here</a></p>
+]]></content>
+  </entry>
+  
+</feed>

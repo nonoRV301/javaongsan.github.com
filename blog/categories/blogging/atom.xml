@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Blogging | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2012-11-23T10:31:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to know if you are ready for your niche]]></title>
+    <link href="http://javaongsan.github.com/blog/2009/03/12/how-to-know-if-you-are-ready-for-your-niche/"/>
+    <updated>2009-03-12T05:54:22+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2009/03/12/how-to-know-if-you-are-ready-for-your-niche</id>
+    <content type="html"><![CDATA[<p>Your gone through some steps or routine to come to a conclusion on your niche for your website, blog or article campaign. You are all set and passionate about your niche and ready to unleash it on the www audiences. Now before you do that and possible end up with a dead campaign or blog, do a simple test to make sure you are ready for it. Write 20 articles on your niche without any references material, simply using your own words and knowledge. Once your are done spin 5 sub articles out each of this 20 articles. If you are able to do that you have a year worth of content and probably more. Now for a little link muscle. Use 20 on your blog and each of the 5 spin article on a sub domain blog linking to its main. For article campaign simple submit 20 articles to 1 main article directory and separate the 5 across an other directory linking to the main article. Now you have something worthwhile to keep going.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Back with a job]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/05/23/back-with-a-job/"/>
+    <updated>2008-05-23T15:01:55+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/05/23/back-with-a-job</id>
+    <content type="html"><![CDATA[<p>Been working in a new job since April. This is the second time I taken a long break from work. I broke my previous record by going 7 month without a job this time. I did not make enough money this time to continue without a job but I know I am very close. With a baby arriving in July, I will be needing more cash flow.</p>
+
+<p>There are several projects I have in mind after recently been to some local PHP meetups. With my schedule revolving   around my work, I am blogging less. There so much to write and so little time. I need some time to sit down and organize to document some of things that I have done here. So stayed tune.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gizmodo are looking for an editor in Asia ]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/05/16/gizmodo-are-looking-for-an-editor-in-asia/"/>
+    <updated>2008-05-16T14:55:05+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/05/16/gizmodo-are-looking-for-an-editor-in-asia</id>
+    <content type="html"><![CDATA[<p><a href="http://gizmodo.com/391032/work-for-gizmodo-asiaaustralia-editor-wanted">gizmodo.com</a> is looking for an editor in Australia, Asia (Japan, China, Korea, Taiwan, India, etc.) or somewhere in the general region. Blogging/Journalism experience is preferred, but not entirely required. You just need to possess a passion for both gadgets and writing, and have more than a cursory knowledge of both.</p>
+
+<p>To Apply send emails to jchen@gizmodo.com with the subject "Asia/Australia Editor" with either three sample posts done in Gizmodo style (seriously, follow the template we have laid out), or a link to your current blog. Take your time with these so they best represent your writing ability. Also attach your resume and some information about yourself. You will be posting during nAsia/Australia's normal hours.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Running on wordpress with lighthttpd]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/05/09/running-on-wordpress-with-lighthttpd/"/>
+    <updated>2008-05-09T15:07:05+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/05/09/running-on-wordpress-with-lighthttpd</id>
+    <content type="html"><![CDATA[<p>I just update to wordpress 2.5.1. It was a breeze, upload the code, run the upgrade link, wam 5 second and it's done. I just don't understand why so many blog had problem with their upgrade? Maybe the amount of plugin and customization they had. I have remove almost all plugin and only the essential remain. Why? Plugin drains memories and slow down the blog. I have also moved to lxadmin a light weight control panel which required less ram. I am using non-managed VPS with 128 ram running lighthttpd. Lighthttpd is lighter than apache which probably make this site runs a bit faster than it used to. However setting lighthttpd was no easy task. Unlike apache lighthttpd does not use .htaccess which means all my links are pointing to 404 page and so is my rss feed. My rss feed have been down since I went online. After some research I understand why so few people used lighthttpd for wordpress. Another blogger state after hours of tweaking and after cutting off his left testicle, he had finally got it working. That kind of worries me. With a penknife heated and sterilize, I make managed to finally a solution and yes my testicles are still intact. All that is left to do now is to find a new theme.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Thinking About Starting Another Blog?]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/05/04/thinking-about-starting-another-blog/"/>
+    <updated>2008-05-04T03:50:15+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/05/04/thinking-about-starting-another-blog</id>
+    <content type="html"><![CDATA[<p>Are you thinking of starting another blog? What are the some of the points to take note of? I have learned some important things about operating multiple blogs and websites since I started online.</p>
+
+<p>Do you have time to start another blog?
+How much spare time do you have? Many people have full-time jobs and work more than your average 40 hour per week. They have a family and commitments. Take some time to evaluate your life right now. Come up with a schedule of your life in blocks of 2 hours. block out your working hours and traveling time to work. Fill out your family time, meal time, entertainment time, workout time, blogging time and whatever is that you do. At the end of this exercise, you have clear idea of where all your time goes to. Find the block of time which are non productive like watching TV, reading newspaper or anything thats does not contribute to growing your income. All you need are 1 block of 2 hours a day.</p>
+
+<p>Define blogging frequency and posting time before hand. When you start a second blog it might seem quick and easy to maintain, but it will only become more involved and time consuming over time. A discipline approach will help you go further. You may reevaluate your schedule every quarter and adjust your time slot accordingly.</p>
+
+<p>Before you start a new blog, take some time and do a self evaluation. Only start enough blog that you have time for. The last thing you want is to start too many blogs and have to give up some of them.</p>
+]]></content>
+  </entry>
+  
+</feed>

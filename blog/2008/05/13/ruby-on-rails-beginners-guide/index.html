@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ruby on Rails Beginners Guide - Ong Swee San</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="This tutorial is taken from the book â€œRuby on Rails Made Easy by Justin Williamsâ€. It&#8217;s a very good beginners guide but some of the code &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://javaongsan.github.com/blog/2008/05/13/ruby-on-rails-beginners-guide/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Ong Swee San" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35588905-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Ong Swee San</a></h1>
+  
+    <h2>A Freelancer's Log.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:javaongsan.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ruby on Rails Beginners Guide</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-05-13T14:01:25+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This tutorial is taken from the book â€œ<a href="http://rcm.amazon.com/e/cm?t=wizcoder-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1590597524&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000FF&amp;bc1=000000&amp;bg1=FFFFFF&amp;f=ifr"><strong>Ruby on Rails Made Easy by Justin Williams</strong></a>â€. It&#8217;s a very good beginners guide but some of the code are not compatible with the new version of RoR. I repost it here with the necessary changes. I have remove a lot of the explanations and simplify the whole tutorial. If you like to understand more about the code syntax visit <a href="http://www.rubyonrails.org/docs">http://www.rubyonrails.org/docs</a> or consider buying the book.</p>
+
+<p>I am making use of a all-in-one development environment called Instant Rails. Instant Rails is a one-stop Rails runtime solution containing Ruby, Rails, Apache, and MySQL, all preconfigured and ready to run. No installer, you simply drop it into the directory of your choice and run it. It does not modify your system environment.</p>
+
+<p><strong>Installation </strong></p>
+
+<p>Download and install â€œInstant Railsâ€ from <a href="http://instantrails.rubyforge.org/wiki/wiki.pl">http://instantrails.rubyforge.org/wiki/wiki.pl</a></p>
+
+<p><strong>Creating a Rails project</strong></p>
+
+<p>Open up a new command prompt window (Start âž¤ Run âž¤ cmd) and navigate to the directory where instant rails is located.</p>
+
+<p>Type use_ruby at the command prompt and press Enter. These setup the environment you need to create a new application.</p>
+
+<p>To create a new project with the name railslist, type rails railslist at the command prompt and press Enter. Your output look similar to this.</p>
+
+<p><strong>G:\InstantRails-2.0-win\rails_apps>rails railslist</strong></p>
+
+<p><strong>create</strong></p>
+
+<p><strong>create  app/controllers</strong></p>
+
+<p><strong>create  app/helpers</strong></p>
+
+<p><strong>create  app/models</strong></p>
+
+<p><strong>create  app/views/layouts</strong></p>
+
+<p><strong>create  config/environments</strong></p>
+
+<p><strong>create  config/initializers</strong></p>
+
+<p><strong>create  db</strong></p>
+
+<p><strong>create  doc</strong></p>
+
+<p><strong>create  lib</strong></p>
+
+<p><strong>create  lib/tasks</strong></p>
+
+<p><strong>create  log</strong></p>
+
+<p><strong>create  public/images</strong></p>
+
+<p><strong>create  public/javascripts</strong></p>
+
+<p><strong>create  public/stylesheets</strong></p>
+
+<p><strong>create  script/performance</strong></p>
+
+<p><strong>create  script/process</strong></p>
+
+<p><strong>create  test/fixtures</strong></p>
+
+<p><strong>create  test/functional</strong></p>
+
+<p><strong>create  test/integration</strong></p>
+
+<p><strong>create  test/mocks/development</strong></p>
+
+<p><strong>create  test/mocks/test</strong></p>
+
+<p><strong>create  test/unit</strong></p>
+
+<p><strong>create  vendor</strong></p>
+
+<p><strong>create  vendor/plugins</strong></p>
+
+<p><strong>create  tmp/sessions</strong></p>
+
+<p><strong>create  tmp/sockets</strong></p>
+
+<p><strong>create  tmp/cache</strong></p>
+
+<p><strong>create  tmp/pids</strong></p>
+
+<p><strong>create  Rakefile</strong></p>
+
+<p><strong>create  README</strong></p>
+
+<p><strong>create  app/controllers/application.rb</strong></p>
+
+<p><strong>create  app/helpers/application_helper.rb</strong></p>
+
+<p><strong>create  test/test_helper.rb</strong></p>
+
+<p><strong>create  config/database.yml</strong></p>
+
+<p><strong>create  config/routes.rb</strong></p>
+
+<p><strong>create  public/.htaccess</strong></p>
+
+<p><strong>create  config/initializers/inflections.rb</strong></p>
+
+<p><strong>create  config/initializers/mime_types.rb</strong></p>
+
+<p><strong>create  config/boot.rb</strong></p>
+
+<p><strong>create  config/environment.rb</strong></p>
+
+<p><strong>create  config/environments/production.rb</strong></p>
+
+<p><strong>create  config/environments/development.rb</strong></p>
+
+<p><strong>create  config/environments/test.rb</strong></p>
+
+<p><strong>create  script/about</strong></p>
+
+<p><strong>create  script/console</strong></p>
+
+<p><strong>create  script/destroy</strong></p>
+
+<p><strong>create  script/generate</strong></p>
+
+<p><strong>create  script/performance/benchmarker</strong></p>
+
+<p><strong>create  script/performance/profiler</strong></p>
+
+<p><strong>create  script/performance/request</strong></p>
+
+<p><strong>create  script/process/reaper</strong></p>
+
+<p><strong>create  script/process/spawner</strong></p>
+
+<p><strong>create  script/process/inspector</strong></p>
+
+<p><strong>create  script/runner</strong></p>
+
+<p><strong>create  script/server</strong></p>
+
+<p><strong>create  script/plugin</strong></p>
+
+<p><strong>create  public/dispatch.rb</strong></p>
+
+<p><strong>create  public/dispatch.cgi</strong></p>
+
+<p><strong>create  public/dispatch.fcgi</strong></p>
+
+<p><strong>create  public/404.html</strong></p>
+
+<p><strong>create  public/422.html</strong></p>
+
+<p><strong>create  public/500.html</strong></p>
+
+<p><strong>create  public/index.html</strong></p>
+
+<p><strong>create  public/favicon.ico</strong></p>
+
+<p><strong>create  public/robots.txt</strong></p>
+
+<p><strong>create  public/images/rails.png</strong></p>
+
+<p><strong>create  public/javascripts/prototype.js</strong></p>
+
+<p><strong>create  public/javascripts/effects.js</strong></p>
+
+<p><strong>create  public/javascripts/dragdrop.js</strong></p>
+
+<p><strong>create  public/javascripts/controls.js</strong></p>
+
+<p><strong>create  public/javascripts/application.js</strong></p>
+
+<p><strong>create  doc/README_FOR_APP</strong></p>
+
+<p><strong>create  log/server.log</strong></p>
+
+<p><strong>create  log/production.log</strong></p>
+
+<p><strong>create  log/development.log</strong></p>
+
+<p><strong>create  log/test.log</strong></p>
+
+<p>To see your new website.</p>
+
+<p>Start Instant Rails by executing InstantRails.exe. By default, both Apache and Mysql should be started.</p>
+
+<p><img src="file:///C:/Users/JAVAON~1/AppData/Local/Temp/moz-screenshot.jpg" alt="" /></p>
+
+<p><img src="file:///C:/Users/JAVAON~1/AppData/Local/Temp/moz-screenshot-1.jpg" alt="" /></p>
+
+<p>Click on the I icon select â€œRails Application>Manage applicationâ€, you see a list of application including railslist.</p>
+
+<p>To start the web server check railslist and click the button â€œStart with Mongrelâ€. A command prompt window will show you the URL where the new site is located such as <a href="http://localhost:3000/">http://localhost:3000</a>. Type this in your web browser and you should see this page.</p>
+
+<p><strong>Creating the database</strong></p>
+
+<p>We use phpmyadmin to create 3 new database. Go to your browser and type in <a href="http://loclhost/mysql/">http://loclhost/mysql/</a></p>
+
+<p>you enter the phpmyadmin page.</p>
+
+<p>Enter railslist_development in the â€œ<strong>Create new Databaseâ€</strong> text box and click the button â€œ<strong>Create</strong>â€.</p>
+
+<p>Repeat and create railslist_test and railslist_deployment databases.</p>
+
+<p><strong>Telling Rails about the databases</strong></p>
+
+<p>Open InstantRails-2.0-win\rails_apps\railslist\config\database.yml with your text editor and make the following changes</p>
+
+<p><strong>development:
+adapter: mysql
+database: railslist_development
+username: root
+password:
+host: localhost
+timeout: 5000</strong></p>
+
+<p>**# Warning: The database defined as &#8216;test&#8217; will be erased and</p>
+
+<h1>re-generated from your development database when you run &#8216;rake&#8217;.</h1>
+
+<h1>Do not set this db to the same as development or production.</h1>
+
+<p>test:
+adapter: mysql
+database: railslist_test
+username: root
+password:
+host: localhost**</p>
+
+<p><strong>production:
+adapter: mysql
+database: railslist_deployment
+username: root
+password:
+host: localhost</strong></p>
+
+<p><strong>Creating the model</strong></p>
+
+<p>To use the model generator for this example, open up a command prompt, go to the directory in which the application is located, and then type ruby script/generate model Classified. You should see the following:</p>
+
+<p><strong>cd ~/railslist/</strong></p>
+
+<p><strong>ruby script/generate model Classified</strong></p>
+
+<p><strong>exists app/models/</strong></p>
+
+<p><strong>exists test/unit/</strong></p>
+
+<p><strong>exists test/fixtures/</strong></p>
+
+<p><strong>create app/models/classified.rb</strong></p>
+
+<p><strong>create test/unit/classified_test.rb</strong></p>
+
+<p><strong>create test/fixtures/classifieds.yml</strong></p>
+
+<p><strong>create db/migrate</strong></p>
+
+<p><strong>create db/migrate/001_create_classifieds.rb</strong></p>
+
+<p>You&#8217;re telling the generator to create a model called Classified to store instances of classified ads. Each time you create a Classified model, you&#8217;re pulling a row from the database table.</p>
+
+<p><strong>Rails migrations</strong></p>
+
+<p>A migration file contains basic Ruby syntax that describes the data structure of a database table. It is used to create the tables in your database.</p>
+
+<p>Go to your railslist directory and open up the 001_create_classifieds.rb file in the InstantRails-2.0-in/rails_apps/railslist/db/migrate folder. Replace the default code in your 001_create_classifieds.rb migration file with the following and save your changes:</p>
+
+<p><strong>class CreateClassifieds &lt; ActiveRecord::Migration</strong></p>
+
+<p><strong>def self.up</strong></p>
+
+<p><strong>create_table :classifieds do |t|</strong></p>
+
+<p><strong>t.column :title, :string</strong></p>
+
+<p><strong>t.column :price, :float</strong></p>
+
+<p><strong>t.column :location, :string</strong></p>
+
+<p><strong>t.column :description, :text</strong></p>
+
+<p><strong>t.column :email, :string</strong></p>
+
+<p><strong>t.column :created_at, :timestamp</strong></p>
+
+<p><strong>t.column :updated_at, :timestamp</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>def self.down</strong></p>
+
+<p><strong>drop_table :classifieds</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>Migrations support all the basic data types: :string, :text, :integer, :float, :datetime, :timestamp, :time, :date, :binary and :boolean:</p>
+
+<p>:string is for small data types such as a classified title</p>
+
+<p>:text is for longer pieces of textual data, such as the description</p>
+
+<p>:integer is for whole numbers</p>
+
+<p>:float is for decimals</p>
+
+<p>:datetime and :timestamp store the date and time into a column</p>
+
+<p>:date and :time store either the date only or time only</p>
+
+<p>:binary is for storing data such as images, audio, or movies</p>
+
+<p>:boolean is for storing true or false values</p>
+
+<p>Go to a command prompt and go to the InstantRails-2.0-in/rails_apps/railslist/ directory, in which</p>
+
+<p>the application is located, and then type rake <a href="db:migrate">db:migrate</a></p>
+
+<p><strong>rake db:migrate</strong></p>
+
+<p><strong>(in G:/InstantRails-2.0-win/rails_apps/railslist)</strong></p>
+
+<p><strong>== 1 CreateClassifieds: migrating =============================================</strong></p>
+
+<p><strong>&#8211; create_table(:classifieds)</strong></p>
+
+<p><strong>-> 2.6970s</strong></p>
+
+<p><strong>== 1 CreateClassifieds: migrated (2.6970s) ====================================</strong></p>
+
+<p>The database now has a table in which to store the classified ad data</p>
+
+<p><strong>Creating the controller</strong></p>
+
+<p>Now you need to write the basic code to manipulate the model. To create a controller, open up a command prompt and go to the directory in which the application is located; then type ruby script/generate controller Classified</p>
+
+<p><strong>ruby script/generate controller Classified</strong></p>
+
+<p><strong>exists app/controllers/</strong></p>
+
+<p><strong>exists app/helpers/</strong></p>
+
+<p><strong>create app/views/classified</strong></p>
+
+<p><strong>exists test/functional/</strong></p>
+
+<p><strong>create app/controllers/classified_controller.rb</strong></p>
+
+<p><strong>create test/functional/classified_controller_test.rb</strong></p>
+
+<p><strong>create app/helpers/classified_helper.rb</strong></p>
+
+<p>Open classified_controller.rb file located under app/controllers. Modify the file to look like the following and save your changes:</p>
+
+<p><strong>class ClassifiedController &lt; ApplicationController
+def list
+@classifieds = Classified.find(:all)
+end
+def show
+@classified = Classified.find(params[:id])
+end
+def new
+end
+def create
+end
+def edit
+end
+def update
+end
+def delete
+end
+end
+</strong></p>
+
+<p><strong>Creating the views</strong></p>
+
+<p>Create a file called list.rhtml using your favorite text editor and save it to InstantRails-2.0-in/rails_apps/railslist/app/views/classified. After creating and saving the file, refresh your web browser. You should see a blank page; if you don&#8217;t, check the spelling of your file and make sure that it is the exactly the same as your controller&#8217;s method.</p>
+
+<p>Put some code into the list.rhtml file.</p>
+
+<p><strong>&lt;% if @classifieds.blank? %></strong></p>
+
+<p>**</p>
+
+<p>There are not any ads currently in the system.</p>
+
+<p>**</p>
+
+<p><strong>&lt;% else %></strong></p>
+
+<p>**</p>
+
+<p>These are the current classified ads in our system</p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p><strong>&lt;% @classifieds.each do |c| %></strong></p>
+
+<p><strong>
+  * &lt;%= link_to c.title, {:action => &#8216;show&#8217;, :id => c.id} -%>
+</strong></p>
+
+<p><strong>&lt;% end %></strong></p>
+
+<hr />
+
+<p><strong>&lt;% end %></strong></p>
+
+<p>**</p>
+
+<p>&lt;%= link_to &#8220;Add new ad&#8221;, {:action => &#8216;new&#8217; }%></p>
+
+<p>**</p>
+
+<p><strong>Creating the first objects</strong></p>
+
+<p>Go back to your classified_controller.rb file in InstantRails-2.0-in/rails_apps/railslist/app/controllers and edit the new method to look like this:</p>
+
+<p><strong>def new</strong></p>
+
+<p><strong>@classified = Classified.new</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>The line you added to the new method lets Rails know that you will create a new object in this view. Create the corresponding new.rhtml file in InstantRails-2.0-in/rails_apps/railslist/app/views/ classified.</p>
+
+<p>You&#8217;ll create a basic input form to accept new classified postings. Add the following code to the new.rhtml file and save it:</p>
+
+<p>**</p>
+
+<h1>Post new classified</h1>
+
+<p>**</p>
+
+<p>**&lt;% form_tag &#8216;create&#8217;  do -%></p>
+
+<p>Title</p>
+
+<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></p>
+
+<p>Price</p>
+
+<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></p>
+
+<p>Location</p>
+
+<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></p>
+
+<p>Description</p>
+
+<p>&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></p>
+
+<p>Email</p>
+
+<p>&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></p>
+
+<p><strong>
+</strong>&lt;%= submit_tag &#8216;Create&#8217; %>
+&lt;% end -%>
+&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217;} %>**</p>
+
+<p>Edit the create method in the classified_controller.rb to match the following:</p>
+
+<p><strong>def create</strong></p>
+
+<p><strong>@classified = Classified.new(params[:classified])</strong></p>
+
+<p><strong>if @classified.save</strong></p>
+
+<p><strong>redirect_to :action => &#8216;list&#8217;</strong></p>
+
+<p><strong>else</strong></p>
+
+<p><strong>render :action => &#8216;new&#8217;</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>Go to your browser and visit http://localhost:3000/classified/new, enter some data into the form, and submit it.</p>
+
+<p>The data should submit successfully and redirect you to the list page, in which you now have a single item listed. If you click the link, you should see another Template is missing error since you haven&#8217;t created the template file yet.</p>
+
+<p>Create a show.rhtml file under InstantRails-2.0-in/rails_apps/railslist/app/views/classified and populate it with the</p>
+
+<p>following code:</p>
+
+<p>**</p>
+
+<h1>&lt;%= @classified.title %></h1>
+
+<p>**</p>
+
+<p>**</p>
+
+<p><strong>Price: </strong> $&lt;%= @classified.price %><br/>
+**</p>
+
+<p><strong><strong>Location: </strong> &lt;%= @classified.location %><br/>
+</strong></p>
+
+<p><strong><strong>Date Posted:</strong> &lt;%= @classified.created_at %><br/>
+</strong></p>
+
+<p><strong><strong>Last updated:</strong> &lt;%= @classified.updated_at %></strong></p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>&lt;%= @classified.description %></p>
+
+<p>**</p>
+
+<p>**</p>
+
+<hr />
+
+<p>**</p>
+
+<p>**</p>
+
+<p>Interested? Contact &lt;%= mail_to @classified.email -%></p>
+
+<p>**</p>
+
+<p><strong>&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217;} %></strong></p>
+
+<p><strong>Updating existing ads</strong></p>
+
+<p>Modify the classified_controller.rb edit and update methods to look like the following:</p>
+
+<p><strong>def edit</strong></p>
+
+<p><strong>@classified = Classified.find(params[:id])</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>def update</strong></p>
+
+<p><strong>@classified = Classified.find(params[:id])</strong></p>
+
+<p><strong>if @classified.update_attributes(params[:classified])</strong></p>
+
+<p><strong>redirect_to :action => &#8216;show&#8217;, :id => @classified</strong></p>
+
+<p><strong>else</strong></p>
+
+<p><strong>render :action => &#8216;edit&#8217;</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>Create a new file called edit.rhtml and save it in InstantRails-2.0-in/rails_apps/railslist/app/views/classified. Populate</p>
+
+<p>it with the following code:</p>
+
+<p>**</p>
+
+<h1>Editing Classified: &lt;%= @classified.title -%></h1>
+
+<p>**</p>
+
+<p><strong>&lt;% form_tag( {:action => &#8216;update&#8217;, :id => @classified}) do  %></strong></p>
+
+<p>**</p>
+
+<p>Title<br/>
+**</p>
+
+<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>Price<br/>
+**</p>
+
+<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>Location<br/>
+**</p>
+
+<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>Description<br/>
+**</p>
+
+<p>**&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p>Email<br/>
+**</p>
+
+<p>**&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></p>
+
+<p>**</p>
+
+<p><strong>&lt;%= submit_tag &#8220;Save changes&#8221; %></strong></p>
+
+<p><strong>&lt;% end -%></strong></p>
+
+<p><strong>&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217; } %></strong></p>
+
+<p>edit the list.rhtml file go to the
+* element and modify it to look like the following:</p>
+
+<p>**</p>
+
+<hr />
+
+<p><strong>&lt;%= link_to c.title, {:action => &#8220;show&#8221;, :id => c.id} -%></strong></p>
+
+<p><strong> &lt;%= link_to &#8216;Edit&#8217;, {:action => &#8220;edit&#8221;,</strong></p>
+
+<p><strong>:id => c.id} %></strong></p>
+
+<p><strong>
+</strong></p>
+
+<p>Point your browser to http://localhost:3000/classified/list and test the new functionality.</p>
+
+<p><strong>Removing an ad</strong></p>
+
+<p>modify list.rhtml</p>
+
+<p>Go to the
+* element and modify it to look like the following:</p>
+
+<p>**</p>
+
+<hr />
+
+<p><strong>&lt;%= link_to c.title, {:action => &#8216;show&#8217;, :id => c.id} -%></strong></p>
+
+<p><strong> &lt;%= link_to &#8216;Edit&#8217;, {:action => &#8216;edit&#8217;,</strong></p>
+
+<p><strong>:id => c.id} %></strong></p>
+
+<p><strong> &lt;%= link_to &#8220;Delete&#8221;, {:action => &#8216;delete&#8217;, :id => c.id},</strong></p>
+
+<p><strong>:confirm => &#8220;Are you sure you want to delete this item?&#8221; %></strong></p>
+
+<p><strong>
+</strong></p>
+
+<p>Open classified_controller.rb and modify the delete method as follows:</p>
+
+<p><strong>def delete</strong></p>
+
+<p><strong>Classified.find(params[:id]).destroy</strong></p>
+
+<p><strong>redirect_to :action => &#8216;list&#8217;</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>Adding some style</strong></p>
+
+<p>Add a new file called standard.rhtml to InstantRails-2.0-in/rails_apps/railslist/app/views/layouts.</p>
+
+<p>Open up the classified_controller.rb file in app/controllers and add the following line just below the first line:</p>
+
+<p>layout &#8216;standard&#8217;</p>
+
+<p>You are telling the controller that you want to use the layout in the standard.rhtml file.</p>
+
+<p>go to http://localhost:3000/classified/list you should see that the template is now implemented,</p>
+
+<p>Create a new file called style.css and save it in InstantRails-2.0-in/rails_apps/railslist//public/stylesheets.</p>
+
+<p><strong>* {</strong></p>
+
+<p><strong>margin: 0;</strong></p>
+
+<p><strong>padding:0;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>body {</strong></p>
+
+<p><strong>font-family: Helvetica, Geneva, Arial, sans-serif;</strong></p>
+
+<p><strong>font-size: small;</strong></p>
+
+<p><strong>font-color: #000;</strong></p>
+
+<p><strong>background-color: #fff;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>a:link, a:active, a:visited {</strong></p>
+
+<p><strong>color: #CD0000;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>a:hover {</strong></p>
+
+<p><strong>color: #F70000;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>input { margin-bottom: 5px;}</strong></p>
+
+<p><strong>p { line-height: 150%; }</strong></p>
+
+<p><strong>div#container {</strong></p>
+
+<p><strong>width: 760px;</strong></p>
+
+<p><strong>margin: 0 auto;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#header {</strong></p>
+
+<p><strong>text-align: center;</strong></p>
+
+<p><strong>padding-bottom: 15px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#content {</strong></p>
+
+<p><strong>float: left;</strong></p>
+
+<p><strong>width: 450px;</strong></p>
+
+<p><strong>padding: 10px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#content h3 {</strong></p>
+
+<p><strong>margin-top: 15px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>ul#classifieds {</strong></p>
+
+<p><strong>list-style-type: none;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>ul#classifieds li {</strong></p>
+
+<p><strong>line-height: 140%;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#sidebar {</strong></p>
+
+<p><strong>width: 200px;</strong></p>
+
+<p><strong>margin-left: 480px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p>Refresh your browser and you should see your application displayed with a bit more style. Thats all folks!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-05-13T14:01:25+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/programming/'>programming</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://javaongsan.github.com/blog/2008/05/13/ruby-on-rails-beginners-guide/" data-via="wizcoder" data-counturl="http://javaongsan.github.com/blog/2008/05/13/ruby-on-rails-beginners-guide/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2008/05/12/how-to-upgrade-from-shared-hosting-to-vps/" title="Previous Post: How to upgrade from shared hosting to VPS">&laquo; How to upgrade from shared hosting to VPS</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2008/05/16/gizmodo-are-looking-for-an-editor-in-asia/" title="Next Post: Gizmodo are looking for an editor in Asia ">Gizmodo are looking for an editor in Asia  &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/15/my-first-windows-phone-app/">My First Windows Phone App</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/14/about/">About</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/22/abstract-class-implementing-interface/">Abstract Class Implementing Interface</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/10/web-based-kindle-cloud-reader/">Web-Based Kindle Cloud Reader</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/15/yahoo-mail-release-old-deactivated-email-address/">Yahoo mail release old deactivated email address</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/25/cwindows-forms-caching/">C#Windows forms Caching</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-name-instead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name instead of account name</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/03/14/vs2010-development-environment-hacks/">Vs2010 development environment hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/03/14/grub-rescue-error/">Grub rescue error</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/javaongsan">@javaongsan</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'javaongsan',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("wizcoder", 4, true);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/wizcoder" class="twitter-follow-button" data-show-count="true">Follow @wizcoder</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

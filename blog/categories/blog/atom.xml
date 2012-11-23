@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-23T10:31:36+08:00</updated>
+  <updated>2012-11-23T11:35:11+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -71,36 +71,34 @@ I simply install Linux and got a new boot menu.</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[My Beta Commentor Publish Notice WordPress Plugin]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin/"/>
-    <updated>2009-06-17T09:16:06+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin</id>
-    <content type="html"><![CDATA[<p>I am releasing a beta WordPress plugin, a Commentor Publish Notice emailer. My plugin sends email to all the people who have commented on the blog when a post is publish.</p>
+    <title type="html"><![CDATA[Generating multiple streams of income online]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/02/24/generating-multiple-streams-of-income-online/"/>
+    <updated>2008-02-24T05:07:49+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/02/24/generating-multiple-streams-of-income-online</id>
+    <content type="html"><![CDATA[<p>Do you have only one website thats is bringing the cash now? Do you find it hard to increase the income from that site? If so, it may be time to set up another site theres complete different from what you are doing. Lets look at the types of sites we can set up.</p>
 
-<p>Installation Guide:</p>
+<p>Forum
+Forum are the best source of passive income online, they require minimum management and most of the information are user contributed. The toughest thing about starting a forum is getting users to sign up and generate interesting topics. Revenue comes from private ad placement and ad networks.</p>
 
-<ol>
-<li><a href="http://javaongsan.github.com/wp-content/downloads/wizcom.zip">Download the plugin here</a></li>
-<li>Unzip the file</li>
-<li>Upload the whole wizcom folder to your Plugins folder via FTP</li>
-<li>Inside the Plugins section of your WordPress control panel activate the plugin</li>
-<li>Under the Dashboard click on WizCom.</li>
-<li>Setup yoor email template.</li>
-</ol>
+<p>Blog
+Blog are the simplest to start. You write whatever you want. It the easy to get traffic. Revenue comes from a wide variety and is the most versatile of all.</p>
 
+<p>Auto Blog
+Its a blog that updates it self. A very effective way to make instant income but die as soon as it start making good profits.</p>
 
-<p>Please report any bugs here.</p>
+<p>Scripted Sites
+Scripted Sites like myspace resources sites requires no maintainences makes primary income from Adsense. This site requires you to promote the site at the beginning.</p>
+
+<p>These are some of the sites I have been playing with now. Whats are the type of sites you own?</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[My Christmas present]]></title>
-    <link href="http://javaongsan.github.com/blog/2008/12/24/my-christmas-present/"/>
-    <updated>2008-12-24T10:12:12+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2008/12/24/my-christmas-present</id>
-    <content type="html"><![CDATA[<p>This the best gift ever.
-<img src="http://localhost:8888/wizcoder/images/DSC00020.JPG" alt="Christmas gift" />
-I am so excited I am creating a contest to give away this tube or whatever that left. Rules are simple, the best comments wins. So what you waiting for?</p>
+    <title type="html"><![CDATA[How to be a successful entrepreneur]]></title>
+    <link href="http://javaongsan.github.com/blog/2008/02/19/how-to-be-a-successful-entrepreneur/"/>
+    <updated>2008-02-19T04:03:40+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2008/02/19/how-to-be-a-successful-entrepreneur</id>
+    <content type="html"><![CDATA[<p>Wikipedia describe entrepreneur as An entrepreneur is a person who operates a new enterprise or venture and assumes some accountability for the inherent risks. If you have line up all the successful entrepreneur in the world and tried to profile them, you find that they all different. From the size, looks, to the way they think and operate. There are no fixed rule to become an entrepreneur, but at some point you be required to take risks or perform and work in a way that most peers will not. If you go back to all the successful entrepreneurs and ask them for the key to their success, you probably get as many as the number of people you asked. How do become successful? We do it by failing more than others and we get up each time. Technical skills like marketing, writing business plan, managing can be learn but attitude and commitment are forged through countless hardship, visualization, developing passion and undying attitude. What the most important thing you can do to be a successful entrepreneur is simply "Don't Quit"</p>
 ]]></content>
   </entry>
   

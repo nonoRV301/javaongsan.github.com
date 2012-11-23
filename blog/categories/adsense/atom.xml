@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Adsense | Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/blog/categories/adsense/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-23T10:31:36+08:00</updated>
+  <updated>2012-11-23T11:35:11+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,21 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[AdSense Referrals and AdWords pay-per-action beta to retire]]></title>
-    <link href="http://javaongsan.github.com/blog/2008/07/01/adsense-referrals-and-adwords-pay-per-action-beta-to-retire/"/>
-    <updated>2008-07-01T12:57:06+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2008/07/01/adsense-referrals-and-adwords-pay-per-action-beta-to-retire</id>
-    <content type="html"><![CDATA[<p>Google will be retiring the AdSense Referrals program during the last week of August. This will be replace by the new "<strong>Google Affiliate Network</strong>"</p>
-
-<p><em>"As part of the integration of DoubleClick, the DoubleClick Performics Affiliate Network will now operate as the Google Affiliate Network for advertisers targeting users located in the United States. Similar to the AdSense Referrals program, the Google Affiliate Network enables publishers to apply for advertiser programs and get paid based on advertiser-defined actions instead of clicks or impressions. For further details, please visit: <a href="http://www.google.com/ads/affiliatenetwork/">http://www.google.com/ads/affiliatenetwork/</a>."</em></p>
-
-<p>Also to be retired, the AdWords pay-per-action beta. As an alternative, Google offers two products that allow you to manage your advertising on a CPA (cost-per-acquisition) basis: the <a href="http://adwords.blogspot.com/2008/01/conversion-optimizer-increase-profits.html">Conversion Optimizer</a> and the Google Affiliate Network.</p>
-
-<p>The Conversion Optimizer is an AdWords bidding feature that lets you specify a maximum CPA goal for ads on the Google search and content networks. It uses historical information about your campaign to automatically adjust your CPC bid for each auction to help you meet your CPA goal. In addition, the Conversion Optimizer is now supported in both the AdWords Editor and the AdWords API.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Google remove Onsite Advertiser Sign-up feature]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rss | Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/blog/categories/rss/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-23T10:31:36+08:00</updated>
+  <updated>2012-11-23T11:35:11+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -21,63 +21,6 @@
     <content type="html"><![CDATA[<p>The actual question is What are your criteria for subscribing to a particular RSS feed? Feed count, popularity or simply because you like it? What ever your reason, you shouldn't have a criteria. In fact, my suggestion is to subscribe to any blog you came across. like anyone else I don't like to help a blog increased their feed count or readership by subscribing to them, especially when there are only 1 digit. I do not subscribe to any blog who I am not found of, or if I think they are boring, or for whatever reason. Since reading a post y John Chow about his idea of tracking a numerous blogs for ideas, I started to wonder. Could I be missing out on some valuable informations by refusing to subscribe to a blog? I think the answer is obvious. Now that I amÃ‚   writingÃ‚   more blog, I need more informations,Ã‚   someÃ‚   in specific niche, I found that its really useful to read more blogs. Not only does it generate new ideas for content, some of them have good writing styles which I can follow. I may also be tracking blogs that are starting out and testing certain techniques on blogging or affiliate marketing. There a lot of things that I learn through other people's experiences.</p>
 
 <p>Many will argue the time I wasted tracking so many feeds, well I not going for PHD here so I don't study every single content in details, I simple do a quick scan of all the titles and pick out a few that I will go through. You may also used different readers, or create different foldersÃ‚   to separate the feeds. A golden rule that I live by now "Only Subscribe, Do Not Unsubscribe!".</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[BidVertiser Ads for your RSS Feeds]]></title>
-    <link href="http://javaongsan.github.com/blog/2008/01/07/bidvertiser-ads-for-your-rss-feeds/"/>
-    <updated>2008-01-07T09:10:31+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2008/01/07/bidvertiser-ads-for-your-rss-feeds</id>
-    <content type="html"><![CDATA[<p>I finally gotten the email on the much talk about <a href="http://bdv.bidvertiser.com/bidvertiser/referral_button.html?pid=57114">Bidvertiser</a> ads on rss feed.
-Here are the steps to create a new rss feed url with bidvertiser ad:
-1. Login to your publisher account and click "Add New BidVertiser". During the Public Beta, you may also click the "Public Beta" link. If you are new to BidVertiser, click here to create a publisher account.</p>
-
-<ol>
-<li><p>Make sure you are under the BidVertiser for your Feed tab.</p></li>
-<li><p>Provide your feed URL and title and click Next.</p></li>
-<li><p>Verify your feed ownership by adding a temporary post with a unique verification code we provide you with.</p></li>
-<li><p>Choose your favorite multiple-subscription Feed Widget and add it to your website or blog. Detail instructions for each of the major blog platforms is provided as part of the process.</p></li>
-</ol>
-
-
-<p>The problem now is trying to get all your subscriber to subscribe to your new feed. I certainly not using this, I have been experiencing a sharp decline of rss suscriber. I think its time to kick in another gear and break that 1000 rss count limit.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How I went from 0 to 900 subscriber in 4 months]]></title>
-    <link href="http://javaongsan.github.com/blog/2007/09/29/how-i-went-from-0-to-900-subscriber-in-4-months/"/>
-    <updated>2007-09-29T16:34:43+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2007/09/29/how-i-went-from-0-to-900-subscriber-in-4-months</id>
-    <content type="html"><![CDATA[<p><img src="http://localhost:8888/wizcoder/images/c.png" alt="wizcoder" /> Bad news for anyone who is reading is via RSS, I can only push a half feed. This is because a restriction from wordpress, I have not found the plugin to fix this or maybe the new wordpress release will have a full feed feature.</p>
-
-<p>Since July My RSS feed has been hovering around 900 range. I have grew from 0 subscriber to 900 plus from May to July. In July my RSS feed starts decreasing mainly because I was traveling and did not blog for 2, 3 days.</p>
-
-<p><strong>What is an RSS feed?</strong>
-An RSS feed is simply an XML formated document of your blog. Most Blog comes with a default RSS feed. RSS is an important promotion tool. Most blog reader used RSS reader like google reader, yahoo, netvibes, blogline etc to track their favorite. RSS reader is an effective tool just like your email client, it announces and collect the latest post form the blog that you subscribed to, therefore save the reader time from having to go back to the actual website.</p>
-
-<p><strong>Feedburner</strong>
-Without a method to monetize my feed there really is no reason why I should be bother with my RSS feeds but I love it when my feed count goes up. I have about 9000 subscriber which a lot more than other more popular websites. I used <a href="http://www.feedburner.com/">feedburner</a> to track my RSS feed. feedburner is a great service. You should sign up for it if don't already have an account. When you burn a feed with feedburner, you get a code to display the number of subscriber you have on your blog.</p>
-
-<p><strong>The secret of increasing from 0 to 900 subscriber in 4 months</strong>
-My guess is that you have been reading this post because you want to know the secret. The main technique I used to increase my feed count is content. I post about 4 times a day. Thats it! Bottom line. I have read sometime in February, that he has increased his traffic by posting 4 times a day. I did the same, I did whatever I could, to post 4 times a day. It was tough. I didn't know how to write, beside writing programming manual I have no recollection of ever writing some remotely human readable. I have read many blogs very day, tried to copy and modified their styles.</p>
-
-<p>I listed some quick tips for anyone who wants to try this route.</p>
-
-<ol>
-<li><p>Post more than once. 4 times is good, anything more is a bonus.</p></li>
-<li><p>Spread out your posts so user have time to response. I got this from problogger.</p></li>
-<li><p>Display a feed count.</p></li>
-<li><p>Mix long post with short posts. Long post are pillar articles that you use to anchor your blog. Short post are breaking news, tips, tricks or sharing that require less effort.</p></li>
-<li><p>Subscribe to your own feed. Don't be the last to know if something is wrong with your feed.</p></li>
-<li><p>Remove monetization. The fastest way to grow is a ad free feed.</p></li>
-<li><p>Run a contest specially just for your RSS subscriber.</p></li>
-<li><p>Did I miss anything else?</p></li>
-</ol>
-
-
-<p>I would like to run a similar contest for RSS subscriber. What type of prize shall it be? I doubt I can get it sponsored so probably be cash. Not sure about the amount. the contest will being once I get the full feed running.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: News | Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/blog/categories/news/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-23T10:31:36+08:00</updated>
+  <updated>2012-11-23T11:35:11+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -25,15 +25,6 @@
 <p>You can read more <a href="http://www.google.com/intl/en/press/pressrel/20080612_yahoo.html">here</a>.</p>
 
 <p>Techcrunch points out Google's escape cause <a href="http://www.techcrunch.com/2008/06/13/googles-83-million-escape-clause-sec-filing-spells-out-details-of-yahoo-google-deal/">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Yahoo! Search Marketing Lower Minimum Bids]]></title>
-    <link href="http://javaongsan.github.com/blog/2008/02/27/yahoo-search-marketing-lower-minimum-bids/"/>
-    <updated>2008-02-27T11:17:19+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2008/02/27/yahoo-search-marketing-lower-minimum-bids</id>
-    <content type="html"><![CDATA[<p>Starting in the next several weeks, Yahoo! Search Marketing adjusted the minimum bids for a number of <strong>Sponsored Search</strong> keywords will no longer be fixed at $.10. New minimum bids can be lower or higher than $.10. Content Match minimum bids currently will remain at $.10. Yahoo! Search Marketing believe that this update is intended will align your minimum bids with the value and quality of your keywords and to help improve the overall search user experience by rewarding advertisers for better quality with lower entry points into keyword markets.</p>
 ]]></content>
   </entry>
   
@@ -61,13 +52,18 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[End of the Netscape web browser]]></title>
-    <link href="http://javaongsan.github.com/blog/2007/12/29/end-of-the-netscape-web-browser/"/>
-    <updated>2007-12-29T09:01:23+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2007/12/29/end-of-the-netscape-web-browser</id>
-    <content type="html"><![CDATA[<p>The once popluar Netscape Communicator is coming to an end. After February 1, 2008 there will be no more active product support for Navigator 9, or any previous Netscape Navigator browser. This includes Netscape v1-v4.x, Netscape v6, Netscape v7 Suite, Netscape Browser v8, and Netscape Navigator/Messenger 9.</p>
+    <title type="html"><![CDATA[Android, an open platform for mobile devices]]></title>
+    <link href="http://javaongsan.github.com/blog/2007/11/06/android-an-open-platform-for-mobile-devices/"/>
+    <updated>2007-11-06T02:03:03+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2007/11/06/android-an-open-platform-for-mobile-devices</id>
+    <content type="html"><![CDATA[<p><a href="http://googleblog.blogspot.com/2007/11/wheres-my-gphone.html">Google</a> announced Android, the first truly open and comprehensive platform for mobile devices. It includes an operating system, user-interface and applications for mobile phone, but without the proprietary obstacles that have hindered mobile innovation. Android was developed in cooperation with the Open Handset Alliance, which consists of more than 30 technology and mobile leaders including Motorola, Qualcomm, HTC and T-Mobile. Phones based on the Android platform are targeted for release on the second half of 2008.</p>
 
-<p><a href="http://blog.netscape.com/2007/12/28/end-of-support-for-netscape-web-browsers">netscape</a>: <em>"AOL's focus on transitioning to an ad-supported web business leaves little room for the size of investment needed to get the Netscape browser to a point many of its fans expect it to be. Given AOL's current business focus and the success the Mozilla Foundation has had in developing critically-acclaimed products, we feel it's the right time to end development of Netscape branded browsers, hand the reins fully to Mozilla and encourage Netscape users to adopt Firefox."</em></p>
+<p>If you're a developer and this approach sounds exciting the <a href="http://www.openhandsetalliance.com/developers.html">SDK</a> might be available in a week or so.</p>
+
+<p><strong>Further digging at </strong><a href="http://www.openhandsetalliance.com/android_overview.html"><strong>Open Handset Alliance</strong></a>
+Androidâ„¢ will deliver a complete set of software for mobile devices: an operating system, middleware and key mobile applications. Android will be open source, it is built on the open Linux Kernel. Furthermore, it utilizes a custom virtual machine that has been designed to optimize memory and hardware resources in a mobile environment. Android does not differentiate between the phone's core applications and third-party applications. They can all be built to have equal access to a phone's capabilities providing users with a broad spectrum of applications and services. Android provides access to a wide range of useful libraries and tools that can be used to build rich applications. It sounds like a dream come true for mobile developers but can it really deliver.</p>
+
+<p>On November 12, theres an frist look release of the Android Software Development Kit (SDK) for developers. Is this what we mobile developers have been looking forward to?</p>
 ]]></content>
   </entry>
   

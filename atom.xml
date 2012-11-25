@@ -4,7 +4,7 @@
   <title><![CDATA[Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-23T15:24:57+08:00</updated>
+  <updated>2012-11-25T07:59:34+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -78,9 +78,10 @@ Interface is a contract class with empty methods, properties and functions. <br/
 Any class which implements the interface has to compulsory implement all the <br/>
 empty methods, functions and properties of the interface.</p>
 
-<p>Interface <br/>
-`<br/>
-using System;<br/>
+<p>&#8220;
+Interface</p>
+
+<p>using System;<br/>
 using System.Collections.Generic;<br/>
 using System.Linq;<br/>
 using System.Web;</p>
@@ -112,13 +113,11 @@ using System.Web;</p>
 </code></pre>
 
 <p>   }<br/>
-}<br/>
-`</p>
+}</p>
 
 <p>Abstract Class</p>
 
-<p>`<br/>
-using System;<br/>
+<p>using System;<br/>
 using System.Collections.Generic;<br/>
 using System.Linq;<br/>
 using System.Web;<br/>
@@ -151,12 +150,11 @@ using Employee.Interface;</p>
 </code></pre>
 
 <p>   }<br/>
-}<br/>
-`</p>
+}</p>
 
-<p>Employee Class<br/>
-`<br/>
-using System;<br/>
+<p>Employee Class</p>
+
+<p>using System;<br/>
 using System.Collections.Generic;<br/>
 using System.Linq;<br/>
 using System.Web;<br/>
@@ -230,8 +228,7 @@ using Employee.Abstract;</p>
 </code></pre>
 
 <p>   }<br/>
-}<br/>
-`</p>
+}&#8220;</p>
 ]]></content>
   </entry>
   

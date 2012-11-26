@@ -4,7 +4,7 @@
   <title><![CDATA[Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-25T07:59:34+08:00</updated>
+  <updated>2012-11-26T12:06:44+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -78,7 +78,7 @@ Interface is a contract class with empty methods, properties and functions. <br/
 Any class which implements the interface has to compulsory implement all the <br/>
 empty methods, functions and properties of the interface.</p>
 
-<p>&#8220;
+<p><code>`</code>
 Interface</p>
 
 <p>using System;<br/>
@@ -228,7 +228,7 @@ using Employee.Abstract;</p>
 </code></pre>
 
 <p>   }<br/>
-}&#8220;</p>
+}` &#8220;</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-26T12:14:48+08:00</updated>
+  <updated>2013-02-27T16:05:10+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Evernote Programming Challenge]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/02/27/evernote-programming-challenge/"/>
+    <updated>2013-02-27T15:53:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/02/27/evernote-programming-challenge</id>
+    <content type="html"><![CDATA[<p>
+Evernote is running a "Evernote Programming Challenge" to recurit engineers. Most of them are based in US. Took the challenge anyway, it was fun. I used python and manage to solve all the problem after a few tries. Not bad for a python newbie.
+Check out the challenge at <a href="https://evernotechallenge.interviewstreet.com/challenges">here</a>.
+My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Windows Phone App]]></title>

@@ -9,7 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="I have been working on windows mobile for the last 10 years starting with VB 3.0 up to .NET. This is the first time I work on a consumer app. I have &hellip;">
+  <meta name="description" content="Evernote is running a &#8220;Evernote Programming Challenge&#8221; to recurit engineers. Most of them are based in US. Took the challenge anyway, it &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/27/evernote-programming-challenge/">Evernote Programming Challenge</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-27T15:53:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>
+Evernote is running a &#8220;Evernote Programming Challenge&#8221; to recurit engineers. Most of them are based in US. Took the challenge anyway, it was fun. I used python and manage to solve all the problem after a few tries. Not bad for a python newbie.
+Check out the challenge at <a href="https://evernotechallenge.interviewstreet.com/challenges">here</a>.
+My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -619,35 +659,47 @@ empty methods, functions and properties of the interface.</p>
 
   <div class="entry-content"><p>This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids.</p>
 
-<p>`private DataTable dt = null;</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>private DataTable dt = null;  
+</span><span class='line'>  
+</span><span class='line'>private void LoadGrid(object sender, DoWorkEventArgs e)  
+</span><span class='line'>{  
+</span><span class='line'>  dt = ...;  
+</span><span class='line'>}  
+</span><span class='line'>  
+</span><span class='line'>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)  
+</span><span class='line'>{  
+</span><span class='line'>  dgView.DataSource = dt;  
+</span><span class='line'>  dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
+</span><span class='line'>}  
+</span><span class='line'>  
+</span><span class='line'>private void LoadinBackground()  
+</span><span class='line'>{  
+</span><span class='line'>  System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
+</span><span class='line'>  bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
+</span><span class='line'>  bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
+</span><span class='line'>  bgWrkr.RunWorkerAsync();  
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
-<p>private void LoadGrid(object sender, DoWorkEventArgs e)<br/>
-{</p>
-
-<pre><code>dt = ...;  
-</code></pre>
-
-<p>}</p>
-
-<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)<br/>
-{</p>
-
-<pre><code>dgView.DataSource = dt;  
-dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
-</code></pre>
-
-<p>}</p>
-
-<p>private void LoadinBackground()<br/>
-{</p>
-
-<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
-bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
-bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
-bgWrkr.RunWorkerAsync();  
-</code></pre>
-
-<p>}`</p>
 </div>
   
   
@@ -685,56 +737,101 @@ bgWrkr.RunWorkerAsync();
 
   <div class="entry-content"><p>When developing C# windows application, we  tend to reuse  common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good strategy reduce the round trip to database.  I cache most of all my commonly used datasets improve loading time.</p>
 
-<p>`using System;<br/>
-using System.Collections.Generic;<br/>
-using System.Linq;<br/>
-using System.Text;</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Text;  
+</span><span class='line'>  
+</span><span class='line'>namespace Cache  
+</span><span class='line'>{  
+</span><span class='line'>   public class Cache  
+</span><span class='line'>   {  
+</span><span class='line'>       static Dictionary _cache = new Dictionary();  
+</span><span class='line'>  
+</span><span class='line'>       public Cache() { }  
+</span><span class='line'>  
+</span><span class='line'>       public static bool AddToCache(string key, object obj)  
+</span><span class='line'>       {  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               _cache.Add(key, obj);  
+</span><span class='line'>           }  
+</span><span class='line'>           catch (ArgumentException)  
+</span><span class='line'>           {  
+</span><span class='line'>               return false;  
+</span><span class='line'>           }  
+</span><span class='line'>           return true;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public static object GetFromCache(string key)  
+</span><span class='line'>       {  
+</span><span class='line'>           object obj = null;  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               if (_cache.ContainsKey(key))  
+</span><span class='line'>                   _cache.TryGetValue(key, out obj);  
+</span><span class='line'>           }  
+</span><span class='line'>           catch  
+</span><span class='line'>           {  
+</span><span class='line'>           }  
+</span><span class='line'>           return obj;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public static void ClearCache()  
+</span><span class='line'>       {  
+</span><span class='line'>           _cache.Clear();  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>   }  
+</span><span class='line'>}  </span></code></pre></td></tr></table></div></figure>
 
-<p>namespace Cache<br/>
-{<br/>
-   public class Cache<br/>
-   {</p>
-
-<pre><code>   static Dictionary _cache = new Dictionary();  
-
-   public Cache() { }  
-
-   public static bool AddToCache(string key, object obj)  
-   {  
-       try  
-       {  
-           _cache.Add(key, obj);  
-       }  
-       catch (ArgumentException)  
-       {  
-           return false;  
-       }  
-       return true;  
-   }  
-
-   public static object GetFromCache(string key)  
-   {  
-       object obj = null;  
-       try  
-       {  
-           if (_cache.ContainsKey(key))  
-               _cache.TryGetValue(key, out obj);  
-       }  
-       catch  
-       {  
-       }  
-       return obj;  
-   }  
-
-   public static void ClearCache()  
-   {  
-       _cache.Clear();  
-   }  
-</code></pre>
-
-<p>   }<br/>
-}<br/>
-`</p>
 </div>
   
   
@@ -814,71 +911,6 @@ using System.Text;</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/15/training-2/">Training # 2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-15T23:32:00+08:00" pubdate data-updated="true">Mar 15<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Tempo run</p>
-
-<p>Target heart rate:130 - 140 beats per minute</p>
-
-<p>Run duration:40 minutes</p>
-
-<p>Workout importance:High</p>
-
-<p>Workout pointers:High aerobic run. Time to pick up the tempo. Stay close to upper range of target heart rate.</p>
-
-<p>Weight training 1</p>
-
-<p>Description: Lifting adaptation period 1 set of 12 repetitions. </p>
-
-<p>Power Lateral Pull-Downs<br/>
-Power Leg Extensions<br/>
-Power Leg Curls<br/>
-Bench Press<br/>
-Squats OR Leg Press<br/>
-Power Dumbbell Pullover<br/>
-Bent Over Row<br/>
-Lunges<br/>
-Side Lateral Raises<br/>
-Biceps<br/>
-Triceps<br/>
-Calf Raises<br/>
-Sit-ups<br/>
-Stretching<br/>
-Sit-ups<br/>
-Stretching</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -892,6 +924,10 @@ Stretching</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/27/evernote-programming-challenge/">Evernote Programming Challenge</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/10/15/my-first-windows-phone-app/">My First Windows Phone App</a>
@@ -928,10 +964,6 @@ Stretching</p>
       <li class="post">
         <a href="/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/">Request yahoo serach marketing to reissue cheque to my actual name
 instead of account name</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/03/15/training-2/">Training # 2</a>
       </li>
     
   </ul>
@@ -993,7 +1025,7 @@ instead of account name</a>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Your Name -
+  Copyright &copy; 2013 - Your Name -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

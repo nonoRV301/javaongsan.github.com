@@ -4,7 +4,7 @@
   <title><![CDATA[Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2012-11-26T12:14:48+08:00</updated>
+  <updated>2013-02-27T16:05:10+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Evernote Programming Challenge]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/02/27/evernote-programming-challenge/"/>
+    <updated>2013-02-27T15:53:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/02/27/evernote-programming-challenge</id>
+    <content type="html"><![CDATA[<p>
+Evernote is running a &#8220;Evernote Programming Challenge&#8221; to recurit engineers. Most of them are based in US. Took the challenge anyway, it was fun. I used python and manage to solve all the problem after a few tries. Not bad for a python newbie.
+Check out the challenge at <a href="https://evernotechallenge.interviewstreet.com/challenges">here</a>.
+My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Windows Phone App]]></title>
@@ -397,35 +410,47 @@ empty methods, functions and properties of the interface.</p>
     <id>http://javaongsan.github.com/blog/2011/06/08/ayschronous-data-loading</id>
     <content type="html"><![CDATA[<p>This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids.</p>
 
-<p>`private DataTable dt = null;</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>private DataTable dt = null;  
+</span><span class='line'>  
+</span><span class='line'>private void LoadGrid(object sender, DoWorkEventArgs e)  
+</span><span class='line'>{  
+</span><span class='line'>  dt = ...;  
+</span><span class='line'>}  
+</span><span class='line'>  
+</span><span class='line'>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)  
+</span><span class='line'>{  
+</span><span class='line'>  dgView.DataSource = dt;  
+</span><span class='line'>  dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
+</span><span class='line'>}  
+</span><span class='line'>  
+</span><span class='line'>private void LoadinBackground()  
+</span><span class='line'>{  
+</span><span class='line'>  System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
+</span><span class='line'>  bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
+</span><span class='line'>  bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
+</span><span class='line'>  bgWrkr.RunWorkerAsync();  
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
-<p>private void LoadGrid(object sender, DoWorkEventArgs e)<br/>
-{</p>
-
-<pre><code>dt = ...;  
-</code></pre>
-
-<p>}</p>
-
-<p>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)<br/>
-{</p>
-
-<pre><code>dgView.DataSource = dt;  
-dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
-</code></pre>
-
-<p>}</p>
-
-<p>private void LoadinBackground()<br/>
-{</p>
-
-<pre><code>System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
-bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
-bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
-bgWrkr.RunWorkerAsync();  
-</code></pre>
-
-<p>}`</p>
 ]]></content>
   </entry>
   
@@ -436,56 +461,101 @@ bgWrkr.RunWorkerAsync();
     <id>http://javaongsan.github.com/blog/2011/05/25/cwindows-forms-caching</id>
     <content type="html"><![CDATA[<p>When developing C# windows application, we  tend to reuse  common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good strategy reduce the round trip to database.  I cache most of all my commonly used datasets improve loading time.</p>
 
-<p>`using System;<br/>
-using System.Collections.Generic;<br/>
-using System.Linq;<br/>
-using System.Text;</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Text;  
+</span><span class='line'>  
+</span><span class='line'>namespace Cache  
+</span><span class='line'>{  
+</span><span class='line'>   public class Cache  
+</span><span class='line'>   {  
+</span><span class='line'>       static Dictionary _cache = new Dictionary();  
+</span><span class='line'>  
+</span><span class='line'>       public Cache() { }  
+</span><span class='line'>  
+</span><span class='line'>       public static bool AddToCache(string key, object obj)  
+</span><span class='line'>       {  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               _cache.Add(key, obj);  
+</span><span class='line'>           }  
+</span><span class='line'>           catch (ArgumentException)  
+</span><span class='line'>           {  
+</span><span class='line'>               return false;  
+</span><span class='line'>           }  
+</span><span class='line'>           return true;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public static object GetFromCache(string key)  
+</span><span class='line'>       {  
+</span><span class='line'>           object obj = null;  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               if (_cache.ContainsKey(key))  
+</span><span class='line'>                   _cache.TryGetValue(key, out obj);  
+</span><span class='line'>           }  
+</span><span class='line'>           catch  
+</span><span class='line'>           {  
+</span><span class='line'>           }  
+</span><span class='line'>           return obj;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public static void ClearCache()  
+</span><span class='line'>       {  
+</span><span class='line'>           _cache.Clear();  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>   }  
+</span><span class='line'>}  </span></code></pre></td></tr></table></div></figure>
 
-<p>namespace Cache<br/>
-{<br/>
-   public class Cache<br/>
-   {</p>
-
-<pre><code>   static Dictionary _cache = new Dictionary();  
-
-   public Cache() { }  
-
-   public static bool AddToCache(string key, object obj)  
-   {  
-       try  
-       {  
-           _cache.Add(key, obj);  
-       }  
-       catch (ArgumentException)  
-       {  
-           return false;  
-       }  
-       return true;  
-   }  
-
-   public static object GetFromCache(string key)  
-   {  
-       object obj = null;  
-       try  
-       {  
-           if (_cache.ContainsKey(key))  
-               _cache.TryGetValue(key, out obj);  
-       }  
-       catch  
-       {  
-       }  
-       return obj;  
-   }  
-
-   public static void ClearCache()  
-   {  
-       _cache.Clear();  
-   }  
-</code></pre>
-
-<p>   }<br/>
-}<br/>
-`</p>
 ]]></content>
   </entry>
   
@@ -636,7 +706,7 @@ I simply install Linux and got a new boot menu.</p>
     <id>http://javaongsan.github.com/blog/2009/06/23/countdown-timer</id>
     <content type="html"><![CDATA[<p>If you have read Alex Mandossian&#8217;s Action steps, you know that he suggested that we watch our time using a count down time. Ever since I read this I have been looking for one. A physical countdown time is either too expensive or too small. So i developed one that will run on my screen and stay on top of all my applications. Now i can set a target for my self each time I start a new process.</p>
 
-<p>You can down load the software <a href="http://wizcodersolution.com/wp-content/downloads/Timer.zip">here. </a></p>
+<p>You can down load the software <a href="https://github.com/javaongsan/Count-Down-Timer/blob/master/Timer/bin/Release/Timer.zip">here. </a></p>
 
 <p>You may distribute it freely. please sent me some feedback after using it.</p>
 ]]></content>
@@ -652,8 +722,7 @@ I simply install Linux and got a new boot menu.</p>
 <p>Installation Guide:</p>
 
 <ol>
-<li><a href="http://wizcodersolution.com/wp-content/downloads/wizcom.zip">Download the plugin here</a></li>
-<li>Unzip the file</li>
+<li><a href="https://github.com/javaongsan/WizCom">Download the plugin here</a></li>
 <li>Upload the whole wizcom folder to your Plugins folder via FTP</li>
 <li>Inside the Plugins section of your WordPress control panel activate the plugin</li>
 <li>Under the Dashboard click on WizCom.</li>
@@ -701,15 +770,6 @@ I simply install Linux and got a new boot menu.</p>
 <li><p>Save and close your file</p></li>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to know if you are ready for your niche]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/03/12/how-to-know-if-you-are-ready-for-your-niche/"/>
-    <updated>2009-03-12T13:54:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/03/12/how-to-know-if-you-are-ready-for-your-niche</id>
-    <content type="html"><![CDATA[<p>Your gone through some steps or routine to come to a conclusion on your niche for your website, blog or article campaign. You are all set and passionate about your niche and ready to unleash it on the www audiences. Now before you do that and possible end up with a dead campaign or blog, do a simple test to make sure you are ready for it. Write 20 articles on your niche without any references material, simply using your own words and knowledge. Once your are done spin 5 sub articles out each of this 20 articles. If you are able to do that you have a year worth of content and probably more. Now for a little link muscle. Use 20 on your blog and each of the 5 spin article on a sub domain blog linking to its main. For article campaign simple submit 20 articles to 1 main article directory and separate the 5 across an other directory linking to the main article. Now you have something worthwhile to keep going.</p>
 ]]></content>
   </entry>
   

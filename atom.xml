@@ -4,7 +4,7 @@
   <title><![CDATA[Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2013-02-27T16:05:10+08:00</updated>
+  <updated>2013-04-30T13:31:16+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CLEAN &amp; GREEN HACKATHON 2013]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/04/30/clean-and-green-hackathon-2013/"/>
+    <updated>2013-04-30T13:27:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/04/30/clean-and-green-hackathon-2013</id>
+    <content type="html"><![CDATA[<p>CLEAN &amp; GREEN HACKATHON FROM 26TH TO 28TH APRIL 2013.</p>
+
+<p>Our Team rrrbit <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/944542_10151540613766855_144657784_n.jpg" /></p>
+
+<p>The 2 minute pitch <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash4/396898_10151540616686855_1805901341_n.jpg" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Evernote Programming Challenge]]></title>
@@ -54,20 +67,6 @@ My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
     
     I made a website www.skymusicapp.com using the <a href="http://wp7appsite.codeplex.com/">One-Page Windows Phone 7 App Website Template</a> with <a href="https://github.com/raul/rack-static-boilerplate">rack static boilerplate</a> and hosted it on heroku.
 </p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[About]]></title>
-    <link href="http://javaongsan.github.com/blog/2012/10/14/about/"/>
-    <updated>2012-10-14T15:58:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2012/10/14/about</id>
-    <content type="html"><![CDATA[<p>Ong Swee San is a developer.  He enjoys MMA, Triahtlon and ….  All of these are enjoyed in the context of his family of 2 precocious children, and his beautiful wife.
-</p>
-
-
-<p>You can find him <a href="http://twitter.com/ongsweesan">on Twitter</a> or send him an <a href="mailto:@gmail.com">email</a>.</p>
 
 ]]></content>
   </entry>

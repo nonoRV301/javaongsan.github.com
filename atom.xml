@@ -4,7 +4,7 @@
   <title><![CDATA[Ong Swee San]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2013-04-30T16:44:26+08:00</updated>
+  <updated>2013-05-22T12:29:36+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,13 +14,25 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Health UP Hackathon]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/05/22/health-up-hackathon/"/>
+    <updated>2013-05-22T12:18:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/05/22/health-up-hackathon</id>
+    <content type="html"><![CDATA[<p>I was at Health UP Hackathon 2013 17-19 May at the Scape.
+<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/575667_501425496577406_152410366_n.jpg" />
+Our Team Asknow. We create an q&amp;a platform for diabete&#8217;s caregivers to find the most relevant answer by matching them with user of similar profiles.
+<img src="https://twitter.com/leilachow/status/336006393654034432/photo/1" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[CLEAN &amp; GREEN HACKATHON 2013]]></title>
     <link href="http://javaongsan.github.com/blog/2013/04/30/clean-and-green-hackathon-2013/"/>
     <updated>2013-04-30T13:27:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2013/04/30/clean-and-green-hackathon-2013</id>
     <content type="html"><![CDATA[<p>CLEAN &amp; GREEN HACKATHON FROM 26TH TO 28TH APRIL 2013.</p>
 
-<p>Our Team rrrbit <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/944542_10151540613766855_144657784_n.jpg" /></p>
+<p>Our Team rrribbiti <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/944542_10151540613766855_144657784_n.jpg" /></p>
 
 <p>The 2 minute pitch <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash4/396898_10151540616686855_1805901341_n.jpg" /></p>
 ]]></content>
@@ -750,25 +762,6 @@ I simply install Linux and got a new boot menu.</p>
     <updated>2009-03-12T19:56:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2009/03/12/singapore-loses-rights-to-host-itu-world-championship-series</id>
     <content type="html"><![CDATA[<p>A great blow to local triathletes, it seems that Singapore has lost the right to host the ITU World Championship Series Singapore to Korea. Schedule on May 9, the sudden decisions will a affect a large number of triathletes trying to qualify for the world championship. More details will be revealed in these few days.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Portable Skype]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/03/12/portable-skype/"/>
-    <updated>2009-03-12T14:02:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/03/12/portable-skype</id>
-    <content type="html"><![CDATA[<p>I been a big fan of portable programs ever since I wipe out accidentally my firefox 2 years ago. I was looking for a way not to reinstall my applications and to make them go on my usb. I been using a couple of such program Firefox, Thunderbird, coreftp, putty, keeppass, xampp and many more. The latest addition is Skype.<br/>
-<a href="http://www.downloadsquad.com/2009/02/17/how-to-run-skype-from-a-usb-flash-drive/">Download Squad</a> show as how</p>
-
-<ol>
-<li><p>Install Skype on your PC and then find the installation folder. It&#8217;s probably something like &#8220;C:Program FilesSkype.&#8221; Copy the Skype.exe file to a folder on your USB flash drive.  </p></li>
-<li><p>In that same folder on your flash drive, create a subfolder called &#8220;data.&#8221;</p></li>
-<li><p>Create a new text file called &#8220;Skype.bat&#8221; or Skype Portable.bat&#8221; or whatever you like.</p></li>
-<li><p>Open your new file using Notepad or another text editor and write &#8220;skype.exe /datapath:&#8221;data&#8221; /removable&#8221; (without the quotes).</p></li>
-<li><p>Save and close your file</p></li>
-</ol>
-
 ]]></content>
   </entry>
   

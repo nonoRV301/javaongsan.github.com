@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: HACKATHON | Ong Swee San]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/hackathon/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2013-05-22T12:29:36+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Health UP Hackathon]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/05/22/health-up-hackathon/"/>
+    <updated>2013-05-22T12:18:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/05/22/health-up-hackathon</id>
+    <content type="html"><![CDATA[<p>I was at Health UP Hackathon 2013 17-19 May at the Scape.
+<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/575667_501425496577406_152410366_n.jpg" />
+Our Team Asknow. We create an q&amp;a platform for diabete's caregivers to find the most relevant answer by matching them with user of similar profiles.
+<img src="https://twitter.com/leilachow/status/336006393654034432/photo/1" /></p>
+]]></content>
+  </entry>
+  
+</feed>

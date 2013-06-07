@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ong Swee San]]></title>
+  <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2013-05-22T13:38:10+08:00</updated>
+  <updated>2013-06-07T16:10:25+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Ong Swee San]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AngelHack Singapore]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/06/05/angelhack-singapore/"/>
+    <updated>2013-06-05T13:18:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/06/05/angelhack-singapore</id>
+    <content type="html"><![CDATA[<p>I was at AngelHack Singapore 2013 1-2 June at the Microsoft HQ.
+<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/945317_176646755834666_1327429927_n.jpg" />
+This is by far my favorite hackathon out of the previous 3 I have attended. I have met more developers than the last 2 event combine. There some hacking with rails, pyhton, php and lots of js.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Health UP Hackathon]]></title>
@@ -22,6 +33,11 @@
 <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/575667_501425496577406_152410366_n.jpg" />
 Our Team Asknow. We create an q&amp;a platform for diabete&#8217;s caregivers to find the most relevant answer by matching them with user of similar profiles.
 <img src="https://pbs.twimg.com/media/BKm8COhCQAAP_Og.jpg" /></p>
+
+<br>
+
+
+<p><img src="http://www.upsingapore.com/wp-content/uploads/2013/05/Asknow-510x339.jpg" /></p>
 ]]></content>
   </entry>
   
@@ -753,15 +769,6 @@ I simply install Linux and got a new boot menu.</p>
     <content type="html"><![CDATA[<p>Clickbank direct deposit is really great I got my paid out for March in 2 days and none of that expensive clearing fee. Comparing to my feburary cheaque payment, I receive it by mail last week and its still processing. I enjoying the shorter turn arond as now I have more funds to paly with. My latest paid out is about $600.  </p>
 
 <p>The latest news from Clickbank, Now they do not allowing P2P products anymore. That means no more movies, music, PSP, iPod, Satellite TV for PC, Wii products.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Singapore loses rights to host ITU World Championship Series]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/03/12/singapore-loses-rights-to-host-itu-world-championship-series/"/>
-    <updated>2009-03-12T19:56:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/03/12/singapore-loses-rights-to-host-itu-world-championship-series</id>
-    <content type="html"><![CDATA[<p>A great blow to local triathletes, it seems that Singapore has lost the right to host the ITU World Championship Series Singapore to Korea. Schedule on May 9, the sudden decisions will a affect a large number of triathletes trying to qualify for the world championship. More details will be revealed in these few days.</p>
 ]]></content>
   </entry>
   

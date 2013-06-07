@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: HACKATHON | Ong Swee San]]></title>
+  <title><![CDATA[Category: HACKATHON | EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/blog/categories/hackathon/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2013-05-22T13:38:10+08:00</updated>
+  <updated>2013-06-07T16:10:25+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Ong Swee San]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AngelHack Singapore]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/06/05/angelhack-singapore/"/>
+    <updated>2013-06-05T13:18:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/06/05/angelhack-singapore</id>
+    <content type="html"><![CDATA[<p>I was at AngelHack Singapore 2013 1-2 June at the Microsoft HQ.
+<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/945317_176646755834666_1327429927_n.jpg" />
+This is by far my favorite hackathon out of the previous 3 I have attended. I have met more developers than the last 2 event combine. There some hacking with rails, pyhton, php and lots of js.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Health UP Hackathon]]></title>
@@ -22,6 +33,11 @@
 <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/575667_501425496577406_152410366_n.jpg" />
 Our Team Asknow. We create an q&amp;a platform for diabete's caregivers to find the most relevant answer by matching them with user of similar profiles.
 <img src="https://pbs.twimg.com/media/BKm8COhCQAAP_Og.jpg" /></p>
+
+<br>
+
+
+<p><img src="http://www.upsingapore.com/wp-content/uploads/2013/05/Asknow-510x339.jpg" /></p>
 ]]></content>
   </entry>
   

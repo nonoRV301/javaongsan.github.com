@@ -9,7 +9,7 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="I been suffering form lower back pain for last 2 weeks which has disturbed my training schedule. I been having back problem for many years but it has &hellip;">
+  <meta name="description" content="When developing C# windows application, we tend to reuse common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,138 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/25/cwindows-forms-caching/">C#Windows Forms Caching</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-25T13:05:00+08:00" pubdate data-updated="true">May 25<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When developing C# windows application, we  tend to reuse  common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good strategy reduce the round trip to database.  I cache most of all my commonly used datasets improve loading time.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Text;  
+</span><span class='line'>  
+</span><span class='line'>namespace Cache  
+</span><span class='line'>{  
+</span><span class='line'>   public class Cache  
+</span><span class='line'>   {  
+</span><span class='line'>       static Dictionary _cache = new Dictionary();  
+</span><span class='line'>  
+</span><span class='line'>       public Cache() { }  
+</span><span class='line'>  
+</span><span class='line'>       public static bool AddToCache(string key, object obj)  
+</span><span class='line'>       {  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               _cache.Add(key, obj);  
+</span><span class='line'>           }  
+</span><span class='line'>           catch (ArgumentException)  
+</span><span class='line'>           {  
+</span><span class='line'>               return false;  
+</span><span class='line'>           }  
+</span><span class='line'>           return true;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public static object GetFromCache(string key)  
+</span><span class='line'>       {  
+</span><span class='line'>           object obj = null;  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               if (_cache.ContainsKey(key))  
+</span><span class='line'>                   _cache.TryGetValue(key, out obj);  
+</span><span class='line'>           }  
+</span><span class='line'>           catch  
+</span><span class='line'>           {  
+</span><span class='line'>           }  
+</span><span class='line'>           return obj;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public static void ClearCache()  
+</span><span class='line'>       {  
+</span><span class='line'>           _cache.Clear();  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>   }  
+</span><span class='line'>}  </span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -496,44 +628,6 @@ I simply install Linux and got a new boot menu.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/03/14/clickbank-direct-deposit/">Clickbank Direct Deposit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-03-14T11:00:00+08:00" pubdate data-updated="true">Mar 14<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Clickbank direct deposit is really great I got my paid out for March in 2 days and none of that expensive clearing fee. Comparing to my feburary cheaque payment, I receive it by mail last week and its still processing. I enjoying the shorter turn arond as now I have more funds to paly with. My latest paid out is about $600.  </p>
-
-<p>The latest news from Clickbank, Now they do not allowing P2P products anymore. That means no more movies, music, PSP, iPod, Satellite TV for PC, Wii products.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -549,6 +643,10 @@ I simply install Linux and got a new boot menu.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/19/nokia-marketing-toolkit/">Nokia Marketing Toolkit</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/06/05/angelhack-singapore/">AngelHack Singapore</a>
@@ -584,10 +682,6 @@ I simply install Linux and got a new boot menu.</p>
     
       <li class="post">
         <a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/05/25/cwindows-forms-caching/">C#Windows forms Caching</a>
       </li>
     
   </ul>

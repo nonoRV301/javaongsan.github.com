@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mobile | EZ 2 Hack]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/mobile/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2013-07-19T13:20:09+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Ong Swee San]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Nokia Marketing Toolkit]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/07/19/nokia-marketing-toolkit/"/>
+    <updated>2013-07-19T13:14:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/07/19/nokia-marketing-toolkit</id>
+    <content type="html"><![CDATA[<p>If have an nokia developer account, you should checkout nokia's <a href="http://www.developer.nokia.com/Distribute/Promoting_your_app/Home">Marketing Toolkit</a>. The toolkit make it easy for developers to create promotional materials for their Windows Phone apps via their Marketing in a Box offering, including marketing videos, banners, facebook page and website among others.</p>
+
+<p>Checkout my WP7 app's <a href="http://youtu.be/mTQePXfVCjY">promotional video</a>. Make with this toolkit by following through some simple steps. No video editing required.</p>
+]]></content>
+  </entry>
+  
+</feed>

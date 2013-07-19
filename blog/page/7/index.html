@@ -9,7 +9,7 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="Is your blog slowing down? Do you feel the need to gain full control of your band width, OS, software installed and get optimum up time? By paying a &hellip;">
+  <meta name="description" content="This tutorial is taken from the book â€œRuby on Rails Made Easy by Justin Williamsâ€. It&#8217;s a very good beginners guide but some of the code &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,776 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/05/13/ruby-on-rails-beginners-guide/">Ruby on Rails Beginners Guide</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-05-13T22:01:00+08:00" pubdate data-updated="true">May 13<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This tutorial is taken from the book â€œ<a href="http://rcm.amazon.com/e/cm?t=wizcoder-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1590597524&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000FF&amp;bc1=000000&amp;bg1=FFFFFF&amp;f=ifr"><strong>Ruby on Rails Made Easy by Justin Williams</strong></a>â€. It&#8217;s a very good beginners guide but some of the code are not compatible with the new version of RoR. I repost it here with the necessary changes. I have remove a lot of the explanations and simplify the whole tutorial. If you like to understand more about the code syntax visit <a href="http://www.rubyonrails.org/docs">http://www.rubyonrails.org/docs</a> or consider buying the book.</p>
+
+<p>I am making use of a all-in-one development environment called Instant Rails. Instant Rails is a one-stop Rails runtime solution containing Ruby, Rails, Apache, and MySQL, all preconfigured and ready to run. No installer, you simply drop it into the directory of your choice and run it. It does not modify your system environment.</p>
+
+<p><strong>Installation </strong></p>
+
+<p>Download and install â€œInstant Railsâ€ from <a href="http://instantrails.rubyforge.org/wiki/wiki.pl">http://instantrails.rubyforge.org/wiki/wiki.pl</a></p>
+
+<p><strong>Creating a Rails project</strong></p>
+
+<p>Open up a new command prompt window (Start âž¤ Run âž¤ cmd) and navigate to the directory where instant rails is located.</p>
+
+<p>Type use_ruby at the command prompt and press Enter. These setup the environment you need to create a new application.</p>
+
+<p>To create a new project with the name railslist, type rails railslist at the command prompt and press Enter. Your output look similar to this.</p>
+
+<p><strong>G:InstantRails-2.0-winrails_apps>rails railslist</strong></p>
+
+<p><strong>create</strong></p>
+
+<p><strong>create  app/controllers</strong></p>
+
+<p><strong>create  app/helpers</strong></p>
+
+<p><strong>create  app/models</strong></p>
+
+<p><strong>create  app/views/layouts</strong></p>
+
+<p><strong>create  config/environments</strong></p>
+
+<p><strong>create  config/initializers</strong></p>
+
+<p><strong>create  db</strong></p>
+
+<p><strong>create  doc</strong></p>
+
+<p><strong>create  lib</strong></p>
+
+<p><strong>create  lib/tasks</strong></p>
+
+<p><strong>create  log</strong></p>
+
+<p><strong>create  public/images</strong></p>
+
+<p><strong>create  public/javascripts</strong></p>
+
+<p><strong>create  public/stylesheets</strong></p>
+
+<p><strong>create  script/performance</strong></p>
+
+<p><strong>create  script/process</strong></p>
+
+<p><strong>create  test/fixtures</strong></p>
+
+<p><strong>create  test/functional</strong></p>
+
+<p><strong>create  test/integration</strong></p>
+
+<p><strong>create  test/mocks/development</strong></p>
+
+<p><strong>create  test/mocks/test</strong></p>
+
+<p><strong>create  test/unit</strong></p>
+
+<p><strong>create  vendor</strong></p>
+
+<p><strong>create  vendor/plugins</strong></p>
+
+<p><strong>create  tmp/sessions</strong></p>
+
+<p><strong>create  tmp/sockets</strong></p>
+
+<p><strong>create  tmp/cache</strong></p>
+
+<p><strong>create  tmp/pids</strong></p>
+
+<p><strong>create  Rakefile</strong></p>
+
+<p><strong>create  README</strong></p>
+
+<p><strong>create  app/controllers/application.rb</strong></p>
+
+<p><strong>create  app/helpers/application_helper.rb</strong></p>
+
+<p><strong>create  test/test_helper.rb</strong></p>
+
+<p><strong>create  config/database.yml</strong></p>
+
+<p><strong>create  config/routes.rb</strong></p>
+
+<p><strong>create  public/.htaccess</strong></p>
+
+<p><strong>create  config/initializers/inflections.rb</strong></p>
+
+<p><strong>create  config/initializers/mime_types.rb</strong></p>
+
+<p><strong>create  config/boot.rb</strong></p>
+
+<p><strong>create  config/environment.rb</strong></p>
+
+<p><strong>create  config/environments/production.rb</strong></p>
+
+<p><strong>create  config/environments/development.rb</strong></p>
+
+<p><strong>create  config/environments/test.rb</strong></p>
+
+<p><strong>create  script/about</strong></p>
+
+<p><strong>create  script/console</strong></p>
+
+<p><strong>create  script/destroy</strong></p>
+
+<p><strong>create  script/generate</strong></p>
+
+<p><strong>create  script/performance/benchmarker</strong></p>
+
+<p><strong>create  script/performance/profiler</strong></p>
+
+<p><strong>create  script/performance/request</strong></p>
+
+<p><strong>create  script/process/reaper</strong></p>
+
+<p><strong>create  script/process/spawner</strong></p>
+
+<p><strong>create  script/process/inspector</strong></p>
+
+<p><strong>create  script/runner</strong></p>
+
+<p><strong>create  script/server</strong></p>
+
+<p><strong>create  script/plugin</strong></p>
+
+<p><strong>create  public/dispatch.rb</strong></p>
+
+<p><strong>create  public/dispatch.cgi</strong></p>
+
+<p><strong>create  public/dispatch.fcgi</strong></p>
+
+<p><strong>create  public/404.html</strong></p>
+
+<p><strong>create  public/422.html</strong></p>
+
+<p><strong>create  public/500.html</strong></p>
+
+<p><strong>create  public/index.html</strong></p>
+
+<p><strong>create  public/favicon.ico</strong></p>
+
+<p><strong>create  public/robots.txt</strong></p>
+
+<p><strong>create  public/images/rails.png</strong></p>
+
+<p><strong>create  public/javascripts/prototype.js</strong></p>
+
+<p><strong>create  public/javascripts/effects.js</strong></p>
+
+<p><strong>create  public/javascripts/dragdrop.js</strong></p>
+
+<p><strong>create  public/javascripts/controls.js</strong></p>
+
+<p><strong>create  public/javascripts/application.js</strong></p>
+
+<p><strong>create  doc/README_FOR_APP</strong></p>
+
+<p><strong>create  log/server.log</strong></p>
+
+<p><strong>create  log/production.log</strong></p>
+
+<p><strong>create  log/development.log</strong></p>
+
+<p><strong>create  log/test.log</strong></p>
+
+<p>To see your new website.</p>
+
+<p>Start Instant Rails by executing InstantRails.exe. By default, both Apache and Mysql should be started.</p>
+
+<p><img src="file:///C:/Users/JAVAON~1/AppData/Local/Temp/moz-screenshot.jpg" alt="" /></p>
+
+<p><img src="file:///C:/Users/JAVAON~1/AppData/Local/Temp/moz-screenshot-1.jpg" alt="" /></p>
+
+<p>Click on the I icon select â€œRails Application>Manage applicationâ€, you see a list of application including railslist.</p>
+
+<p>To start the web server check railslist and click the button â€œStart with Mongrelâ€. A command prompt window will show you the URL where the new site is located such as <a href="http://localhost:3000/">http://localhost:3000</a>. Type this in your web browser and you should see this page.</p>
+
+<p><strong>Creating the database</strong></p>
+
+<p>We use phpmyadmin to create 3 new database. Go to your browser and type in <a href="http://loclhost/mysql/">http://loclhost/mysql/</a></p>
+
+<p>you enter the phpmyadmin page.</p>
+
+<p>Enter railslist_development in the â€œ<strong>Create new Databaseâ€</strong> text box and click the button â€œ<strong>Create</strong>â€.</p>
+
+<p>Repeat and create railslist_test and railslist_deployment databases.</p>
+
+<p><strong>Telling Rails about the databases</strong></p>
+
+<p>Open InstantRails-2.0-winrails_appsrailslistconfigdatabase.yml with your text editor and make the following changes</p>
+
+<p><strong>development:<br/>
+adapter: mysql<br/>
+database: railslist_development<br/>
+username: root<br/>
+password:<br/>
+host: localhost<br/>
+timeout: 5000</strong></p>
+
+<p>**# Warning: The database defined as &#8216;test&#8217; will be erased and</p>
+
+<h1>re-generated from your development database when you run &#8216;rake&#8217;.</h1>
+
+<h1>Do not set this db to the same as development or production.</h1>
+
+<p>test:<br/>
+adapter: mysql<br/>
+database: railslist_test<br/>
+username: root<br/>
+password:<br/>
+host: localhost**</p>
+
+<p><strong>production:<br/>
+adapter: mysql<br/>
+database: railslist_deployment<br/>
+username: root<br/>
+password:<br/>
+host: localhost</strong></p>
+
+<p><strong>Creating the model</strong></p>
+
+<p>To use the model generator for this example, open up a command prompt, go to the directory in which the application is located, and then type ruby script/generate model Classified. You should see the following:</p>
+
+<p><strong>cd ~/railslist/</strong></p>
+
+<p><strong>ruby script/generate model Classified</strong></p>
+
+<p><strong>exists app/models/</strong></p>
+
+<p><strong>exists test/unit/</strong></p>
+
+<p><strong>exists test/fixtures/</strong></p>
+
+<p><strong>create app/models/classified.rb</strong></p>
+
+<p><strong>create test/unit/classified_test.rb</strong></p>
+
+<p><strong>create test/fixtures/classifieds.yml</strong></p>
+
+<p><strong>create db/migrate</strong></p>
+
+<p><strong>create db/migrate/001_create_classifieds.rb</strong></p>
+
+<p>You&#8217;re telling the generator to create a model called Classified to store instances of classified ads. Each time you create a Classified model, you&#8217;re pulling a row from the database table.</p>
+
+<p><strong>Rails migrations</strong></p>
+
+<p>A migration file contains basic Ruby syntax that describes the data structure of a database table. It is used to create the tables in your database.</p>
+
+<p>Go to your railslist directory and open up the 001_create_classifieds.rb file in the InstantRails-2.0-in/rails_apps/railslist/db/migrate folder. Replace the default code in your 001_create_classifieds.rb migration file with the following and save your changes:</p>
+
+<p><strong>class CreateClassifieds &lt; ActiveRecord::Migration</strong></p>
+
+<p><strong>def self.up</strong></p>
+
+<p><strong>create_table :classifieds do |t|</strong></p>
+
+<p><strong>t.column :title, :string</strong></p>
+
+<p><strong>t.column :price, :float</strong></p>
+
+<p><strong>t.column :location, :string</strong></p>
+
+<p><strong>t.column :description, :text</strong></p>
+
+<p><strong>t.column :email, :string</strong></p>
+
+<p><strong>t.column :created_at, :timestamp</strong></p>
+
+<p><strong>t.column :updated_at, :timestamp</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>def self.down</strong></p>
+
+<p><strong>drop_table :classifieds</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>Migrations support all the basic data types: :string, :text, :integer, :float, :datetime, :timestamp, :time, :date, :binary and :boolean:</p>
+
+<p>:string is for small data types such as a classified title</p>
+
+<p>:text is for longer pieces of textual data, such as the description</p>
+
+<p>:integer is for whole numbers</p>
+
+<p>:float is for decimals</p>
+
+<p>:datetime and :timestamp store the date and time into a column</p>
+
+<p>:date and :time store either the date only or time only</p>
+
+<p>:binary is for storing data such as images, audio, or movies</p>
+
+<p>:boolean is for storing true or false values</p>
+
+<p>Go to a command prompt and go to the InstantRails-2.0-in/rails_apps/railslist/ directory, in which</p>
+
+<p>the application is located, and then type rake <a href="db:migrate">db:migrate</a></p>
+
+<p><strong>rake db:migrate</strong></p>
+
+<p><strong>(in G:/InstantRails-2.0-win/rails_apps/railslist)</strong></p>
+
+<p><strong>== 1 CreateClassifieds: migrating =============================================</strong></p>
+
+<p><strong>&#8211; create_table(:classifieds)</strong></p>
+
+<p><strong>-> 2.6970s</strong></p>
+
+<p><strong>== 1 CreateClassifieds: migrated (2.6970s) ====================================</strong></p>
+
+<p>The database now has a table in which to store the classified ad data</p>
+
+<p><strong>Creating the controller</strong></p>
+
+<p>Now you need to write the basic code to manipulate the model. To create a controller, open up a command prompt and go to the directory in which the application is located; then type ruby script/generate controller Classified</p>
+
+<p><strong>ruby script/generate controller Classified</strong></p>
+
+<p><strong>exists app/controllers/</strong></p>
+
+<p><strong>exists app/helpers/</strong></p>
+
+<p><strong>create app/views/classified</strong></p>
+
+<p><strong>exists test/functional/</strong></p>
+
+<p><strong>create app/controllers/classified_controller.rb</strong></p>
+
+<p><strong>create test/functional/classified_controller_test.rb</strong></p>
+
+<p><strong>create app/helpers/classified_helper.rb</strong></p>
+
+<p>Open classified_controller.rb file located under app/controllers. Modify the file to look like the following and save your changes:</p>
+
+<p><strong>class ClassifiedController &lt; ApplicationController<br/>
+def list<br/>
+@classifieds = Classified.find(:all)<br/>
+end<br/>
+def show<br/>
+@classified = Classified.find(params[:id])<br/>
+end<br/>
+def new<br/>
+end<br/>
+def create<br/>
+end<br/>
+def edit<br/>
+end<br/>
+def update<br/>
+end<br/>
+def delete<br/>
+end<br/>
+end<br/>
+</strong></p>
+
+<p><strong>Creating the views</strong></p>
+
+<p>Create a file called list.rhtml using your favorite text editor and save it to InstantRails-2.0-in/rails_apps/railslist/app/views/classified. After creating and saving the file, refresh your web browser. You should see a blank page; if you don&#8217;t, check the spelling of your file and make sure that it is the exactly the same as your controller&#8217;s method.</p>
+
+<p>Put some code into the list.rhtml file.</p>
+
+<p><strong>&lt;% if @classifieds.blank? %></strong></p>
+
+<hr />
+
+<p>There are not any ads currently in the system.</p>
+
+<p><strong>&lt;% else %></strong></p>
+
+<hr />
+
+<p>These are the current classified ads in our system</p>
+
+<p>**</p>
+
+<p>**</p>
+
+<p><strong>&lt;% @classifieds.each do |c| %></strong></p>
+
+<p><strong>
+* &lt;%= link_to c.title, {:action => &#8216;show&#8217;, :id => c.id} -%>
+</strong></p>
+
+<p><strong>&lt;% end %></strong></p>
+
+<hr />
+
+<p><strong>&lt;% end %></strong></p>
+
+<hr />
+
+<p>&lt;%= link_to &#8220;Add new ad&#8221;, {:action => &#8216;new&#8217; }%></p>
+
+<p><strong>Creating the first objects</strong></p>
+
+<p>Go back to your classified_controller.rb file in InstantRails-2.0-in/rails_apps/railslist/app/controllers and edit the new method to look like this:</p>
+
+<p><strong>def new</strong></p>
+
+<p><strong>@classified = Classified.new</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>The line you added to the new method lets Rails know that you will create a new object in this view. Create the corresponding new.rhtml file in InstantRails-2.0-in/rails_apps/railslist/app/views/ classified.</p>
+
+<p>You&#8217;ll create a basic input form to accept new classified postings. Add the following code to the new.rhtml file and save it:</p>
+
+<p>**</p>
+
+<h1>Post new classified</h1>
+
+<p>**</p>
+
+<p>**&lt;% form_tag &#8216;create&#8217;  do -%></p>
+
+<p>Title<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></p>
+
+<p>Price<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></p>
+
+<p>Location<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></p>
+
+<p>Description<br/>
+&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></p>
+
+<p>Email<br/>
+&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></p>
+
+<p><strong><br/>
+</strong>&lt;%= submit_tag &#8216;Create&#8217; %><br/>
+&lt;% end -%><br/>
+&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217;} %>**</p>
+
+<p>Edit the create method in the classified_controller.rb to match the following:</p>
+
+<p><strong>def create</strong></p>
+
+<p><strong>@classified = Classified.new(params[:classified])</strong></p>
+
+<p><strong>if @classified.save</strong></p>
+
+<p><strong>redirect_to :action => &#8216;list&#8217;</strong></p>
+
+<p><strong>else</strong></p>
+
+<p><strong>render :action => &#8216;new&#8217;</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>Go to your browser and visit http://localhost:3000/classified/new, enter some data into the form, and submit it.</p>
+
+<p>The data should submit successfully and redirect you to the list page, in which you now have a single item listed. If you click the link, you should see another Template is missing error since you haven&#8217;t created the template file yet.</p>
+
+<p>Create a show.rhtml file under InstantRails-2.0-in/rails_apps/railslist/app/views/classified and populate it with the</p>
+
+<p>following code:</p>
+
+<p>**</p>
+
+<h1>&lt;%= @classified.title %></h1>
+
+<p>**</p>
+
+<hr />
+
+<p><strong>Price: </strong> $&lt;%= @classified.price %></p>
+
+<p><strong>****Location: </strong> &lt;%= @classified.location %></p>
+
+<p><strong>****Date Posted:</strong> &lt;%= @classified.created_at %></p>
+
+<p><strong>****Last updated:</strong> &lt;%= @classified.updated_at %></p>
+
+<hr />
+
+<hr />
+
+<p>&lt;%= @classified.description %></p>
+
+<p>**</p>
+
+<hr />
+
+<p>**</p>
+
+<hr />
+
+<p>Interested? Contact &lt;%= mail_to @classified.email -%></p>
+
+<p><strong>&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217;} %></strong></p>
+
+<p><strong>Updating existing ads</strong></p>
+
+<p>Modify the classified_controller.rb edit and update methods to look like the following:</p>
+
+<p><strong>def edit</strong></p>
+
+<p><strong>@classified = Classified.find(params[:id])</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>def update</strong></p>
+
+<p><strong>@classified = Classified.find(params[:id])</strong></p>
+
+<p><strong>if @classified.update_attributes(params[:classified])</strong></p>
+
+<p><strong>redirect_to :action => &#8216;show&#8217;, :id => @classified</strong></p>
+
+<p><strong>else</strong></p>
+
+<p><strong>render :action => &#8216;edit&#8217;</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>end</strong></p>
+
+<p>Create a new file called edit.rhtml and save it in InstantRails-2.0-in/rails_apps/railslist/app/views/classified. Populate</p>
+
+<p>it with the following code:</p>
+
+<p>**</p>
+
+<h1>Editing Classified: &lt;%= @classified.title -%></h1>
+
+<p>**</p>
+
+<p><strong>&lt;% form_tag( {:action => &#8216;update&#8217;, :id => @classified}) do  %></strong></p>
+
+<hr />
+
+<p>Title</p>
+
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;title&#8217; %></strong></p>
+
+<hr />
+
+<p>Price</p>
+
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;price&#8217; %></strong></p>
+
+<hr />
+
+<p>Location</p>
+
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;location&#8217; %></strong></p>
+
+<hr />
+
+<p>Description</p>
+
+<p><strong>&lt;%= text_area &#8216;classified&#8217;, &#8216;description&#8217; %></strong></p>
+
+<hr />
+
+<p>Email</p>
+
+<p><strong>&lt;%= text_field &#8216;classified&#8217;, &#8216;email&#8217; %></strong></p>
+
+<p><strong>&lt;%= submit_tag &#8220;Save changes&#8221; %></strong></p>
+
+<p><strong>&lt;% end -%></strong></p>
+
+<p><strong>&lt;%= link_to &#8216;Back&#8217;, {:action => &#8216;list&#8217; } %></strong></p>
+
+<p>edit the list.rhtml file go to the
+* element and modify it to look like the following:</p>
+
+<p>**</p>
+
+<hr />
+
+<p><strong>&lt;%= link_to c.title, {:action => &#8220;show&#8221;, :id => c.id} -%></strong></p>
+
+<p><strong> &lt;%= link_to &#8216;Edit&#8217;, {:action => &#8220;edit&#8221;,</strong></p>
+
+<p><strong>:id => c.id} %></strong></p>
+
+<hr />
+
+<p>Point your browser to http://localhost:3000/classified/list and test the new functionality.</p>
+
+<p><strong>Removing an ad</strong></p>
+
+<p>modify list.rhtml</p>
+
+<p>Go to the
+* element and modify it to look like the following:</p>
+
+<p>**</p>
+
+<hr />
+
+<p><strong>&lt;%= link_to c.title, {:action => &#8216;show&#8217;, :id => c.id} -%></strong></p>
+
+<p><strong> &lt;%= link_to &#8216;Edit&#8217;, {:action => &#8216;edit&#8217;,</strong></p>
+
+<p><strong>:id => c.id} %></strong></p>
+
+<p><strong> &lt;%= link_to &#8220;Delete&#8221;, {:action => &#8216;delete&#8217;, :id => c.id},</strong></p>
+
+<p><strong>:confirm => &#8220;Are you sure you want to delete this item?&#8221; %></strong></p>
+
+<hr />
+
+<p>Open classified_controller.rb and modify the delete method as follows:</p>
+
+<p><strong>def delete</strong></p>
+
+<p><strong>Classified.find(params[:id]).destroy</strong></p>
+
+<p><strong>redirect_to :action => &#8216;list&#8217;</strong></p>
+
+<p><strong>end</strong></p>
+
+<p><strong>Adding some style</strong></p>
+
+<p>Add a new file called standard.rhtml to InstantRails-2.0-in/rails_apps/railslist/app/views/layouts.</p>
+
+<p>Open up the classified_controller.rb file in app/controllers and add the following line just below the first line:</p>
+
+<p>layout &#8216;standard&#8217;</p>
+
+<p>You are telling the controller that you want to use the layout in the standard.rhtml file.</p>
+
+<p>go to http://localhost:3000/classified/list you should see that the template is now implemented,</p>
+
+<p>Create a new file called style.css and save it in InstantRails-2.0-in/rails_apps/railslist//public/stylesheets.</p>
+
+<p><strong>* {</strong></p>
+
+<p><strong>margin: 0;</strong></p>
+
+<p><strong>padding:0;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>body {</strong></p>
+
+<p><strong>font-family: Helvetica, Geneva, Arial, sans-serif;</strong></p>
+
+<p><strong>font-size: small;</strong></p>
+
+<p><strong>font-color: #000;</strong></p>
+
+<p><strong>background-color: #fff;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>a:link, a:active, a:visited {</strong></p>
+
+<p><strong>color: #CD0000;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>a:hover {</strong></p>
+
+<p><strong>color: #F70000;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>input { margin-bottom: 5px;}</strong></p>
+
+<p><strong>p { line-height: 150%; }</strong></p>
+
+<p><strong>div#container {</strong></p>
+
+<p><strong>width: 760px;</strong></p>
+
+<p><strong>margin: 0 auto;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#header {</strong></p>
+
+<p><strong>text-align: center;</strong></p>
+
+<p><strong>padding-bottom: 15px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#content {</strong></p>
+
+<p><strong>float: left;</strong></p>
+
+<p><strong>width: 450px;</strong></p>
+
+<p><strong>padding: 10px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#content h3 {</strong></p>
+
+<p><strong>margin-top: 15px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>ul#classifieds {</strong></p>
+
+<p><strong>list-style-type: none;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>ul#classifieds li {</strong></p>
+
+<p><strong>line-height: 140%;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p><strong>div#sidebar {</strong></p>
+
+<p><strong>width: 200px;</strong></p>
+
+<p><strong>margin-left: 480px;</strong></p>
+
+<p><strong>}</strong></p>
+
+<p>Refresh your browser and you should see your application displayed with a bit more style. Thats all folks!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -424,54 +1194,6 @@ How much spare time do you have? Many people have full-time jobs and work more t
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/03/11/32-richest-man-in-the-world/">#32 Richest Man in the World</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-03-11T10:13:00+08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://a2.vox.com/6a00cd9719d53d4cd500d4142583ea6a47-150wi" alt="" />#32 is different from others because he is a programmer. He is Pierre Omidyar, born on June 21, 1967, a French-Iranian-American entrepreneur and philanthropist/economist. If you have not heard of him you may know him as the founder/chairman of the eBay.</p>
-
-<p>Pierre Omidyar was born in Paris, France. He moved to Maryland with his family when his physician father began his residency at Johns Hopkins University Medical Center. Pierre developed an interest in computing while still at St. Andrew&#8217;s Episcopal School (Maryland) in Bethesda. He taught himself BASIC on a TRS-80. In 1988 he graduated in computer science from Tufts University, and joined Claris, an Apple Computer subsidiary. In 1991, he co-founded Ink Development Corp. with three friends. The company included an Internet shopping segment and was later renamed eShop Inc. Omidyar worked as a software engineer for eShop until the end of 1994, when he became a developer services engineer for General Magic, a mobile communication platform company. In 1996, eShop was sold to Microsoft, but Omidyar remained fascinated by the technical challenges of online commerce.</p>
-
-<p>Omidyar was intrigued by the technical problem of establishing an online venue for direct person-to-person auction of collectible items. Omidyar was 28 when he sat down over a long holiday weekend to write the original computer code for eBay. He created a simple prototype on his personal web page, and launched Auction Web as a sole proprietorship on Labor Day weekend in 1995. Auction Web was later renamed &#8220;eBay&#8221;, after Echo Bay, Omidyar&#8217;s consulting firm, when &#8220;echobay.com&#8221; was unavailable. The service was free at first, but started charging in order to cover Internet service provider costs. Pierre turned eBay into the most successful company of the dotcom era. In September 1998, eBay launched a successful public offering, make Omidyar a billionaire.</p>
-
-<p>From a keynote speech at Tufts University:</p>
-
-<blockquote><p><em>&#8220;So people often say to me - &#8220;when you built the system, you must have known that making it self-sustainable was the only way eBay could grow to serve 40 million users a day.&#8221; Well&#8230; nope. I made the system self-sustaining for one reason: Back when I launched eBay on Labor Day 1995, eBay wasn&#8217;t my business - it was my hobby. I had to build a system that was self-sustaining&#8230; because I had a real job to go to every morning.</em></p></blockquote>
-
-<p><em>I was working as a software engineer from 10 to 7, and I wanted to have a life on the weekends. So I built a system that could keep working - catching complaints and capturing feedback &#8211; even when Pam and I were out mountain-biking, and the only one home was our cat.&#8221;</em></p>
-
-<p>Find out more at <a href="http://pierre.typepad.com/">Pierre Omidyar&#8217;s Blog</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/8/">&larr; Older</a>
@@ -487,6 +1209,10 @@ How much spare time do you have? Many people have full-time jobs and work more t
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/19/nokia-marketing-toolkit/">Nokia Marketing Toolkit</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/06/05/angelhack-singapore/">AngelHack Singapore</a>
@@ -522,10 +1248,6 @@ How much spare time do you have? Many people have full-time jobs and work more t
     
       <li class="post">
         <a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/05/25/cwindows-forms-caching/">C#Windows forms Caching</a>
       </li>
     
   </ul>

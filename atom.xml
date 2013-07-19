@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2013-06-25T17:18:45+08:00</updated>
+  <updated>2013-07-19T13:20:09+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Nokia Marketing Toolkit]]></title>
+    <link href="http://javaongsan.github.com/blog/2013/07/19/nokia-marketing-toolkit/"/>
+    <updated>2013-07-19T13:14:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2013/07/19/nokia-marketing-toolkit</id>
+    <content type="html"><![CDATA[<p>If have an nokia developer account, you should checkout nokia&#8217;s <a href="http://www.developer.nokia.com/Distribute/Promoting_your_app/Home">Marketing Toolkit</a>. The toolkit make it easy for developers to create promotional materials for their Windows Phone apps via their Marketing in a Box offering, including marketing videos, banners, facebook page and website among others.</p>
+
+<p>Checkout my WP7 app&#8217;s <a href="http://youtu.be/mTQePXfVCjY">promotional video</a>. Make with this toolkit by following through some simple steps. No video editing required.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[AngelHack Singapore]]></title>
@@ -758,17 +769,6 @@ I simply install Linux and got a new boot menu.</p>
 
 
 <p>Please report any bugs here.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Clickbank direct deposit]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/03/14/clickbank-direct-deposit/"/>
-    <updated>2009-03-14T11:00:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/03/14/clickbank-direct-deposit</id>
-    <content type="html"><![CDATA[<p>Clickbank direct deposit is really great I got my paid out for March in 2 days and none of that expensive clearing fee. Comparing to my feburary cheaque payment, I receive it by mail last week and its still processing. I enjoying the shorter turn arond as now I have more funds to paly with. My latest paid out is about $600.  </p>
-
-<p>The latest news from Clickbank, Now they do not allowing P2P products anymore. That means no more movies, music, PSP, iPod, Satellite TV for PC, Wii products.</p>
 ]]></content>
   </entry>
   

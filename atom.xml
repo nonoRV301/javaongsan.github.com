@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2013-07-19T13:20:09+08:00</updated>
+  <updated>2014-01-13T13:28:17+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Getting work as a Freelance developer]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/13/getting-work-as-a-freelance-developer/"/>
+    <updated>2014-01-13T12:12:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/13/getting-work-as-a-freelance-developer</id>
+    <content type="html"><![CDATA[<p>How does one go about getting work as a Freelance developer?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Nokia Marketing Toolkit]]></title>
@@ -747,28 +756,6 @@ I simply install Linux and got a new boot menu.</p>
 <p>You can down load the software <a href="https://github.com/javaongsan/Count-Down-Timer/blob/master/Timer/bin/Release/Timer.zip">here. </a></p>
 
 <p>You may distribute it freely. please sent me some feedback after using it.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Beta Commentor Publish Notice WordPress Plugin]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin/"/>
-    <updated>2009-06-17T17:16:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin</id>
-    <content type="html"><![CDATA[<p>I am releasing a beta WordPress plugin, a Commentor Publish Notice emailer. My plugin sends email to all the people who have commented on the blog when a post is publish.</p>
-
-<p>Installation Guide:</p>
-
-<ol>
-<li><a href="https://github.com/javaongsan/WizCom">Download the plugin here</a></li>
-<li>Upload the whole wizcom folder to your Plugins folder via FTP</li>
-<li>Inside the Plugins section of your WordPress control panel activate the plugin</li>
-<li>Under the Dashboard click on WizCom.</li>
-<li>Setup yoor email template.</li>
-</ol>
-
-
-<p>Please report any bugs here.</p>
 ]]></content>
   </entry>
   

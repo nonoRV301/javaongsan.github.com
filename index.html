@@ -9,7 +9,8 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="If have an nokia developer account, you should checkout nokia&#8217;s Marketing Toolkit. The toolkit make it easy for developers to create &hellip;">
+  <meta name="description" content="How does one go about getting work as a Freelance developer?
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +79,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/13/getting-work-as-a-freelance-developer/">Getting Work as a Freelance Developer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-13T12:12:00+08:00" pubdate data-updated="true">Jan 13<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How does one go about getting work as a Freelance developer?</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -750,84 +787,6 @@ empty methods, functions and properties of the interface.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-08T15:41:00+08:00" pubdate data-updated="true">Jun 8<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>private DataTable dt = null;  
-</span><span class='line'>  
-</span><span class='line'>private void LoadGrid(object sender, DoWorkEventArgs e)  
-</span><span class='line'>{  
-</span><span class='line'>  dt = ...;  
-</span><span class='line'>}  
-</span><span class='line'>  
-</span><span class='line'>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)  
-</span><span class='line'>{  
-</span><span class='line'>  dgView.DataSource = dt;  
-</span><span class='line'>  dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
-</span><span class='line'>}  
-</span><span class='line'>  
-</span><span class='line'>private void LoadinBackground()  
-</span><span class='line'>{  
-</span><span class='line'>  System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
-</span><span class='line'>  bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
-</span><span class='line'>  bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
-</span><span class='line'>  bgWrkr.RunWorkerAsync();  
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -841,6 +800,10 @@ empty methods, functions and properties of the interface.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/13/getting-work-as-a-freelance-developer/">Getting work as a Freelance developer</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/07/19/nokia-marketing-toolkit/">Nokia Marketing Toolkit</a>
@@ -876,10 +839,6 @@ empty methods, functions and properties of the interface.</p>
     
       <li class="post">
         <a href="/blog/2011/07/15/yahoo-mail-release-old-deactivated-email-address/">Yahoo mail release old deactivated email address</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a>
       </li>
     
   </ul>
@@ -941,7 +900,7 @@ empty methods, functions and properties of the interface.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Ong Swee San -
+  Copyright &copy; 2014 - Ong Swee San -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

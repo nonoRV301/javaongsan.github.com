@@ -9,7 +9,13 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="When developing C# windows application, we tend to reuse common datasource in serveral forms fo controls like combo bo, listbox. Caching is a good &hellip;">
+  <meta name="description" content="This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids. 1
+2
+3
+4
+5
+6
+7 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +84,84 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-08T15:41:00+08:00" pubdate data-updated="true">Jun 8<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This code improves data loading for large database, very useful for windows applications which do not implement paging ffor data grids.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>private DataTable dt = null;  
+</span><span class='line'>  
+</span><span class='line'>private void LoadGrid(object sender, DoWorkEventArgs e)  
+</span><span class='line'>{  
+</span><span class='line'>  dt = ...;  
+</span><span class='line'>}  
+</span><span class='line'>  
+</span><span class='line'>private void WorkerCompleted(object sender, RunWorkerCompletedEventArgs e)  
+</span><span class='line'>{  
+</span><span class='line'>  dgView.DataSource = dt;  
+</span><span class='line'>  dgView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;  
+</span><span class='line'>}  
+</span><span class='line'>  
+</span><span class='line'>private void LoadinBackground()  
+</span><span class='line'>{  
+</span><span class='line'>  System.ComponentModel.BackgroundWorker bgWrkr = new System.ComponentModel.BackgroundWorker();  
+</span><span class='line'>  bgWrkr.DoWork += new System.ComponentModel.DoWorkEventHandler(LoadGrid);  
+</span><span class='line'>  bgWrkr.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(WorkerCompleted);  
+</span><span class='line'>  bgWrkr.RunWorkerAsync();  
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -579,55 +663,6 @@ I simply install Linux and got a new boot menu.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/06/17/my-beta-commentor-publish-notice-wordpress-plugin/">My Beta Commentor Publish Notice WordPress Plugin</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-06-17T17:16:00+08:00" pubdate data-updated="true">Jun 17<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I am releasing a beta WordPress plugin, a Commentor Publish Notice emailer. My plugin sends email to all the people who have commented on the blog when a post is publish.</p>
-
-<p>Installation Guide:</p>
-
-<ol>
-<li><a href="https://github.com/javaongsan/WizCom">Download the plugin here</a></li>
-<li>Upload the whole wizcom folder to your Plugins folder via FTP</li>
-<li>Inside the Plugins section of your WordPress control panel activate the plugin</li>
-<li>Under the Dashboard click on WizCom.</li>
-<li>Setup yoor email template.</li>
-</ol>
-
-
-<p>Please report any bugs here.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -643,6 +678,10 @@ I simply install Linux and got a new boot menu.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/13/getting-work-as-a-freelance-developer/">Getting work as a Freelance developer</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/07/19/nokia-marketing-toolkit/">Nokia Marketing Toolkit</a>
@@ -678,10 +717,6 @@ I simply install Linux and got a new boot menu.</p>
     
       <li class="post">
         <a href="/blog/2011/07/15/yahoo-mail-release-old-deactivated-email-address/">Yahoo mail release old deactivated email address</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/06/08/ayschronous-data-loading/">Ayschronous Data Loading</a>
       </li>
     
   </ul>
@@ -743,7 +778,7 @@ I simply install Linux and got a new boot menu.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Ong Swee San -
+  Copyright &copy; 2014 - Ong Swee San -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

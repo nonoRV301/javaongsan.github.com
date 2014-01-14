@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2014-01-14T14:42:50+08:00</updated>
+  <updated>2014-01-14T14:49:22+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -22,11 +22,11 @@
 
 <p>Since then I have gather a few methods from various freelancer and marketers I came across that have work well.</p>
 
-<h1>Define The Types of Client</h1>
+<h2>Define The Types of Client</h2>
 
 <p>For me a good client will be someone for pays $5000 or more for a single project. Loosely translate to $500 per man-day charge. Anything less are just not worth the time and effort even if I have no income. Recurring revenue is another thing that I would focus on. Clients I take on should be coming back to me for more work.</p>
 
-<h1>Lead Source</h1>
+<h2>Lead Source</h2>
 
 <p>Leads can be generated through:
 1. On-line classified ads.
@@ -38,7 +38,7 @@ Using Adwords and facebook ads can generate the fastest and most relevant leads.
 4. Linkedin
 People are always looking for someone good in certain skill set. Setting up a good profile can help generate a fair amount of traffic</p>
 
-<h1>Building the list</h1>
+<h2>Building the list</h2>
 
 <p>Now you have gather all the source, you need channel them to a place where you can keep build relationships. Use an opt-in list builder like mailchimp. Set up a landing page to catch all that traffic. Set up an series of emails.</p>
 
@@ -49,26 +49,17 @@ People are always looking for someone good in certain skill set. Setting up a go
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Should you work for equity instead of cash?]]></title>
-    <link href="http://javaongsan.github.com/blog/2014/01/14/should-you-work-for-equity-instead-of-cash/"/>
-    <updated>2014-01-14T10:23:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2014/01/14/should-you-work-for-equity-instead-of-cash</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Freelancing]]></title>
     <link href="http://javaongsan.github.com/blog/2014/01/13/freelancing/"/>
     <updated>2014-01-13T14:22:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2014/01/13/freelancing</id>
     <content type="html"><![CDATA[<p>More programmers are try their hands at freelancing full-time. They are driven by the dream to be independent and living without a 9-to-5 job constraints. Does a full-time freelancer get to work he you want, take vacations when you want, for as long as he wants. For me its not, I start freelancing 2 years ago, this are somethings I learn along the way. If you&#8217;re looking to start freelancing and not sure how you can go about it, then read on.</p>
 
-<h1>Motivation</h1>
+<h2>Motivation</h2>
 
 <p>Decide why you want to freelance. More time for family, more time for health, less commuting, no office politics, no more long boring meetings or the comfort of working from your own home. Knowing your motivation will help will go through tough times and taking full time employment again.</p>
 
-<h1>Finding work</h1>
+<h2>Finding work</h2>
 
 <p>The one most ask question I get when I introduce my self as a freelancer is &#8220;How to get work?&#8221;. Well, there are a few ways to find work:
 1. Referral from a friends, family member, Ex-Employees, Ex-Colleagues or just about anyone you knows.
@@ -77,7 +68,7 @@ People are always looking for someone good in certain skill set. Setting up a go
 4. From online classified ads.
 All of the above requires constantly looking, goggling, searching and talking to people. It will probably take up more time then development before you get your first 3 clients. I have the most success getting referrals from ex-colleagues and ex-employers.</p>
 
-<h1>Whats my rate?</h1>
+<h2>Whats my rate?</h2>
 
 <p>The next most important thing is how much to charge? Working out how much to charge clients is very difficult. I would recommend you work out you hourly rate. Try this formula if you are having trouble determine you hourly rate. Take your highest monthly pay, divide it by the number of working days, divide the result by 8, then increase it by 20%. You should get a reasonable hourly rate. Remember if you have low rate, you have a hard time trying to raise it later on.</p>
 
@@ -795,6 +786,17 @@ I simply install Linux and got a new boot menu.</p>
 <li>Type Bootrec.exe /FixMbr, and then press ENTER.</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[VS2008 events handler]]></title>
+    <link href="http://javaongsan.github.com/blog/2011/02/19/vs2008-events-handler/"/>
+    <updated>2011-02-19T00:09:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2011/02/19/vs2008-events-handler</id>
+    <content type="html"><![CDATA[<p>If you are using the Visual Studio IDE 2008 onwards, you will not find the event handlers by double clicking on the components or from the drop down box in code view.</p>
+
+<p>You have to toto properties of that component and click the Events icon. You find all the event handlers there. Double-click the event that you want to create, for example the Load event.</p>
 ]]></content>
   </entry>
   

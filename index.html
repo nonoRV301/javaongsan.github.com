@@ -111,11 +111,11 @@
 
 <p>Since then I have gather a few methods from various freelancer and marketers I came across that have work well.</p>
 
-<h1>Define The Types of Client</h1>
+<h2>Define The Types of Client</h2>
 
 <p>For me a good client will be someone for pays $5000 or more for a single project. Loosely translate to $500 per man-day charge. Anything less are just not worth the time and effort even if I have no income. Recurring revenue is another thing that I would focus on. Clients I take on should be coming back to me for more work.</p>
 
-<h1>Lead Source</h1>
+<h2>Lead Source</h2>
 
 <p>Leads can be generated through:
 1. On-line classified ads.
@@ -127,49 +127,13 @@ Using Adwords and facebook ads can generate the fastest and most relevant leads.
 4. Linkedin
 People are always looking for someone good in certain skill set. Setting up a good profile can help generate a fair amount of traffic</p>
 
-<h1>Building the list</h1>
+<h2>Building the list</h2>
 
 <p>Now you have gather all the source, you need channel them to a place where you can keep build relationships. Use an opt-in list builder like mailchimp. Set up a landing page to catch all that traffic. Set up an series of emails.</p>
 
 <h1>Other more manual generation</h1>
 
 <p>Responding to wanted ads, forum query and user groups and posting links back to your blog post which eventually end up on your landing page.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/01/14/should-you-work-for-equity-instead-of-cash/">Should You Work for Equity Instead of Cash?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-14T10:23:00+08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
 </div>
   
   
@@ -207,11 +171,11 @@ People are always looking for someone good in certain skill set. Setting up a go
 
   <div class="entry-content"><p>More programmers are try their hands at freelancing full-time. They are driven by the dream to be independent and living without a 9-to-5 job constraints. Does a full-time freelancer get to work he you want, take vacations when you want, for as long as he wants. For me its not, I start freelancing 2 years ago, this are somethings I learn along the way. If you&#8217;re looking to start freelancing and not sure how you can go about it, then read on.</p>
 
-<h1>Motivation</h1>
+<h2>Motivation</h2>
 
 <p>Decide why you want to freelance. More time for family, more time for health, less commuting, no office politics, no more long boring meetings or the comfort of working from your own home. Knowing your motivation will help will go through tough times and taking full time employment again.</p>
 
-<h1>Finding work</h1>
+<h2>Finding work</h2>
 
 <p>The one most ask question I get when I introduce my self as a freelancer is &#8220;How to get work?&#8221;. Well, there are a few ways to find work:
 1. Referral from a friends, family member, Ex-Employees, Ex-Colleagues or just about anyone you knows.
@@ -220,7 +184,7 @@ People are always looking for someone good in certain skill set. Setting up a go
 4. From online classified ads.
 All of the above requires constantly looking, goggling, searching and talking to people. It will probably take up more time then development before you get your first 3 clients. I have the most success getting referrals from ex-colleagues and ex-employers.</p>
 
-<h1>Whats my rate?</h1>
+<h2>Whats my rate?</h2>
 
 <p>The next most important thing is how much to charge? Working out how much to charge clients is very difficult. I would recommend you work out you hourly rate. Try this formula if you are having trouble determine you hourly rate. Take your highest monthly pay, divide it by the number of working days, divide the result by 8, then increase it by 20%. You should get a reasonable hourly rate. Remember if you have low rate, you have a hard time trying to raise it later on.</p>
 
@@ -543,6 +507,346 @@ My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/10/22/abstract-class-implementing-interface/">Abstract Class Implementing Interface</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-10-22T23:54:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Abstract Class Implementing Interface.</p>
+
+<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will <br/>
+use an abstract class that implements an Interface.</p>
+
+<p>What is abstract class ?<br/>
+Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods <br/>
+or it can have implemented methods which can be overridden by child classes.</p>
+
+<p>What are interfaces?<br/>
+Interface is a contract class with empty methods, properties and functions. <br/>
+Any class which implements the interface has to compulsory implement all the <br/>
+empty methods, functions and properties of the interface.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Interface   
+</span><span class='line'>
+</span><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Web;  
+</span><span class='line'>  
+</span><span class='line'>namespace Employee.Interface  
+</span><span class='line'>{  
+</span><span class='line'>   public interface IEmployee  
+</span><span class='line'>   {  
+</span><span class='line'>      String Name  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>      String DateJoin  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       String Department  
+</span><span class='line'>       {  
+</span><span class='line'>           get;  
+</span><span class='line'>           set;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       bool Save(String mName, String mDate, String mDepartment);  
+</span><span class='line'>   }  
+</span><span class='line'>}  
+</span><span class='line'>
+</span><span class='line'>  
+</span><span class='line'>Abstract Class  
+</span><span class='line'>  
+</span><span class='line'>
+</span><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Web;  
+</span><span class='line'>using Employee.Interface;  
+</span><span class='line'>  
+</span><span class='line'>namespace Employee.Abstract  
+</span><span class='line'>{  
+</span><span class='line'>   public abstract class AEmployee:IEmployee  
+</span><span class='line'>   {  
+</span><span class='line'>       public abstract String Name  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       public abstract String DateJoin  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       public abstract String Department  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       public abstract bool Save(String mName, String mDate, String mDepartment);  
+</span><span class='line'>  
+</span><span class='line'>   }  
+</span><span class='line'>}  
+</span><span class='line'>
+</span><span class='line'>  
+</span><span class='line'>Employee Class  
+</span><span class='line'>  
+</span><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Web;  
+</span><span class='line'>using Employee.Abstract;  
+</span><span class='line'>  
+</span><span class='line'>namespace Employee  
+</span><span class='line'>{  
+</span><span class='line'>   public class Employee : AEmployee  
+</span><span class='line'>   {  
+</span><span class='line'>       private String _Name = String.Empty;  
+</span><span class='line'>       private String _DateJoin = String.Empty;  
+</span><span class='line'>       private String _Department = String.Empty;  
+</span><span class='line'>  
+</span><span class='line'>       public override String Name  
+</span><span class='line'>       {  
+</span><span class='line'>           get  
+</span><span class='line'>           {  
+</span><span class='line'>  
+</span><span class='line'>               return _Name;  
+</span><span class='line'>           }  
+</span><span class='line'>           set  
+</span><span class='line'>           {  
+</span><span class='line'>               _Name = value;  
+</span><span class='line'>           }  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public override String DateJoin  
+</span><span class='line'>       {  
+</span><span class='line'>           get  
+</span><span class='line'>           {  
+</span><span class='line'>               return _DateJoin;  
+</span><span class='line'>           }  
+</span><span class='line'>           set  
+</span><span class='line'>           {  
+</span><span class='line'>               _DateJoin = value;  
+</span><span class='line'>           }  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public override String Department  
+</span><span class='line'>       {  
+</span><span class='line'>           get  
+</span><span class='line'>           {  
+</span><span class='line'>               return _Department;  
+</span><span class='line'>           }  
+</span><span class='line'>           set  
+</span><span class='line'>           {  
+</span><span class='line'>               _Department = value;  
+</span><span class='line'>           }  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public override bool Save(String mName, String mDate, String mDepartment)  
+</span><span class='line'>       {  
+</span><span class='line'>           bool success = false;  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               _Name = mName;  
+</span><span class='line'>               _DateJoin = mDate;  
+</span><span class='line'>               _Department = mDepartment;  
+</span><span class='line'>  
+</span><span class='line'>               //Code to save   
+</span><span class='line'>               //  
+</span><span class='line'>               success = true;  
+</span><span class='line'>           }  
+</span><span class='line'>           catch (Exception)  
+</span><span class='line'>           {  
+</span><span class='line'>               throw;  
+</span><span class='line'>           }  
+</span><span class='line'>           return success;  
+</span><span class='line'>       }  
+</span><span class='line'>   }  
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -559,10 +863,6 @@ My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
     
       <li class="post">
         <a href="/blog/2014/01/14/creating-a-reliable-lead-generation-channel-for-your-freelancing-business/">Creating a reliable lead generation channel for your freelancing business</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/14/should-you-work-for-equity-instead-of-cash/">Should you work for equity instead of cash?</a>
       </li>
     
       <li class="post">
@@ -595,6 +895,10 @@ My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
     
       <li class="post">
         <a href="/blog/2012/10/15/my-first-windows-phone-app/">My First Windows Phone App</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/10/22/abstract-class-implementing-interface/">Abstract Class Implementing Interface</a>
       </li>
     
   </ul>

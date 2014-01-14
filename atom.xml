@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2014-01-13T13:59:45+08:00</updated>
+  <updated>2014-01-14T10:10:24+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Freelancing]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/13/freelancing/"/>
+    <updated>2014-01-13T14:22:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/13/freelancing</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Getting work as a Freelance developer]]></title>
@@ -743,19 +752,6 @@ I simply install Linux and got a new boot menu.</p>
 <p>A dialogue box with a message saying &#8220;Congratulations! Region Change Fee!&#8221;</p>
 
 <p>I suspect my set was set to region free by the sales guys at the store when on display.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Countdown Timer]]></title>
-    <link href="http://javaongsan.github.com/blog/2009/06/23/countdown-timer/"/>
-    <updated>2009-06-23T10:17:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2009/06/23/countdown-timer</id>
-    <content type="html"><![CDATA[<p>If you have read Alex Mandossian&#8217;s Action steps, you know that he suggested that we watch our time using a count down time. Ever since I read this I have been looking for one. A physical countdown time is either too expensive or too small. So i developed one that will run on my screen and stay on top of all my applications. Now i can set a target for my self each time I start a new process.</p>
-
-<p>You can down load the software <a href="https://github.com/javaongsan/Count-Down-Timer/blob/master/Timer/bin/Release/Timer.zip">here. </a></p>
-
-<p>You may distribute it freely. please sent me some feedback after using it.</p>
 ]]></content>
   </entry>
   

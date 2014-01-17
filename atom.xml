@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2014-01-14T14:49:22+08:00</updated>
+  <updated>2014-01-17T16:14:30+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Should you work for equity instead of cash?]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/17/should-you-work-for-equity-instead-of-cash/"/>
+    <updated>2014-01-17T10:23:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/17/should-you-work-for-equity-instead-of-cash</id>
+    <content type="html"><![CDATA[<p>I been asking a few times to take equity instead of cash to help with the development of mostly startups or those who wants to do start up.
+I would definitely take equity if a right project I like comes along.</p>
+
+<p>My rules are :
+1. If project have good potential and generates income right form the start, I take equity.
+2. If project have good potential and may generate income in distant future, I take small equity plus small upfront cash.
+3. If project have no potential, I charge full development cost.
+4. Reject anything else thats a waste of time.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[how to use LinkedIn Groups to get more clients ]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/16/how-to-use-linkedin-groups-to-get-more-clients/"/>
+    <updated>2014-01-16T10:11:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/16/how-to-use-linkedin-groups-to-get-more-clients</id>
+    <content type="html"><![CDATA[<p>Most people just waste time on LinkedIn, browsing randomly and sending out odd connection requests hoping to land a jobs. Most of them are looking the wrong way. The secret is in LinkedIn Groups. LinkedIn Groups are a very good way to get more clients for your freelance business. LinkedIn has over 200 million users, most groups have at least a thousand members and you can tap into this crowd to find your target customers. There always people looking to solve a problem. Join groups related to your industries and participate in the problem solving not join random discussion, and soon you be the expert of the group and most people will go directly to you. If you have optimizing your LinkedIn profile according to what you are offfering, you get a steady flow of job offers.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[freelancing 2 years in]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/15/freelancing-2-years-in/"/>
+    <updated>2014-01-15T13:02:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/15/freelancing-2-years-in</id>
+    <content type="html"><![CDATA[<p>This month was my second year as a freelance programmer. This are somethings that have worked well.</p>
+
+<h2>Recurring income</h2>
+
+<p>Always ask for more work from existing client. Charge a monthly for maintenances if you can.</p>
+
+<h2>Tools</h2>
+
+<p>Macbook air, Dell 23 inch have been the best investment ever. I hope to get a new MBA with more ram than the current 4g and a 27i nch Monitor thats now cost less than $500. A mac pro would be ideal but a spec up one is really costly.</p>
+
+<h2>Skills</h2>
+
+<p>C#, PHP and javascript are the most common skill I am using. I write a lot python scripts to process things.</p>
+
+<h2>Networking</h2>
+
+<p>I attended a lot more events and hackathons. I make some really good connections.</p>
+
+<h2>learning</h2>
+
+<p>I learn a lot of marketing techniques since.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Creating a reliable lead generation channel for your freelancing business]]></title>
@@ -739,64 +793,6 @@ Sit-ups<br/>
 Stretching<br/>
 Sit-ups<br/>
 Stretching</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Training #1]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/03/14/training-1/"/>
-    <updated>2011-03-14T22:34:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/03/14/training-1</id>
-    <content type="html"><![CDATA[<p>Bought a olympic distance training program from Markallen.com to prepare for august races. Program is very light for beginners cause I haven&#8217;t been active for a while. Most beginners should be able to follow along these program.</p>
-
-<p>Training #1</p>
-
-<p>Target heart rate: 130 - 140 beats per minute</p>
-
-<p>Swim distance:500</p>
-
-<p>Swim workout details: <br/>
-Warm up 200 easy, accelerating speed every other lap. <br/>
-Main Set 8x25 fast on 45 sec rest. <br/>
-Warm down 100 easy.</p>
-
-<p>Workout importance:High</p>
-
-<p>Workout pointers:High aerobic swim. Stay close to upper range of target heart rate.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Grub rescue error]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/03/14/grub-rescue-error/"/>
-    <updated>2011-03-14T10:14:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/03/14/grub-rescue-error</id>
-    <content type="html"><![CDATA[<p>I used gpart to partition a 600g hard disk with preinstall win7. When I boot up after that, boot sector for win7 was gone or maybe replaced. The grup rescue command prompt appear. I couldn&#8217;t fix it. <br/>
-I simply install Linux and got a new boot menu.</p>
-
-<p>When I migrate win7 to virtual box the same problem appear. This time I had to use win7 rescues disk to fix the problem. Below are the steps I found</p>
-
-<ol>
-<li>Put the Windows Vista installation disc in the disc drive, and then start the computer.</li>
-<li>Press a key when you are prompted.</li>
-<li>Select a language, a time, a currency, a keyboard or an input method, and then click Next.</li>
-<li>Click Repair your computer.</li>
-<li>Click the operating system that you want to repair, and then click Next.</li>
-<li>In the System Recovery Options dialog box, click Command Prompt.</li>
-<li>Type Bootrec.exe /FixMbr, and then press ENTER.</li>
-</ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[VS2008 events handler]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/02/19/vs2008-events-handler/"/>
-    <updated>2011-02-19T00:09:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/02/19/vs2008-events-handler</id>
-    <content type="html"><![CDATA[<p>If you are using the Visual Studio IDE 2008 onwards, you will not find the event handlers by double clicking on the components or from the drop down box in code view.</p>
-
-<p>You have to toto properties of that component and click the Events icon. You find all the event handlers there. Double-click the event that you want to create, for example the Load event.</p>
 ]]></content>
   </entry>
   

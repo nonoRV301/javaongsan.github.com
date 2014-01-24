@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2014-01-20T14:45:49+08:00</updated>
+  <updated>2014-01-24T15:03:02+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to control Mdi form Menu dynamically for different login user]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user/"/>
+    <updated>2014-01-19T08:25:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user</id>
+    <content type="html"><![CDATA[<p>Controlling winform for multi-user application can be easy achieve by limiting menu access based on login user.
+Most of the time, a role is required because many user have the same access rights. We can either add this manually or have everything store in an database.</p>
+
+<pre><code>```
+
+foreach (ToolStripItem item in menuStrip1.Items)
+{
+    item.Enabled = RoleAccess.IsEnable(RoleId);
+    item.Visible = RoleAccess.IsEnable(RoleId);
+}
+
+```
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building your own software product]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/18/building-your-own-software-product/"/>
+    <updated>2014-01-18T16:06:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/18/building-your-own-software-product</id>
+    <content type="html"><![CDATA[<p>This is not a guide, I do not have a profitable product yet, This is a collection for my own references.</p>
+
+<p>If you been freelancing for a while, chances are you get the itch sometimes to create your own software product. For a freelance programmer, the best way to create recurring income is to create your own software product.</p>
+
+<p>How do we go about creating an software product. First, find your niche. A niche is a group of people with the same behavior, in software sense, they use the same type of software to perform a common task.</p>
+
+<p>When you have selected a niche, its time to do some research. Research your customers, look at what products they own, how much are they paying for. Go to forums, user groups, on facebook, twitter and linkedin. Find out what are their problems, pains, desires.</p>
+
+<h2>Generating Ideas for software.</h2>
+
+<p>Automated a time consuming task, build a companion to a task they need to automate e.g. a application that replace then need for a user to manually checking website related to their trade that do not provide filtering or email alerts.</p>
+
+<p>Another great way to build software is to start out by solving your own problems. find other people who had the same problem. Look at what they are doing to solve it.</p>
+
+<p>Look at what you are currently doing and what are your customer paying you to solve. Can some one else use it?</p>
+
+<p>If someone have ask you about a certain kind of solution more than once, start taking notes.</p>
+
+<p>Build your prototype, use agile methodology, start small learn and iterate. Then you&#8217;ll be able to build a product your customer truly love.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Should you work for equity instead of cash?]]></title>
@@ -747,54 +795,6 @@ empty methods, functions and properties of the interface.</p>
     <updated>2011-03-28T18:03:00+08:00</updated>
     <id>http://javaongsan.github.com/blog/2011/03/28/lower-back-pain</id>
     <content type="html"><![CDATA[<p>I been suffering form lower back pain for last 2 weeks which has disturbed my training schedule. I been having back problem for many years but it has been getting pretty bad for the past 2 years. It seems lack of strength training on the lower back is causing my muscles to tense up when it&#8217;s overuse. The tense up muscle affects the nerves near the spine area which cause a shooting pain to the lower butt and leg area. The only thing I can do is to get physiotherapy now and slowly strengthen my back before pounding on the training load.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Request yahoo serach marketing to reissue cheque to my actual name
-instead of account name]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name/"/>
-    <updated>2011-03-28T10:46:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/03/28/request-yahoo-serach-marketing-to-reissue-cheque-to-my-actual-nameinstead-of-account-name</id>
-    <content type="html"><![CDATA[<p>Sometime ago yahoo search marking was merge into mircosoft adcenter. Recently I receive a refund for one of my inactive account, totalling about $200 but it was issue to the account name created and not to my real name. Therefor I couldn&#8217;t cash the cheque. I log in to my account again trying find a email contact to ask to have the cheque reissue but all contact was remove except for a hotline number. I google and found the FAQ page which gave instructions on how to get my check reissue. http://advertisingcentral.yahoo.com/refund</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Training # 2]]></title>
-    <link href="http://javaongsan.github.com/blog/2011/03/15/training-2/"/>
-    <updated>2011-03-15T23:32:00+08:00</updated>
-    <id>http://javaongsan.github.com/blog/2011/03/15/training-2</id>
-    <content type="html"><![CDATA[<p>Tempo run</p>
-
-<p>Target heart rate:130 - 140 beats per minute</p>
-
-<p>Run duration:40 minutes</p>
-
-<p>Workout importance:High</p>
-
-<p>Workout pointers:High aerobic run. Time to pick up the tempo. Stay close to upper range of target heart rate.</p>
-
-<p>Weight training 1</p>
-
-<p>Description: Lifting adaptation period 1 set of 12 repetitions. </p>
-
-<p>Power Lateral Pull-Downs<br/>
-Power Leg Extensions<br/>
-Power Leg Curls<br/>
-Bench Press<br/>
-Squats OR Leg Press<br/>
-Power Dumbbell Pullover<br/>
-Bent Over Row<br/>
-Lunges<br/>
-Side Lateral Raises<br/>
-Biceps<br/>
-Triceps<br/>
-Calf Raises<br/>
-Sit-ups<br/>
-Stretching<br/>
-Sit-ups<br/>
-Stretching</p>
 ]]></content>
   </entry>
   

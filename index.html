@@ -9,8 +9,8 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="I been asking a few times to take equity instead of cash to help with the development of mostly startups or those who wants to do start up.
-I would &hellip;">
+  <meta name="description" content="Controlling winform for multi-user application can be easy achieve by limiting menu access based on login user.
+Most of the time, a role is required &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,108 @@ I would &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user/">How to Control Mdi Form Menu Dynamically for Different Login User</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-19T08:25:00+08:00" pubdate data-updated="true">Jan 19<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Controlling winform for multi-user application can be easy achieve by limiting menu access based on login user.
+Most of the time, a role is required because many user have the same access rights. We can either add this manually or have everything store in an database.</p>
+
+<pre><code>```
+
+foreach (ToolStripItem item in menuStrip1.Items)
+{
+    item.Enabled = RoleAccess.IsEnable(RoleId);
+    item.Visible = RoleAccess.IsEnable(RoleId);
+}
+
+```
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/18/building-your-own-software-product/">Building Your Own Software Product</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-18T16:06:00+08:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is not a guide, I do not have a profitable product yet, This is a collection for my own references.</p>
+
+<p>If you been freelancing for a while, chances are you get the itch sometimes to create your own software product. For a freelance programmer, the best way to create recurring income is to create your own software product.</p>
+
+<p>How do we go about creating an software product. First, find your niche. A niche is a group of people with the same behavior, in software sense, they use the same type of software to perform a common task.</p>
+
+<p>When you have selected a niche, its time to do some research. Research your customers, look at what products they own, how much are they paying for. Go to forums, user groups, on facebook, twitter and linkedin. Find out what are their problems, pains, desires.</p>
+
+<h2>Generating Ideas for software.</h2>
+
+<p>Automated a time consuming task, build a companion to a task they need to automate e.g. a application that replace then need for a user to manually checking website related to their trade that do not provide filtering or email alerts.</p>
+
+<p>Another great way to build software is to start out by solving your own problems. find other people who had the same problem. Look at what they are doing to solve it.</p>
+
+<p>Look at what you are currently doing and what are your customer paying you to solve. Can some one else use it?</p>
+
+<p>If someone have ask you about a certain kind of solution more than once, start taking notes.</p>
+
+<p>Build your prototype, use agile methodology, start small learn and iterate. Then you&#8217;ll be able to build a product your customer truly love.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -463,90 +565,6 @@ This is by far my favorite hackathon out of the previous 3 I have attended. I ha
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/22/health-up-hackathon/">Health UP Hackathon</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-22T12:18:00+08:00" pubdate data-updated="true">May 22<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I was at Health UP Hackathon 2013 17-19 May at the Scape.
-<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/575667_501425496577406_152410366_n.jpg" />
-Our Team Asknow. We create an q&amp;a platform for diabete&#8217;s caregivers to find the most relevant answer by matching them with user of similar profiles.
-<img src="https://pbs.twimg.com/media/BKm8COhCQAAP_Og.jpg" /></p>
-
-<br>
-
-
-<p><img src="http://www.upsingapore.com/wp-content/uploads/2013/05/Asknow-510x339.jpg" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/30/clean-and-green-hackathon-2013/">CLEAN &amp; GREEN HACKATHON 2013</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-30T13:27:00+08:00" pubdate data-updated="true">Apr 30<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>CLEAN &amp; GREEN HACKATHON FROM 26TH TO 28TH APRIL 2013.</p>
-
-<p>Our Team rrribbiti <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/944542_10151540613766855_144657784_n.jpg" /></p>
-
-<p>The 2 minute pitch <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash4/396898_10151540616686855_1805901341_n.jpg" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -560,6 +578,14 @@ Our Team Asknow. We create an q&amp;a platform for diabete&#8217;s caregivers to
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user/">How to control Mdi form Menu dynamically for different login user</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/18/building-your-own-software-product/">Building your own software product</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/01/17/should-you-work-for-equity-instead-of-cash/">Should you work for equity instead of cash?</a>
@@ -591,14 +617,6 @@ Our Team Asknow. We create an q&amp;a platform for diabete&#8217;s caregivers to
     
       <li class="post">
         <a href="/blog/2013/06/05/angelhack-singapore/">AngelHack Singapore</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/22/health-up-hackathon/">Health UP Hackathon</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/30/clean-and-green-hackathon-2013/">CLEAN &amp; GREEN HACKATHON 2013</a>
       </li>
     
   </ul>

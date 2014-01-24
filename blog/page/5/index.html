@@ -9,7 +9,7 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="GIMP a free alternative to photoshop, had just released GIMP 2.5.4. Changes in GIMP 2.5.4 improved look and feel of the Navigation dialog and &hellip;">
+  <meta name="description" content="I been really busy learning new things, working and tweaking a lot of my wordpress site lately, theres a few good trick in mysql tricks that I find &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,93 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/10/04/useful-mysql-tricks/">Useful Mysql Tricks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-10-04T21:15:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I been really busy learning new things, working and tweaking a lot of my wordpress site lately, theres a few good trick in mysql tricks that I find really useful. One such command is Replace.  This is very useful when you need to make updates to a series of posts. For example your would like to change your links to nofollow.</p>
+
+<p>update wp_posts set <code>post_content</code> = replace(post_content, &#8217;<a href=","></a></p>
+
+<p><strong>How to sell incontent links</strong><br/>
+You can also sell in content links using this method.<br/>
+Find the relevant anchor text.<br/>
+Select post_name, post_title, guid, from wp_posts where post_content like &#8216;%make money from blogging%&#8217;;<br/>
+This will give you the all the post that has this keyword<br/>
+next add hyperlink by<br/>
+update wp_posts set <code>post_content</code> = replace(post_content, &#8216;make money from blogging&#8217;, &#8217;<a href="http://www.wizcodeolution.com">make money from blogging</a>&#8217;)</p>
+
+<p>Another useful trick for SEO s to change the url from www.wizcodersolution.com/2008/09/post_title to  www.wizcodersolution.com/post_title. I find that using wordpress dashboard do not change links for past post. You can use this command to up date the URLs<br/>
+update   <code>wp_posts</code> set <code>guid</code> = concat( &#8216;http://www.qshape.com&#8217;, <code>post_name</code> )</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/09/20/speed-listening/">Speed Listening</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-20T23:16:00+08:00" pubdate data-updated="true">Sep 20<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Do you learn using audios like mp3s? Here&#8217;s a tip to double or trible your learning time by speeding up your audio. Download  <a href="http://audacity.sourceforge.net/"><em>Audacity</em></a> it&#8217;s a Free Audio Editor. Once you installed the software, import the mp3 file you wish to speed up and set the sample rate format higher.<br/>
+<img src="http://wizcodersolution.com/wp-content/uploads/audacity.jpg" alt="" /><br/>
+Play the mp3, now you have a faster audio that you can go listen at a shorter time. This method is say to increase your concentration and absorption rate.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -466,84 +553,6 @@ Now, when you use the Keyword Tool to search for relevant keywords to include in
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/07/01/clickbank-finally-offers-direct-deposit/">Clickbank Finally Offers Direct Deposit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-07-01T21:02:00+08:00" pubdate data-updated="true">Jul 1<span>st</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Clickbanks finally offers Driect Deposit but wait you have to meet all the requirements. To be eligible, an account must have first received three paper paychecks within any 90-day period. Additionally, only accounts in the following countries are eligible at this time: Australia, Austria, Belgium, Canada, France, Germany, Ireland, Mexico, The Netherlands, New Zealand, Spain, Switzerland, United Kingdom, United States. Dam!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/07/01/adsense-referrals-and-adwords-pay-per-action-beta-to-retire/">AdSense Referrals and AdWords Pay-per-action Beta to Retire</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-07-01T20:57:00+08:00" pubdate data-updated="true">Jul 1<span>st</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Google will be retiring the AdSense Referrals program during the last week of August. This will be replace by the new &#8221;<strong>Google Affiliate Network</strong>&#8221;</p>
-
-<p><em>&#8220;As part of the integration of DoubleClick, the DoubleClick Performics Affiliate Network will now operate as the Google Affiliate Network for advertisers targeting users located in the United States. Similar to the AdSense Referrals program, the Google Affiliate Network enables publishers to apply for advertiser programs and get paid based on advertiser-defined actions instead of clicks or impressions. For further details, please visit: <a href="http://www.google.com/ads/affiliatenetwork/">http://www.google.com/ads/affiliatenetwork/</a>.&#8221;</em></p>
-
-<p>Also to be retired, the AdWords pay-per-action beta. As an alternative, Google offers two products that allow you to manage your advertising on a CPA (cost-per-acquisition) basis: the <a href="http://adwords.blogspot.com/2008/01/conversion-optimizer-increase-profits.html">Conversion Optimizer</a> and the Google Affiliate Network.</p>
-
-<p>The Conversion Optimizer is an AdWords bidding feature that lets you specify a maximum CPA goal for ads on the Google search and content networks. It uses historical information about your campaign to automatically adjust your CPC bid for each auction to help you meet your CPA goal. In addition, the Conversion Optimizer is now supported in both the AdWords Editor and the AdWords API.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -559,6 +568,14 @@ Now, when you use the Keyword Tool to search for relevant keywords to include in
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user/">How to control Mdi form Menu dynamically for different login user</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/18/building-your-own-software-product/">Building your own software product</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/01/17/should-you-work-for-equity-instead-of-cash/">Should you work for equity instead of cash?</a>
@@ -590,14 +607,6 @@ Now, when you use the Keyword Tool to search for relevant keywords to include in
     
       <li class="post">
         <a href="/blog/2013/06/05/angelhack-singapore/">AngelHack Singapore</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/22/health-up-hackathon/">Health UP Hackathon</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/30/clean-and-green-hackathon-2013/">CLEAN &amp; GREEN HACKATHON 2013</a>
       </li>
     
   </ul>

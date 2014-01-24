@@ -333,10 +333,6 @@
         <lastmod>2013-06-25T17:11:09+08:00</lastmod>
     </url>
     <url>
-        <loc>http://javaongsan.github.com/blog/2007/06/23/fast-links-for-navtej-kohli/</loc>
-        <lastmod>2013-06-25T17:11:09+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://javaongsan.github.com/blog/2007/06/24/organizing-tags/</loc>
         <lastmod>2013-06-25T17:11:09+08:00</lastmod>
     </url>
@@ -554,7 +550,7 @@
     </url>
     <url>
         <loc>http://javaongsan.github.com/blog/2007/10/23/what-am-i-up-to/</loc>
-        <lastmod>2013-06-25T17:11:09+08:00</lastmod>
+        <lastmod>2014-01-24T14:58:54+08:00</lastmod>
     </url>
     <url>
         <loc>http://javaongsan.github.com/blog/2007/10/28/selecting-a-vps/</loc>
@@ -1269,12 +1265,24 @@
         <lastmod>2014-01-14T15:58:16+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://javaongsan.github.com/blog/2014/01/18/building-your-own-software-product/
+        </loc>
+        <lastmod>2014-01-24T14:48:21+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://javaongsan.github.com/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user/
+        </loc>
+        <lastmod>2014-01-24T12:11:14+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://javaongsan.github.com/about/</loc>
         <lastmod>2014-01-20T14:14:28+08:00</lastmod>
     </url>
     <url>
         <loc>http://javaongsan.github.com/blog/archives/</loc>
-        <lastmod>2014-01-20T13:57:35+08:00</lastmod>
+        <lastmod>2014-01-24T14:58:54+08:00</lastmod>
     </url>
     <url>
         <loc>http://javaongsan.github.com/hire-me/</loc>
@@ -1282,10 +1290,10 @@
     </url>
     <url>
         <loc>http://javaongsan.github.com/</loc>
-        <lastmod>2014-01-20T13:57:35+08:00</lastmod>
+        <lastmod>2014-01-24T14:58:54+08:00</lastmod>
     </url>
     <url>
         <loc>http://javaongsan.github.com/pair-program-with-me/</loc>
-        <lastmod>2014-01-20T14:45:42+08:00</lastmod>
+        <lastmod>2014-01-20T14:48:12+08:00</lastmod>
     </url>
 </urlset>

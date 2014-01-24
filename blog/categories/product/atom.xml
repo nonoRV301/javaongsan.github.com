@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: product | EZ 2 Hack]]></title>
+  <link href="http://javaongsan.github.com/blog/categories/product/atom.xml" rel="self"/>
+  <link href="http://javaongsan.github.com/"/>
+  <updated>2014-01-24T15:03:02+08:00</updated>
+  <id>http://javaongsan.github.com/</id>
+  <author>
+    <name><![CDATA[Ong Swee San]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Building your own software product]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/18/building-your-own-software-product/"/>
+    <updated>2014-01-18T16:06:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/18/building-your-own-software-product</id>
+    <content type="html"><![CDATA[<p>This is not a guide, I do not have a profitable product yet, This is a collection for my own references.</p>
+
+<p>If you been freelancing for a while, chances are you get the itch sometimes to create your own software product. For a freelance programmer, the best way to create recurring income is to create your own software product.</p>
+
+<p>How do we go about creating an software product. First, find your niche. A niche is a group of people with the same behavior, in software sense, they use the same type of software to perform a common task.</p>
+
+<p>When you have selected a niche, its time to do some research. Research your customers, look at what products they own, how much are they paying for. Go to forums, user groups, on facebook, twitter and linkedin. Find out what are their problems, pains, desires.</p>
+
+<h2>Generating Ideas for software.</h2>
+
+<p>Automated a time consuming task, build a companion to a task they need to automate e.g. a application that replace then need for a user to manually checking website related to their trade that do not provide filtering or email alerts.</p>
+
+<p>Another great way to build software is to start out by solving your own problems. find other people who had the same problem. Look at what they are doing to solve it.</p>
+
+<p>Look at what you are currently doing and what are your customer paying you to solve. Can some one else use it?</p>
+
+<p>If someone have ask you about a certain kind of solution more than once, start taking notes.</p>
+
+<p>Build your prototype, use agile methodology, start small learn and iterate. Then you'll be able to build a product your customer truly love.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2014-01-20T14:45:49+08:00</updated>
+  <updated>2014-01-24T15:03:02+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to control Mdi form Menu dynamically for different login user]]></title>
+    <link href="http://javaongsan.github.com/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user/"/>
+    <updated>2014-01-19T08:25:00+08:00</updated>
+    <id>http://javaongsan.github.com/blog/2014/01/19/how-to-control-mdi-form-menu-dynamically-for-different-login-user</id>
+    <content type="html"><![CDATA[<p>Controlling winform for multi-user application can be easy achieve by limiting menu access based on login user.
+Most of the time, a role is required because many user have the same access rights. We can either add this manually or have everything store in an database.</p>
+
+<pre><code>```
+
+foreach (ToolStripItem item in menuStrip1.Items)
+{
+    item.Enabled = RoleAccess.IsEnable(RoleId);
+    item.Visible = RoleAccess.IsEnable(RoleId);
+}
+
+```
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Evernote Programming Challenge]]></title>

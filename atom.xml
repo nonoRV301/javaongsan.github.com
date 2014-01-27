@@ -4,7 +4,7 @@
   <title><![CDATA[EZ 2 Hack]]></title>
   <link href="http://javaongsan.github.com/atom.xml" rel="self"/>
   <link href="http://javaongsan.github.com/"/>
-  <updated>2014-01-24T15:03:02+08:00</updated>
+  <updated>2014-01-27T11:52:03+08:00</updated>
   <id>http://javaongsan.github.com/</id>
   <author>
     <name><![CDATA[Ong Swee San]]></name>
@@ -58,6 +58,8 @@ foreach (ToolStripItem item in menuStrip1.Items)
 <p>If someone have ask you about a certain kind of solution more than once, start taking notes.</p>
 
 <p>Build your prototype, use agile methodology, start small learn and iterate. Then you&#8217;ll be able to build a product your customer truly love.</p>
+
+<h1>For the next 30 days, find at least one problem per day. Record it.</h1>
 ]]></content>
   </entry>
   

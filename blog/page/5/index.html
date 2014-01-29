@@ -9,7 +9,7 @@
   <meta name="author" content="Ong Swee San">
 
   
-  <meta name="description" content="I been really busy learning new things, working and tweaking a lot of my wordpress site lately, theres a few good trick in mysql tricks that I find &hellip;">
+  <meta name="description" content="Evernote is running a &#8220;Evernote Programming Challenge&#8221; to recurit engineers. Most of them are based in US. Took the challenge anyway, it &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -49,7 +49,7 @@
   <header role="banner"><hgroup>
   <h1><a href="/">A Freelance Programmer's Log.</a></h1>
   
-    <h2>I am a freelance consultant and software developer and this is what I do.</h2>
+    <h2>I am a freelance software developer. This is what I do.</h2>
   
 </hgroup>
 
@@ -85,7 +85,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2008/10/04/useful-mysql-tricks/">Useful Mysql Tricks</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/27/evernote-programming-challenge/">Evernote Programming Challenge</a></h1>
     
     
       <p class="meta">
@@ -101,29 +101,20 @@
   
 
 
-<time datetime="2008-10-04T21:15:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2008</time>
+<time datetime="2013-02-27T15:53:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
         
-         | <a href="/blog/2008/10/04/useful-mysql-tricks/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/02/27/evernote-programming-challenge/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>I been really busy learning new things, working and tweaking a lot of my wordpress site lately, theres a few good trick in mysql tricks that I find really useful. One such command is Replace.  This is very useful when you need to make updates to a series of posts. For example your would like to change your links to nofollow.</p>
+  <div class="entry-content"><p>
+Evernote is running a &#8220;Evernote Programming Challenge&#8221; to recurit engineers. Most of them are based in US. Took the challenge anyway, it was fun. I used python and manage to solve all the problem after a few tries. Not bad for a python newbie.
+Check out the challenge at <a href="https://evernotechallenge.interviewstreet.com/challenges">here</a>.
+My codes <a href="https://github.com/javaongsan/evernotechallenge">here</a>.
 
-<p>update wp_posts set <code>post_content</code> = replace(post_content, &#8217;<a href=","></a></p>
-
-<p><strong>How to sell incontent links</strong><br/>
-You can also sell in content links using this method.<br/>
-Find the relevant anchor text.<br/>
-Select post_name, post_title, guid, from wp_posts where post_content like &#8216;%make money from blogging%&#8217;;<br/>
-This will give you the all the post that has this keyword<br/>
-next add hyperlink by<br/>
-update wp_posts set <code>post_content</code> = replace(post_content, &#8216;make money from blogging&#8217;, &#8217;<a href="http://www.wizcodeolution.com">make money from blogging</a>&#8217;)</p>
-
-<p>Another useful trick for SEO s to change the url from www.wizcodersolution.com/2008/09/post_title to  www.wizcodersolution.com/post_title. I find that using wordpress dashboard do not change links for past post. You can use this command to up date the URLs<br/>
-update   <code>wp_posts</code> set <code>guid</code> = concat( &#8216;http://www.qshape.com&#8217;, <code>post_name</code> )</p>
 </div>
   
   
@@ -136,7 +127,7 @@ update   <code>wp_posts</code> set <code>guid</code> = concat( &#8216;http://ww
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2008/09/20/speed-listening/">Speed Listening</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/10/15/my-first-windows-phone-app/">My First Windows Phone App</a></h1>
     
     
       <p class="meta">
@@ -152,18 +143,39 @@ update   <code>wp_posts</code> set <code>guid</code> = concat( &#8216;http://ww
   
 
 
-<time datetime="2008-09-20T23:16:00+08:00" pubdate data-updated="true">Sep 20<span>th</span>, 2008</time>
+<time datetime="2012-10-15T11:37:00+08:00" pubdate data-updated="true">Oct 15<span>th</span>, 2012</time>
         
-         | <a href="/blog/2008/09/20/speed-listening/#disqus_thread">Comments</a>
+         | <a href="/blog/2012/10/15/my-first-windows-phone-app/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Do you learn using audios like mp3s? Here&#8217;s a tip to double or trible your learning time by speeding up your audio. Download  <a href="http://audacity.sourceforge.net/"><em>Audacity</em></a> it&#8217;s a Free Audio Editor. Once you installed the software, import the mp3 file you wish to speed up and set the sample rate format higher.<br/>
-<img src="http://wizcodersolution.com/wp-content/uploads/audacity.jpg" alt="" /><br/>
-Play the mp3, now you have a faster audio that you can go listen at a shorter time. This method is say to increase your concentration and absorption rate.</p>
+  <div class="entry-content"><p>
+    I have been working on windows mobile for the last 10 years starting with VB 3.0 up to .NET. This is the first time I work on a consumer app. I have release an app called Skymusic. I found out that there are already another app named the same way.
+</p>
+
+
+<p>
+    I have been using Omina 7 with Windows Phone 7.5. I have found that from time to time I am not able to sync my medias over. I have lots of music I would like to put on my phone. The fatest way would be from a could storage since most of my stuff are there. However there are very few apps that offers download to local from could especially from skydrive. So I build a simple app that could just do that.
+    
+    The live SDK was not that suitable for a job like this, its does not handles continuos donwload well. It woul be fine if I let select one file at a time for download or may be stream it on demand. I wanted to used wifi and download all the files when I have a fsater connection.
+    </p>
+
+
+<p>
+    After 3 or maybe 4 days, my apps was rejected. I had to make some changes using the tips from <a href="http://www.hanselman.com/blog/FromConceptToCodeIn6HoursShippingMyFirstWindowsPhoneApp.aspx">From Concept to Code in 6 hours: Shipping my first Windows Phone App</a>
+    
+    1. The app keep crashing when in continous download mode, I had to change the design to a click 1 item at time to download. 
+    2. Replace my buttons with Coding4Fun Windows Phone Toolkit.
+    3. Replace screenshots I capture using print screen with the one I took using <a href="http://www.jeff.wilcox.name/2011/10/screenshots-cs-how-to-capture-screenshots-of-your-app-on-your-device/">screenshots.cs&#8221;</a> from the crazy-useful Jeff Wilcox.
+    
+    Resubmitted the app and it was approved, but I mistakenly select $6.99 for pricing. 
+    
+    I made a website www.skymusicapp.com using the <a href="http://wp7appsite.codeplex.com/">One-Page Windows Phone 7 App Website Template</a> with <a href="https://github.com/raul/rack-static-boilerplate">rack static boilerplate</a> and hosted it on heroku.
+</p>
+
 </div>
   
   
@@ -176,7 +188,7 @@ Play the mp3, now you have a faster audio that you can go listen at a shorter ti
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2008/09/18/gimp-2-5-4/">GIMP 2.5.4</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/10/22/abstract-class-implementing-interface/">Abstract Class Implementing Interface</a></h1>
     
     
       <p class="meta">
@@ -192,380 +204,320 @@ Play the mp3, now you have a faster audio that you can go listen at a shorter ti
   
 
 
-<time datetime="2008-09-18T12:57:00+08:00" pubdate data-updated="true">Sep 18<span>th</span>, 2008</time>
+<time datetime="2011-10-22T23:54:00+08:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2011</time>
         
-         | <a href="/blog/2008/09/18/gimp-2-5-4/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>GIMP a free alternative to photoshop, had just released GIMP 2.5.4.</p>
-
-<h1>Changes in GIMP 2.5.4  </h1>
-
-<ul>
-<li>improved look and feel of the Navigation dialog and navigation popups</li>
-<li>improved positioning of the image in the image window</li>
-<li>by default turned off use of GEGL for color operations</li>
-<li>moved the &#8220;Use GEGL&#8221; checkbox to the Debug menu</li>
-<li>optimized the new scaling code</li>
-<li>various fixes to the Python bindings</li>
-<li>added Python bindings for most GIMP widgets to the gimpui module</li>
-<li>merged GimpHRuler and GimpVRuler classes into GimpRuler</li>
-<li>added Search entry to the Keyboard Shortcuts and Input Controller<br/>
-configuration dialogs</li>
-<li>allow to drop images (in addition to URIs) on the empty image window</li>
-<li>improved error handling in Script-Fu</li>
-<li>merged upstream TinyScheme changes into Script-Fu interpreter</li>
-<li>bug fixes and code cleanup</li>
-</ul>
-
-
-<p>If you been looking for a free photo editor try out <a href="ftp://ftp.gimp.org/pub/gimp/v2.5/">GIMP</a>. There is also a portable version available <a href="http://portableapps.com/apps/graphics_pictures/gimp_portable">here</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/09/14/how-to-change-your-mac-address/">How to Change Your Mac-address</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-09-14T20:57:00+08:00" pubdate data-updated="true">Sep 14<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/09/14/how-to-change-your-mac-address/#disqus_thread">Comments</a>
+         | <a href="/blog/2011/10/22/abstract-class-implementing-interface/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><a href="http://www.online-tech-tips.com/computer-tips/how-to-change-mac-address/">online-tech-tips.com</a> post a very useful tip on how to change your mac-address. Yes, I too taught it not possile to change a pc&#8217;s mac address. Definitely a useful trick.</p>
+  <div class="entry-content"><p>Abstract Class Implementing Interface.</p>
+
+<p>Recenlty I took a technically test and I have write an employee class for an aspx page that will <br/>
+use an abstract class that implements an Interface.</p>
+
+<p>What is abstract class ?<br/>
+Abstract class is a base class or a parent class. Abstract classes can have empty abstract methods <br/>
+or it can have implemented methods which can be overridden by child classes.</p>
+
+<p>What are interfaces?<br/>
+Interface is a contract class with empty methods, properties and functions. <br/>
+Any class which implements the interface has to compulsory implement all the <br/>
+empty methods, functions and properties of the interface.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Interface   
+</span><span class='line'>
+</span><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Web;  
+</span><span class='line'>  
+</span><span class='line'>namespace Employee.Interface  
+</span><span class='line'>{  
+</span><span class='line'>   public interface IEmployee  
+</span><span class='line'>   {  
+</span><span class='line'>      String Name  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>      String DateJoin  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       String Department  
+</span><span class='line'>       {  
+</span><span class='line'>           get;  
+</span><span class='line'>           set;  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       bool Save(String mName, String mDate, String mDepartment);  
+</span><span class='line'>   }  
+</span><span class='line'>}  
+</span><span class='line'>
+</span><span class='line'>  
+</span><span class='line'>Abstract Class  
+</span><span class='line'>  
+</span><span class='line'>
+</span><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Web;  
+</span><span class='line'>using Employee.Interface;  
+</span><span class='line'>  
+</span><span class='line'>namespace Employee.Abstract  
+</span><span class='line'>{  
+</span><span class='line'>   public abstract class AEmployee:IEmployee  
+</span><span class='line'>   {  
+</span><span class='line'>       public abstract String Name  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       public abstract String DateJoin  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       public abstract String Department  
+</span><span class='line'>      {  
+</span><span class='line'>          get;  
+</span><span class='line'>          set;  
+</span><span class='line'>      }  
+</span><span class='line'>  
+</span><span class='line'>       public abstract bool Save(String mName, String mDate, String mDepartment);  
+</span><span class='line'>  
+</span><span class='line'>   }  
+</span><span class='line'>}  
+</span><span class='line'>
+</span><span class='line'>  
+</span><span class='line'>Employee Class  
+</span><span class='line'>  
+</span><span class='line'>using System;  
+</span><span class='line'>using System.Collections.Generic;  
+</span><span class='line'>using System.Linq;  
+</span><span class='line'>using System.Web;  
+</span><span class='line'>using Employee.Abstract;  
+</span><span class='line'>  
+</span><span class='line'>namespace Employee  
+</span><span class='line'>{  
+</span><span class='line'>   public class Employee : AEmployee  
+</span><span class='line'>   {  
+</span><span class='line'>       private String _Name = String.Empty;  
+</span><span class='line'>       private String _DateJoin = String.Empty;  
+</span><span class='line'>       private String _Department = String.Empty;  
+</span><span class='line'>  
+</span><span class='line'>       public override String Name  
+</span><span class='line'>       {  
+</span><span class='line'>           get  
+</span><span class='line'>           {  
+</span><span class='line'>  
+</span><span class='line'>               return _Name;  
+</span><span class='line'>           }  
+</span><span class='line'>           set  
+</span><span class='line'>           {  
+</span><span class='line'>               _Name = value;  
+</span><span class='line'>           }  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public override String DateJoin  
+</span><span class='line'>       {  
+</span><span class='line'>           get  
+</span><span class='line'>           {  
+</span><span class='line'>               return _DateJoin;  
+</span><span class='line'>           }  
+</span><span class='line'>           set  
+</span><span class='line'>           {  
+</span><span class='line'>               _DateJoin = value;  
+</span><span class='line'>           }  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public override String Department  
+</span><span class='line'>       {  
+</span><span class='line'>           get  
+</span><span class='line'>           {  
+</span><span class='line'>               return _Department;  
+</span><span class='line'>           }  
+</span><span class='line'>           set  
+</span><span class='line'>           {  
+</span><span class='line'>               _Department = value;  
+</span><span class='line'>           }  
+</span><span class='line'>       }  
+</span><span class='line'>  
+</span><span class='line'>       public override bool Save(String mName, String mDate, String mDepartment)  
+</span><span class='line'>       {  
+</span><span class='line'>           bool success = false;  
+</span><span class='line'>           try  
+</span><span class='line'>           {  
+</span><span class='line'>               _Name = mName;  
+</span><span class='line'>               _DateJoin = mDate;  
+</span><span class='line'>               _Department = mDepartment;  
+</span><span class='line'>  
+</span><span class='line'>               //Code to save   
+</span><span class='line'>               //  
+</span><span class='line'>               success = true;  
+</span><span class='line'>           }  
+</span><span class='line'>           catch (Exception)  
+</span><span class='line'>           {  
+</span><span class='line'>               throw;  
+</span><span class='line'>           }  
+</span><span class='line'>           return success;  
+</span><span class='line'>       }  
+</span><span class='line'>   }  
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
-<p>Step 1: Click on  <strong>Start</strong>, then  <strong>Control Panel</strong>, then  <strong>Network Connections</strong>, and right-click on the network connection you want to change the MAC address for and select<strong>Properties</strong>. It will normally either be  <strong>Local Area Connection</strong>  or  <strong>Wireless Network Connection</strong>.</p>
-
-<p><a href="http://www.online-tech-tips.com/wp-content/uploads/2008/09/localareaconnection.png"><img src="http://www.online-tech-tips.com/wp-content/uploads/2008/09/localareaconnection-thumb.png" alt="local area connection" /></a></p>
-
-<p>If you are using Windows Vista, you have to go to  <strong>Control Panel,</strong>  then  <strong>Network and Internet,</strong>  then  <strong>Network and Sharing Center,</strong>  and then  <strong>Manage Network Connections</strong>.</p>
-
-<p>Step 2: On the  <strong>General</strong>  tab, click the  <strong>Configure</strong>  button</p>
-
-<p><a href="http://www.online-tech-tips.com/wp-content/uploads/2008/09/configurenetwork.png"><img src="http://www.online-tech-tips.com/wp-content/uploads/2008/09/configurenetwork-thumb.png" alt="configure network" /></a></p>
-
-<p>Step 3: Now click on the Advanced tab and click on the â€œ<strong>Locally Administered Address</strong>â€ property or the â€œ<strong>Network Address</strong>â€ property.</p>
-
-<p><a href="http://www.online-tech-tips.com/wp-content/uploads/2008/09/locallyadministeredaddress.png"><img src="http://www.online-tech-tips.com/wp-content/uploads/2008/09/locallyadministeredaddress-thumb.png" alt="locally administered address" /></a></p>
-
-<p>By default, the â€œNot Presentâ€ value is selected. Go ahead and click on the  <strong>Value</strong>radio button and enter in a new MAC address. The MAC address is a combination of 6 pairs of numbers and characters, i.e. 40-A2-D9-82-9F-F2. You should enter the MAC address without the dashes.</p>
-
-<p><a href="http://www.online-tech-tips.com/wp-content/uploads/2008/09/newmacaddress.png"><img src="http://www.online-tech-tips.com/wp-content/uploads/2008/09/newmacaddress-thumb.png" alt="new mac address" /></a></p>
-
-<p>You can check that the MAC address has been changed by going to the command prompt and typing in  <strong>IPCONFIG /ALL</strong>. Go ahead and restart the computer in order for the changes to take effect.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/09/07/innovative-use-of-technology-in-sports/">Innovative Use of Technology in Sports</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-09-07T21:18:00+08:00" pubdate data-updated="true">Sep 7<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/09/07/innovative-use-of-technology-in-sports/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Olympic cyclist and Gold Medalist Kristin Armstrong wrote that Google Earth was &#8220;invaluable&#8221; in helping her find a training route in Boise, Idaho similar to the Olympic course in Beijing. Kristin took one of his GPS units on her time trial ride back in December. After exporting the GPS and elevation data and loading it into Google Earth, she &#8220;was then able to trace the entire course from the comfort of my home half a world away and find a similar route to train on back in Boise.&#8221;<br/>
-Source:[<a href="http://www.pcworld.com/article/150403/olympic_gold_medalist_gives_props_to_google_earth.html?tk=rss_news#">PCWORDLD</a>]</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/09/03/google-chrome/">Google Chrome</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-09-03T22:47:00+08:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2008</time>
-        
-         | <a href="/blog/2008/09/03/google-chrome/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Have you tried the new <a href="http://www.google.com/chrome">Google Chrome</a>, Google&#8217;s very own browser. Its fast, faster than Firefox 3. Its good enough to make me make the switch. Most of the websites I surf daily perform twice as fast, at least. The only problem is that it can be loaded on my usb. It would be better to make it portable.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/08/09/baby-bonus/">Baby Bonus</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-08-09T17:35:00+08:00" pubdate data-updated="true">Aug 9<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/08/09/baby-bonus/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://wizcodersolution.com/images/DSC00493a.JPG" alt="Caleb" /> I have been busy for the last  few weeks, too busy to update my blog and all that becuase of new arrival. Meet the latest family member, Caleb, born 23 july t 7:51 am, weight in at 3.38kg and 51 cm in height. He has mild jaundice, a condition that seems to affect a lot of local babies. This means that there liver are not fully developed and are not able to process a chemical called bilirubin builds up in baby&#8217;s blood. Under sunlight parts of their body or faces apears yellow. However, Caleb condition was mild and no treatment was needed. Since the day, he was born I haven&#8217;t had enough sleep. Do you know that babies wakes up at night and sleep during the day? This start when they in their mother&#8217;s womb.</p>
-
-<p>While I am busy with stuff <a href="http://www.entrepreneur-journey.com/">Yaro</a> have reopen Blog mastermind. There a lot of buzz around this and something worth checking out on.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/08/08/watch-the-olympics-online/">Watch the Olympics Online</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-08-08T17:12:00+08:00" pubdate data-updated="true">Aug 8<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/08/08/watch-the-olympics-online/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://howto.wired.com/wiki/Watch_the_Olympics_Online">wired.com</a> have compiled a list of online destinations for getting your fix of the summer sporting events.</p>
-
-<h2>Live Streams and On-Demand Highlights</h2>
-
-<p><a href="http://howto.wired.com/wiki/Image:BeijingNBC.gif"><img src="http://howto.wired.com/mediawiki/images/BeijingNBC.gif" alt="" /></a></p>
-
-<p><a href="http://www.nbcolympics.com/">NBC Olympics</a>. Media giant NBC has exclusive rights to broadcast the Olympics in the United States, and will serve up four live streams and 3,000 hours of on-demand video online.</p>
-
-<p><a href="http://www.itsgametime.tv/OlympicsLive.html">ItsGameTime.tv</a>. Streamed live using flash so no downloading any programs. No lag and its in near HD quality. Although illegal, there are no ads except a donation button for the Special Olympics.</p>
-
-<p><a href="http://www.tvtonic.com/olympics/install/">TV Tonic</a>. NBC paired with Wavexpress to offer event highlights on demand via a download service similar to iTunes. If you use Windows Media Center to watch TV you&#8217;ll see a link to this software marked as &#8220;NBC Olympics&#8221; in the Online Media strip. This will offer video ranging in quality from 840x480 progressive to 1080i HD. For 32-bit Windows Vista users only.</p>
-
-<p><a href="http://www.youtube.com/beijing2008">YouTube</a>. Starting Wednesday, Google will provide approximately three hours of content each day from the Olympics Broadcasting Service on a channel dedicated to the games. The content will include highlight reels and daily wrap-ups, but no live coverage. The footage will be available in 77 territories, including South Korea, India and Nigeria, that aren&#8217;t officially covered by Olympic sponsors, according to an <a href="http://www.olympic.org/uk/news/media_centre/press_release_uk.asp?release=2678">International Olympic Committee press release</a>.</p>
-
-<p><a href="http://www.cctvolympics.com/">CCTVOlympics.com</a>. CCTV will be supplying more than 5,000 hours of Olympic Games coverage for mainland China and Macau.</p>
-
-<p><a href="http://news.bbc.co.uk/sport2/hi/olympics/default.stm">BBC Sports</a>. The U.K.&#8217;s official Olympics broadcaster will offer six streaming channels showing coverage from BBC TV and BBC News Interactive. Channels will focus on on-demand daily highlights and athlete interviews.</p>
-
-<p><a href="http://au.sports.yahoo.com/olympics/video/">Yahoo7</a>. Australia&#8217;s official Olympics online portal offers live streams, video coverage on-demand and behind-the-scenes interviews, specials and features.</p>
-
-<p><a href="http://www.cbc.ca/olympics/">CBC Olympics</a>. Canadians can tune into the Canadian Broadcasting Corporation online for supplemental live streams, video coverage on-demand and behind-the-scenes interviews, specials and features.</p>
-
-<p><a href="http://www.cox.net/">Cox High Speed Internet.</a> Cox customers can access 2,200 hours of 25 events streamed live, plus full-event video replays, extensive highlights, including daily recaps of key events, best-of montages, commentator analysis and athlete-specific clips each day, available on NBCOlympics.com via a link from the Sports page on www.cox.net.</p>
-
-<h3>Getting Around Location Restrictions</h3>
-
-<p>In most cases, users in the United States will be blocked from viewing the footage on the non-NBC sites. But you may be able to view clips or streams from other countries if you use a proxy server located within that country, or if you can otherwise trick the streaming server into thinking you&#8217;re from a country where it&#8217;s allowed.</p>
-
-<p>There&#8217;s some advice on this topic at <a href="http://ask.metafilter.com/22899/How-do-I-trick-the-BBC-to-think-I-am-in-the-UK">Metafilter</a>.</p>
-
-<p>There are also paid services like <a href="http://www.anonymizer.com/">Anonymizer</a> that can do the trick for you.</p>
-
-<p><em>If you have any additional advice, please add it here.</em></p>
-
-<h2>Peer-to-Peer Options</h2>
-
-<p>If you want to move beyond bite-size recaps and highlight reels, P2P sites are your best bet for backdoor access to unedited blocks of Olympics footage. Additionally, content is likely to be available sooner than the 12-hour delays expected with some of NBC&#8217;s coverage. Try these web workarounds for full access to the Olympics.</p>
-
-<p><strong>BitTorrent</strong>. Miss the opening ceremonies? Or the four-hour finale of table tennis? Try downloading torrents of popular Olympic events. Top torrent-tracking sites to try include <a href="http://isohunt.com/">isoHunt</a>, <a href="http://www.mininova.org/">Mininova</a> and <a href="http://eztv.it/frontpage.php">EZTV</a>. Need a quick primer on using BitTorrent? Read our <a href="http://howto.wired.com/wiki/Use_BitTorrent">How-To Wiki entry</a> on the subject.</p>
-
-<p><a href="http://www.veetle.com/channelList.php">Veetle</a> Stanford University&#8217;s experimental web TV platform requires a downloadable player, but offers live broadcasts of soccer games, basketball and more.</p>
-
-<p><a href="http://www.sopcast.org/">Sopcast</a>. This free P2P internet TV player requires a download, but offers a wide lineup of <a href="http://sopcast.allp2ptv.org/">channels</a> broadcasting the Olympic games.</p>
-
-<p><a href="http://www.tvants.com/">TVants</a>. This is a P2P Internet TV, which requires a free <a href="http://www.tvants.com/download/tvantssetup.exe">download</a>. TVants can run on Windows or on Linux&#8217;s WINE.</p>
-
-<p><a href="http://www.ppmate.com/">PPMate</a>. A Chinese P2P Internet TV network, <a href="http://www.ppmate.com/search/download.jsp">download</a>. PPMate only run under Windows.</p>
-
-<p><a href="http://www.tvunetworks.com/">TVU Networks</a>. This P2P internet TV player requires a free download and only works with Windows, but is a good resource for watching global sporting events online.</p>
-
-<h2>Recording Events Online</h2>
-
-<p><a href="http://www.wmrecorder.com/">WM Capture</a>. If you&#8217;re looking to make recordings of certain events to save forever, transfer to an iPod, or import into a video editing program, you&#8217;ll need to use a on-screen video recording program like WM Capture. NBC is streaming using Microsoft&#8217;s Silverlight, which has an encrypted stream, making streaming videos hard to capture digitally. WM Capture is especially well suited for high quality recordings, as it uses a proprietary high speed MPEG-2 codec for fast video capture from any region on your PC&#8217;s screen.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/07/09/google-keyword-tool-updated/">Google Keyword Tool Updated</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-07-09T22:34:00+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/07/09/google-keyword-tool-updated/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://bp0.blogger.com/_27oPxt14mJc/SHRRKJgiIOI/AAAAAAAAABY/k458aACLN0Q/s400/keywordtool.gif" alt="" /> <br/>
-Now, when you use the Keyword Tool to search for relevant keywords to include in your keyword list, you&#8217;ll be able to see the approximate number of search queries matching your keywords that were performed on Google and the search network, instead of the graphic bar.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/07/02/clickbank-test-exceeds-100/">Clickbank Test Exceeds $100</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-07-02T21:48:00+08:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2008</time>
-        
-         | <a href="/blog/2008/07/02/clickbank-test-exceeds-100/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>As of 1st of July my experiment with <a href="http://wizcodersolution.com/2008/06/11/google-adwords/">google cash concept</a> exceeds $100. I am runnning one campaign, one keyword with 2 ads and one product. I will continue to the experience with a landing page and see how it goes.</p>
 </div>
   
   
@@ -662,6 +614,15 @@ Now, when you use the Keyword Tool to search for relevant keywords to include in
 </section>
 
 
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/ongsweesan?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 <section>
